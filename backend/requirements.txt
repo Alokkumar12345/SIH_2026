@@ -6,3 +6,5 @@ pandas>=2.2.0
 numpy>=1.26.0
 python-multipart>=0.0.9
 python-dateutil>=2.9.0
+passlib[bcrypt]>=1.7.4
+pyjwt>=2.8.0

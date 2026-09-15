@@ -16,7 +16,8 @@ from psycopg2.extras import RealDictCursor
 
 logger = logging.getLogger("IMBPS.Database")
 
-DATA_DIR = Path("c:/IMBPS/data")
+DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # Neon PostgreSQL connection strings
 NEON_TMS_URL = os.getenv(

@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+// Inside SIH_2026/frontend/src/context/AuthContext.jsx
+import React, { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext(null);
 
@@ -45,8 +46,17 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('imbps_token');
   };
 
+  // Helper function to call backend with JWT
+  const authFetch = async (url, options = {}) => {
+    const headers = {
+      ...options.headers,
+      'Authorization': `Bearer ${token}`
+    };
+    return fetch(url, { ...options, headers });
+  };
+
   return (
-    <AuthContext.Provider value={{ user, token, login, logout }}>
+    <AuthContext.Provider value={{ user, token, login, logout, authFetch }}>
       {children}
     </AuthContext.Provider>
   );
