@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMBPS | Integrated Maintenance & Block Planning System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0e17;
+      --bg-card: rgba(18, 26, 44, 0.75);
+      --bg-card-hover: rgba(26, 38, 64, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-highlight: rgba(0, 210, 255, 0.3);
+      --text-primary: #f0f4fc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-cyan: #00d2ff;
+      --accent-blue: #3a7bd5;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --accent-violet: #8b5cf6;
+      --glow-cyan: 0 0 25px rgba(0, 210, 255, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(0, 210, 255, 0.07) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.07) 0%, transparent 40%),
+        linear-gradient(180deg, #0a0e17 0%, #06090e 100%);
+      line-height: 1.5;
+    }
+
+    /* Top Navigation Bar */
+    header {
+      backdrop-filter: blur(16px);
+      background: rgba(10, 14, 23, 0.85);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--glow-cyan);
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    .brand-info h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-info p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .badge {
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid var(--border-subtle);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .badge-neon {
+      background: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 8px currentColor;
+    }
+
+    /* Main Container & Tabs */
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .tabs-nav {
+      display: flex;
+      gap: 0.5rem;
+      background: rgba(18, 26, 44, 0.6);
+      padding: 0.4rem;
+      border-radius: 14px;
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      padding: 0.65rem 1.25rem;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.88rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab-btn:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(0, 210, 255, 0.15), rgba(58, 123, 213, 0.25));
+      color: var(--accent-cyan);
+      border: 1px solid var(--border-highlight);
+      box-shadow: var(--glow-cyan);
+    }
+
+    /* Tab Content Panels */
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.3s ease forwards;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    /* Glass Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 1.5rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Metric Stat Tiles */
+    .stat-tile {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 1rem;
+      text-align: left;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .stat-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-top: 0.25rem;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Form Controls */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.65rem 0.9rem;
+      background: rgba(10, 14, 23, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.88rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+    }
+
+    /* Action Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+      color: #fff;
+      box-shadow: var(--glow-cyan);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(0, 210, 255, 0.4);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text-primary);
+    }
+
+    /* Gauge / Progress Bars */
+    .progress-track {
+      background: rgba(255, 255, 255, 0.05);
+      height: 8px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Timeline / Schedule Grid */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .schedule-table th {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .schedule-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+    }
+
+    .schedule-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text-primary);
+    }
+
+    .tag-dept {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .tag-engg { background: rgba(58, 123, 213, 0.2); color: #60a5fa; border: 1px solid rgba(96, 165, 250, 0.3); }
+    .tag-sig { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }
+    .tag-trd { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+
+    .tag-co-located {
+      background: rgba(139, 92, 246, 0.2);
+      color: #a78bfa;
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.68rem;
+      margin-left: 0.4rem;
+    }
+
+    /* Json viewer */
+    pre.json-view {
+      background: rgba(6, 9, 14, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: #38bdf8;
+      overflow-x: auto;
+      max-height: 380px;
+    }
+
+    @media (max-width: 900px) {
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-logo">IR</div>
+      <div class="brand-info">
+        <h1>IMBPS Control System</h1>
+        <p>Integrated Maintenance & Block Planning System • Indian Railways</p>
+      </div>
+    </div>
+    <div class="nav-badges">
+      <div class="badge badge-neon">
+        <span class="badge-dot"></span>
+        <span>Neon Cloud DB: Connected</span>
+      </div>
+      <div class="badge">
+        <span>Divisions: ASN • HWH • UMB</span>
+      </div>
+      <a href="/docs" target="_blank" class="badge" style="color: var(--accent-cyan); text-decoration: none;">
+        <span>API Docs ↗</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Tab Navigation -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="switchTab('tab-predict')">⚡ ML Prediction Engine</button>
+      <button class="tab-btn" onclick="switchTab('tab-schedule')">🗓️ CP-SAT Block Scheduler</button>
+      <button class="tab-btn" onclick="switchTab('tab-registry')">🏷️ Model Registry & Retraining</button>
+      <button class="tab-btn" onclick="switchTab('tab-feedback')">📝 Execution Feedback Loop</button>
+      <button class="tab-btn" onclick="switchTab('tab-architecture')">📐 Architecture & Rules</button>
+    </div>
+
+    <!-- TAB 1: PREDICTION ENGINE -->
+    <div id="tab-predict" class="tab-pane active">
+      <div class="grid-2">
+        <!-- Input Form -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">⚙️ Maintenance Request Parameters</div>
+            <div style="display: flex; gap: 0.4rem;">
+              <button class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" onclick="loadPreset('TMS')">TMS Preset</button>
+              <button class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" onclick="loadPreset('SMMS')">SMMS Preset</button>
+              <button class="btn btn-secondary" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;" onclick="loadPreset('TDMS')">TDMS Preset</button>
+            </div>
+          </div>
+
+          <form id="jobForm" onsubmit="event.preventDefault(); runPrediction();">
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Job ID</label>
+                <input type="text" id="job_id" class="form-control" value="TMS-REQ-2026-001">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Department</label>
+                <select id="department" class="form-control" onchange="updateWorkTypes()">
+                  <option value="ENGINEERING">ENGINEERING (P-Way/Civil)</option>
+                  <option value="SIGNAL_TELECOM">SIGNAL_TELECOM (S&T)</option>
+                  <option value="TRD">TRD (Electrical Traction)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Division</label>
+                <select id="division" class="form-control">
+                  <option value="ASN">Asansol (ASN) - Eastern Railway</option>
+                  <option value="HWH">Howrah (HWH) - Eastern Railway</option>
+                  <option value="UMB">Ambala (UMB) - Northern Railway</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Section</label>
+                <input type="text" id="section" class="form-control" value="UDL-SNT">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Block Section</label>
+                <input type="text" id="block_section" class="form-control" value="UDL-UKA">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Line</label>
+                <select id="line" class="form-control">
+                  <option value="UP_MAIN">UP_MAIN</option>
+                  <option value="DN_MAIN">DN_MAIN</option>
+                  <option value="3RD_LINE">3RD_LINE</option>
+                  <option value="SINGLE_LINE">SINGLE_LINE</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Work Type</label>
+                <input type="text" id="work_type" class="form-control" value="Tamping">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Asset Type</label>
+                <input type="text" id="asset_type" class="form-control" value="Track">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Severity</label>
+                <select id="severity" class="form-control">
+                  <option value="Critical">Critical</option>
+                  <option value="High" selected>High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Criticality</label>
+                <select id="criticality" class="form-control">
+                  <option value="Critical" selected>Critical</option>
+                  <option value="High">High</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Low">Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="form-group">
+                <label class="form-label">Overdue Days</label>
+                <input type="number" id="overdue_days" class="form-control" value="4">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Crew Size</label>
+                <input type="number" id="crew_size" class="form-control" value="8">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Req Duration (min)</label>
+                <input type="number" id="requested_duration_min" class="form-control" value="150">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Equipment / Rolling Stock</label>
+              <input type="text" id="equipment" class="form-control" value="CSM">
+            </div>
+
+            <button type="submit" id="btnPredict" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+              ⚡ Run Multi-Model Predictions
+            </button>
+          </form>
+        </div>
+
+        <!-- Prediction Results Cards -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <!-- Duration Prediction Card -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">⏱️ Model 1: Duration Prediction</div>
+              <span id="durModelTag" class="badge">Model: duration_v1</span>
+            </div>
+            <div class="grid-2">
+              <div class="stat-tile">
+                <div class="stat-label">Requested Duration</div>
+                <div id="statReqDur" class="stat-value" style="color: var(--text-muted);">150 min</div>
+              </div>
+              <div class="stat-tile" style="border-color: rgba(0, 210, 255, 0.4);">
+                <div class="stat-label">Predicted Duration</div>
+                <div id="statPredDur" class="stat-value" style="color: var(--accent-cyan);">156.7 min</div>
+              </div>
+            </div>
+            <p id="durVarianceNote" style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.75rem;">
+              ℹ️ Model accounts for heavy machine placement (`CSM`), crew size, and block section traffic density.
+            </p>
+          </div>
+
+          <!-- Risk & Priority Cards -->
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">🛡️ Model 2 & 3: Risk & Priority Engine</div>
+              <span id="priorityBandBadge" class="badge" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e;">P1_MANDATORY_CRITICAL</span>
+            </div>
+            <div class="grid-2">
+              <div class="stat-tile">
+                <div class="stat-label">Asset Failure Risk</div>
+                <div id="statRiskScore" class="stat-value" style="color: #f59e0b;">0.839</div>
+                <div class="progress-track">
+                  <div id="riskBar" class="progress-fill" style="width: 84%; background: #f59e0b;"></div>
+                </div>
+              </div>
+              <div class="stat-tile">
+                <div class="stat-label">Priority Score (0-100)</div>
+                <div id="statPriorityScore" class="stat-value" style="color: #f43f5e;">85.2 / 100</div>
+                <div class="progress-track">
+                  <div id="priorityBar" class="progress-fill" style="width: 85%; background: #f43f5e;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="breakdownContainer" style="margin-top: 1rem; font-size: 0.82rem; color: var(--text-secondary);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                <span>Safety Criticality:</span> <strong id="valSafety" style="color: #fff;">89.2</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                <span>Asset Risk Factor:</span> <strong id="valRisk" style="color: #fff;">83.9</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                <span>Urgency & Overdue:</span> <strong id="valUrgency" style="color: #fff;">80.0</strong>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span>Operational Trunk Impact:</span> <strong id="valOp" style="color: #fff;">85.0</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: BLOCK SCHEDULER -->
+    <div id="tab-schedule" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">🧩 Google OR-Tools CP-SAT Block Optimization</div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">
+              Enforcing Hard COA Timetables, Headway Buffers, Multi-Department Co-location & S&T / Power Isolation.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary" onclick="runOptimization('WEEKLY')">Weekly Schedule</button>
+            <button class="btn btn-primary" onclick="runOptimization('MONTHLY')">Monthly Workload Plan</button>
+          </div>
+        </div>
+
+        <div class="grid-4" style="margin-bottom: 1.5rem;">
+          <div class="stat-tile">
+            <div class="stat-label">Solver Status</div>
+            <div id="optStatus" class="stat-value" style="color: #10b981; font-size: 1.3rem;">OPTIMAL</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Jobs Scheduled</div>
+            <div id="optJobsSched" class="stat-value" style="color: var(--accent-cyan); font-size: 1.3rem;">4 / 4 (100%)</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Total Block Hours</div>
+            <div id="optBlockHours" class="stat-value" style="color: #a78bfa; font-size: 1.3rem;">7.5 hrs</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Solve Time</div>
+            <div id="optSolveTime" class="stat-value" style="color: #fbbf24; font-size: 1.3rem;">0.02 s</div>
+          </div>
+        </div>
+
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+          📋 Optimized Multi-Department Block Timeline
+        </h3>
+
+        <div style="overflow-x: auto;">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Job ID</th>
+                <th>Department</th>
+                <th>Work Type</th>
+                <th>Block Section & Line</th>
+                <th>Assigned Window</th>
+                <th>Slot ID</th>
+                <th>Coordination & Dependencies</th>
+              </tr>
+            </thead>
+            <tbody id="scheduleTableBody">
+              <tr>
+                <td><strong style="color: #fff;">TMS-JOB-101</strong></td>
+                <td><span class="tag-dept tag-engg">ENGINEERING</span></td>
+                <td>Tamping</td>
+                <td>UDL-UKA (UP_MAIN)</td>
+                <td><strong style="color: var(--accent-cyan);">11:00 - 13:37</strong> (157 min)</td>
+                <td>SLOT_ASN_01</td>
+                <td>
+                  <span class="badge" style="font-size: 0.68rem; display: inline-flex;">S&T Disconnect Required</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong style="color: #fff;">TDMS-CO-LOC-404</strong></td>
+                <td><span class="tag-dept tag-trd">TRD</span></td>
+                <td>Dropper Renewal</td>
+                <td>UDL-UKA (UP_MAIN)</td>
+                <td><strong style="color: var(--accent-cyan);">11:00 - 12:17</strong> (77 min)</td>
+                <td>SLOT_ASN_01</td>
+                <td>
+                  <span class="tag-co-located">Shared / Piggybacked</span>
+                  <span class="badge" style="font-size: 0.68rem; display: inline-flex;">Power Block Cut</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong style="color: #fff;">SMMS-JOB-202</strong></td>
+                <td><span class="tag-dept tag-sig">SIGNAL_TELECOM</span></td>
+                <td>Point Motor Replacement</td>
+                <td>BLY-BDC (3RD_LINE)</td>
+                <td><strong style="color: var(--accent-cyan);">01:00 - 02:31</strong> (91 min)</td>
+                <td>SLOT_HWH_01</td>
+                <td>
+                  <span class="badge" style="font-size: 0.68rem; display: inline-flex;">Night Shadow Block</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong style="color: #fff;">TDMS-JOB-303</strong></td>
+                <td><span class="tag-dept tag-trd">TRD</span></td>
+                <td>OHE Wire Replacement</td>
+                <td>UMB-RPJ (UP_MAIN)</td>
+                <td><strong style="color: var(--accent-cyan);">12:00 - 14:06</strong> (126 min)</td>
+                <td>SLOT_UMB_01</td>
+                <td>
+                  <span class="badge" style="font-size: 0.68rem; display: inline-flex;">Power Block Cut</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: MODEL REGISTRY -->
+    <div id="tab-registry" class="tab-pane">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">🏷️ Model Governance & Versions</div>
+            <button class="btn btn-primary" onclick="triggerRetrain()" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;">
+              🔄 Trigger Automated Retrain
+            </button>
+          </div>
+          <div id="registryList" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="stat-tile" style="border-left: 4px solid #10b981;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong style="color: #fff; font-size: 1rem;">duration_v1 (Ridge)</strong>
+                <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">PRODUCTION</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">
+                Test MAE: <strong>8.73 min</strong> | Test RMSE: 10.06 min | R²: <strong>0.964</strong>
+              </div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">
+                Deployed across ASN, HWH, UMB division nodes.
+              </div>
+            </div>
+
+            <div class="stat-tile" style="border-left: 4px solid #f59e0b;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong style="color: #fff; font-size: 1rem;">duration_v2 (GradientBoosting)</strong>
+                <span class="badge" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">STAGING_NOT_PROMOTED</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">
+                Val MAE: 8.85 min (Failed promotion threshold: 8.85 > 8.72 production MAE).
+              </div>
+            </div>
+
+            <div class="stat-tile" style="border-left: 4px solid #8b5cf6;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <strong style="color: #fff; font-size: 1rem;">risk_v1 (Domain Explainable)</strong>
+                <span class="badge" style="background: rgba(139, 92, 246, 0.2); color: #a78bfa;">PRODUCTION</span>
+              </div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">
+                Multi-criteria asset failure probability estimator (Mean Risk: 0.647).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">🌐 Division Deployment Status</div>
+            <button class="btn btn-secondary" onclick="rollbackModel()" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;">
+              ⏪ Rollback to duration_v1
+            </button>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="stat-tile">
+              <div style="display: flex; justify-content: space-between;">
+                <strong>Eastern Railway - Asansol Division (ASN)</strong>
+                <span class="badge badge-neon">ONLINE</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">
+                Active Model: duration_v1 • Latency: 1.8ms • Serving 6 sections
+              </p>
+            </div>
+
+            <div class="stat-tile">
+              <div style="display: flex; justify-content: space-between;">
+                <strong>Eastern Railway - Howrah Division (HWH)</strong>
+                <span class="badge badge-neon">ONLINE</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">
+                Active Model: duration_v1 • Latency: 2.1ms • Serving 8 section groups
+              </p>
+            </div>
+
+            <div class="stat-tile">
+              <div style="display: flex; justify-content: space-between;">
+                <strong>Northern Railway - Ambala Division (UMB)</strong>
+                <span class="badge badge-neon">ONLINE</span>
+              </div>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">
+                Active Model: duration_v1 • Latency: 1.9ms • Serving 15 routes
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <div class="card-title" style="font-size: 0.9rem; margin-bottom: 0.5rem;">📜 Retraining Log Output</div>
+            <pre id="retrainLog" class="json-view">{
+  "status": "READY",
+  "message": "Continuous retraining pipeline ready. Click 'Trigger Automated Retrain' to benchmark candidate models."
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: FEEDBACK LOOP -->
+    <div id="tab-feedback" class="tab-pane">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📝 Log Actual Execution Outcome</div>
+          </div>
+          <form id="feedbackForm" onsubmit="event.preventDefault(); submitFeedback();">
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Job ID</label>
+                <input type="text" id="fb_job_id" class="form-control" value="TMS-JOB-101">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Completion Status</label>
+                <select id="fb_status" class="form-control">
+                  <option value="Completed">Completed</option>
+                  <option value="Completed with Delay">Completed with Delay</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Predicted Duration (min)</label>
+                <input type="number" id="fb_pred_dur" class="form-control" value="156.7" step="0.1">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Actual Duration (min)</label>
+                <input type="number" id="fb_act_dur" class="form-control" value="162.0" step="0.1">
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label class="form-label">Train Delay Incurred (min)</label>
+                <input type="number" id="fb_train_delay" class="form-control" value="5.0" step="0.1">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Block Utilization (%)</label>
+                <input type="number" id="fb_util" class="form-control" value="94.2" step="0.1">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Resource Usage Note</label>
+              <input type="text" id="fb_resource" class="form-control" value="CSM + 8 Gangmen (Smooth execution)">
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              💾 Record Feedback for Model Retraining
+            </button>
+          </form>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">📊 Execution Variance & Learning Loop</div>
+          </div>
+          <div class="stat-tile" style="margin-bottom: 1rem;">
+            <div class="stat-label">Variance Analysis</div>
+            <p id="fbVarianceResult" style="font-size: 0.9rem; color: var(--text-primary); margin-top: 0.5rem;">
+              Duration deviation: <strong>+5.3 minutes (+3.3%)</strong>.<br>
+              Within acceptable threshold (&lt;10 min). Feedback logged to operational outcomes dataset.
+            </p>
+          </div>
+          <pre id="fbResponseLog" class="json-view">{
+  "status": "AWAITING_INPUT",
+  "note": "Submit form to record actual block execution data into PostgreSQL / operational outcome stream."
+}</pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: ARCHITECTURE -->
+    <div id="tab-architecture" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📐 Indian Railways IMBPS Architectural Principles</div>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1rem;">
+          <div class="stat-tile">
+            <strong style="color: var(--accent-cyan);">1. ML for Prediction $\rightarrow$ OR-Tools for Optimization $\rightarrow$ COA for Hard Constraints</strong>
+            <p style="margin-top: 0.3rem;">
+              Never use a single black-box ML model to create schedules. The ML layer answers <em>"How long will it take, what is the asset risk, and what is its priority?"</em> while Google OR-Tools CP-SAT answers <em>"When and where can it be safely executed?"</em> under strict COA headway, S&T disconnection, and power isolation constraints.
+            </p>
+          </div>
+
+          <div class="stat-tile">
+            <strong style="color: #34d399;">2. Multi-Department Co-location (Shared Piggybacked Blocks)</strong>
+            <p style="margin-top: 0.3rem;">
+              Whenever TMS Track Tamping is scheduled on a block section, IMBPS identifies compatible TDMS OHE Dropper renewals or SMMS Track Circuit / Bond testing to piggyback into the same window, maximizing the value of the track possession.
+            </p>
+          </div>
+
+          <div class="stat-tile">
+            <strong style="color: #fbbf24;">3. Continuous Governance & Safe Deployment</strong>
+            <p style="margin-top: 0.3rem;">
+              Models retrain on actual execution outcomes. New candidate models must pass the automated quality gate ($\text{Candidate MAE} \le \text{Production MAE}$) before promotion. In case of unexpected field drift, instant rollback to previous versions is supported.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    const PRESETS = {
+      TMS: {
+        job_id: "TMS-H001",
+        department: "ENGINEERING",
+        division: "ASN",
+        section: "UDL-SNT",
+        block_section: "UDL-UKA",
+        line: "UP_MAIN",
+        work_type: "Tamping",
+        asset_type: "Track",
+        severity: "High",
+        criticality: "Critical",
+        overdue_days: 4,
+        crew_size: 8,
+        equipment: "CSM",
+        requested_duration_min: 150
+      },
+      SMMS: {
+        job_id: "SMMS-H001",
+        department: "SIGNAL_TELECOM",
+        division: "HWH",
+        section: "HWH-KAN (Main line)",
+        block_section: "BLY-BDC",
+        line: "3RD_LINE",
+        work_type: "Point Motor Replacement",
+        asset_type: "Point Machine",
+        severity: "Critical",
+        criticality: "Critical",
+        overdue_days: 5,
+        crew_size: 5,
+        equipment: "Point Testing Kit",
+        requested_duration_min: 90
+      },
+      TDMS: {
+        job_id: "TDMS-H001",
+        department: "TRD",
+        division: "UMB",
+        section: "UMB-LDH",
+        block_section: "UMB-RPJ",
+        line: "UP_MAIN",
+        work_type: "OHE Wire Replacement",
+        asset_type: "OHE",
+        severity: "High",
+        criticality: "Critical",
+        overdue_days: 6,
+        crew_size: 8,
+        equipment: "Tower Wagon",
+        requested_duration_min: 120
+      }
+    };
+
+    function loadPreset(key) {
+      const p = PRESETS[key];
+      for (const [k, val] of Object.entries(p)) {
+        const el = document.getElementById(k);
+        if (el) el.value = val;
+      }
+      runPrediction();
+    }
+
+    async function runPrediction() {
+      const btn = document.getElementById('btnPredict');
+      btn.innerText = "⏳ Computing Predictions...";
+      btn.disabled = true;
+
+      const payload = {
+        job_id: document.getElementById('job_id').value,
+        department: document.getElementById('department').value,
+        division: document.getElementById('division').value,
+        section: document.getElementById('section').value,
+        block_section: document.getElementById('block_section').value,
+        line: document.getElementById('line').value,
+        work_type: document.getElementById('work_type').value,
+        asset_type: document.getElementById('asset_type').value,
+        severity: document.getElementById('severity').value,
+        criticality: document.getElementById('criticality').value,
+        overdue_days: parseInt(document.getElementById('overdue_days').value),
+        crew_size: parseInt(document.getElementById('crew_size').value),
+        requested_duration_min: parseInt(document.getElementById('requested_duration_min').value),
+        equipment: document.getElementById('equipment').value
+      };
+
+      try {
+        const [durRes, riskRes, prioRes] = await Promise.all([
+          fetch('/predict/duration', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) }).then(r => r.json()),
+          fetch('/predict/risk', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) }).then(r => r.json()),
+          fetch('/predict/priority', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) }).then(r => r.json())
+        ]);
+
+        document.getElementById('statReqDur').innerText = `${payload.requested_duration_min} min`;
+        document.getElementById('statPredDur').innerText = `${durRes.predicted_duration_min} min`;
+        document.getElementById('durModelTag').innerText = `Model: ${durRes.model_version}`;
+
+        document.getElementById('statRiskScore').innerText = riskRes.risk_probability;
+        document.getElementById('riskBar').style.width = `${Math.min(100, riskRes.risk_probability * 100)}%`;
+
+        document.getElementById('statPriorityScore').innerText = `${prioRes.priority_score} / 100`;
+        document.getElementById('priorityBar').style.width = `${prioRes.priority_score}%`;
+        document.getElementById('priorityBandBadge').innerText = prioRes.priority_band;
+
+        document.getElementById('valSafety').innerText = prioRes.breakdown.safety_criticality_score;
+        document.getElementById('valRisk').innerText = prioRes.breakdown.asset_risk_score;
+        document.getElementById('valUrgency').innerText = prioRes.breakdown.urgency_overdue_score;
+        document.getElementById('valOp').innerText = prioRes.breakdown.operational_impact_score;
+
+      } catch (err) {
+        console.error("Prediction error:", err);
+      } finally {
+        btn.innerText = "⚡ Run Multi-Model Predictions";
+        btn.disabled = false;
+      }
+    }
+
+    async function runOptimization(horizon) {
+      const payload = {
+        planning_horizon: horizon,
+        jobs: [PRESETS.TMS, PRESETS.SMMS, PRESETS.TDMS],
+        candidate_slots: [
+          { slot_id: "SLOT_ASN_01", section: "UDL-SNT", line: "UP_MAIN", start_minute: 660, end_minute: 870, date: "2026-10-05" },
+          { slot_id: "SLOT_HWH_01", section: "HWH-KAN (Main line)", line: "3RD_LINE", start_minute: 60, end_minute: 240, date: "2026-10-05" },
+          { slot_id: "SLOT_UMB_01", section: "UMB-LDH", line: "UP_MAIN", start_minute: 720, end_minute: 930, date: "2026-10-05" }
+        ]
+      };
+
+      try {
+        const res = await fetch('/optimize/block-plan', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        }).then(r => r.json());
+
+        document.getElementById('optStatus').innerText = res.solver_status;
+        document.getElementById('optJobsSched').innerText = `${res.kpis.jobs_scheduled} / ${res.kpis.total_jobs_considered} (${res.kpis.scheduling_rate_percent}%)`;
+        document.getElementById('optBlockHours').innerText = `${res.kpis.total_block_hours} hrs`;
+        document.getElementById('optSolveTime').innerText = `${res.kpis.solver_wall_time_seconds} s`;
+
+        const tbody = document.getElementById('scheduleTableBody');
+        tbody.innerHTML = '';
+        res.scheduled_blocks.forEach(b => {
+          const deptClass = b.department === 'ENGINEERING' ? 'tag-engg' : (b.department === 'SIGNAL_TELECOM' ? 'tag-sig' : 'tag-trd');
+          const row = `<tr>
+            <td><strong style="color: #fff;">${b.job_id}</strong></td>
+            <td><span class="tag-dept ${deptClass}">${b.department}</span></td>
+            <td>${b.work_type}</td>
+            <td>${b.block_section} (${b.line})</td>
+            <td><strong style="color: var(--accent-cyan);">${b.scheduled_start_time} - ${b.scheduled_end_time}</strong> (${b.assigned_duration_min} min)</td>
+            <td>${b.assigned_slot_id}</td>
+            <td>
+              ${b.coordination.power_block_required ? '<span class="badge" style="font-size:0.68rem; display:inline-flex;">Power Cut</span>' : ''}
+              ${b.coordination.st_disconnection_required ? '<span class="badge" style="font-size:0.68rem; display:inline-flex;">S&T Permit</span>' : ''}
+            </td>
+          </tr>`;
+          tbody.innerHTML += row;
+        });
+      } catch (err) {
+        console.error("Optimization error:", err);
+      }
+    }
+
+    async function triggerRetrain() {
+      const log = document.getElementById('retrainLog');
+      log.innerText = "Triggering automated retraining pipeline...";
+      try {
+        const res = await fetch('/model/retrain', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ reason: "DASHBOARD_TRIGGER" })
+        }).then(r => r.json());
+        log.innerText = JSON.stringify(res, null, 2);
+      } catch (err) {
+        log.innerText = "Error: " + err;
+      }
+    }
+
+    async function submitFeedback() {
+      const payload = {
+        job_id: document.getElementById('fb_job_id').value,
+        predicted_duration_min: parseFloat(document.getElementById('fb_pred_dur').value),
+        actual_duration_min: parseFloat(document.getElementById('fb_act_dur').value),
+        predicted_start: "2026-10-05T11:00:00",
+        actual_start: "2026-10-05T11:05:00",
+        predicted_end: "2026-10-05T13:36:00",
+        actual_end: "2026-10-05T13:46:00",
+        train_delay_minutes: parseFloat(document.getElementById('fb_train_delay').value),
+        block_utilization_percent: parseFloat(document.getElementById('fb_util').value),
+        resource_usage: document.getElementById('fb_resource').value,
+        completion_status: document.getElementById('fb_status').value
+      };
+
+      try {
+        const res = await fetch('/maintenance/outcome', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        }).then(r => r.json());
+
+        document.getElementById('fbResponseLog').innerText = JSON.stringify(res, null, 2);
+        document.getElementById('fbVarianceResult').innerHTML = `
+          Variance recorded: <strong>${res.duration_variance > 0 ? '+' : ''}${res.duration_variance} minutes</strong>.<br>
+          Outcome stored in feedback stream for the next periodic retraining batch.
+        `;
+      } catch (err) {
+        document.getElementById('fbResponseLog').innerText = "Error: " + err;
+      }
+    }
+  </script>
+</body>
+</html>

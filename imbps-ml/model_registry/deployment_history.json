@@ -1,0 +1,200 @@
+[
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:12:05.717733",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.717733",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.717733",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.717733",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  },
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:12:05.732599",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.732599",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.732599",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:12:05.732599",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  },
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:18:34.993206",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:34.993206",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:34.993206",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:34.993206",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  },
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:18:35.003460",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:35.003460",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:35.003460",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:18:35.003460",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  },
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:26:07.006090",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.006090",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.006090",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.006090",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  },
+  {
+    "model_version": "duration_v1",
+    "timestamp": "2026-09-09T19:26:07.026298",
+    "target_divisions": [
+      "ASN",
+      "HWH",
+      "UMB"
+    ],
+    "status": "DEPLOYED_SUCCESSFULLY",
+    "division_status": {
+      "ASN": {
+        "division": "ASN",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.026298",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "HWH": {
+        "division": "HWH",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.026298",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      },
+      "UMB": {
+        "division": "UMB",
+        "deployed_model_version": "duration_v1",
+        "status": "ACTIVE_SERVING",
+        "deployed_at": "2026-09-09T19:26:07.026298",
+        "artifact": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
+      }
+    }
+  }
+]

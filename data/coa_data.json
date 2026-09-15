@@ -1,0 +1,5693 @@
+{
+  "master_timetable_feeds": [
+    {
+      "feed_type": "COA_MASTER_TIMETABLE_PATHS",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-UDL-SNT",
+      "effective_from": "2026-10-01",
+      "effective_to": "2027-03-31",
+      "generated_at": "2026-09-04T01:30:00+05:30",
+      "timetable_records": [
+        {
+          "train_number": "13017",
+          "train_name": "Ganadevata Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_UDL_SNT",
+              "from_station": "UDL",
+              "to_station": "SNT",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "09:40",
+              "scheduled_exit_time": "10:45",
+              "commercial_halt": true,
+              "station_code": "SNT",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13051",
+          "train_name": "Hool Express",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "WED",
+            "THU",
+            "FRI",
+            "SAT"
+          ],
+          "traction": "ELECTRIC_CONVENTIONAL",
+          "train_length_coaches": 16,
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_UDL_SNT",
+              "from_station": "UDL",
+              "to_station": "SNT",
+              "assigned_line": "DN_MAIN",
+              "scheduled_entry_time": "11:20",
+              "scheduled_exit_time": "12:35",
+              "commercial_halt": true,
+              "station_code": "SNT",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03561",
+          "train_name": "Andal - Sainthia MEMU Passenger",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 8,
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_UDL_SNT",
+              "from_station": "UDL",
+              "to_station": "SNT",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "14:10",
+              "scheduled_exit_time": "15:40",
+              "commercial_halt": false,
+              "station_code": "SNT",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03543",
+          "train_name": "Andal - Gomoh Passenger Special",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_CONVENTIONAL",
+          "train_length_coaches": 12,
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_UDL_TOP_BBI_STN",
+              "from_station": "UDL",
+              "to_station": "STN",
+              "assigned_line": "GOODS_CHORD",
+              "scheduled_entry_time": "10:15",
+              "scheduled_exit_time": "11:25",
+              "commercial_halt": false,
+              "station_code": "STN",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "BOXN_COAL_ECL_01",
+          "train_name": "Coal Rake ex-Pandabeswar / Barabani",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 58,
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_UDL_TOP_BBI_STN",
+              "from_station": "UDL",
+              "to_station": "STN",
+              "assigned_line": "GOODS_CHORD",
+              "scheduled_entry_time": "12:30",
+              "scheduled_exit_time": "13:50",
+              "commercial_halt": true,
+              "station_code": "STN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_MASTER_TIMETABLE_PATHS",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-MDP-JSME",
+      "effective_from": "2026-10-01",
+      "effective_to": "2027-03-31",
+      "generated_at": "2026-09-04T01:30:00+05:30",
+      "timetable_records": [
+        {
+          "train_number": "03525",
+          "train_name": "Madhupur - Giridih Passenger",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 8,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_MDP_GRD",
+              "from_station": "MDP",
+              "to_station": "GRD",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "08:15",
+              "scheduled_exit_time": "09:20",
+              "commercial_halt": false,
+              "station_code": "GRD",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "18618",
+          "train_name": "Ranchi - Dumka Intercity",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_MDP_GRD",
+              "from_station": "MDP",
+              "to_station": "GRD",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "14:20",
+              "scheduled_exit_time": "15:10",
+              "commercial_halt": true,
+              "station_code": "GRD",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03673",
+          "train_name": "Jasidih - Baidyanathdham MEMU",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 8,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_JSME_BDME",
+              "from_station": "JSME",
+              "to_station": "BDME",
+              "assigned_line": "BRANCH_LINE",
+              "scheduled_entry_time": "11:00",
+              "scheduled_exit_time": "11:25",
+              "commercial_halt": false,
+              "station_code": "BDME",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13320",
+          "train_name": "Ranchi - Dumka Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_JSME_DUMK",
+              "from_station": "JSME",
+              "to_station": "DUMK",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "10:30",
+              "scheduled_exit_time": "12:15",
+              "commercial_halt": true,
+              "station_code": "DUMK",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03781",
+          "train_name": "Jasidih - Dumka DEMU",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "DIESEL_DEMU",
+          "train_length_coaches": 8,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_JSME_DUMK",
+              "from_station": "JSME",
+              "to_station": "DUMK",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "13:00",
+              "scheduled_exit_time": "14:40",
+              "commercial_halt": false,
+              "station_code": "DUMK",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03241",
+          "train_name": "Deoghar - Banka Passenger Special",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 8,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_DGHR_BAKA",
+              "from_station": "DGHR",
+              "to_station": "BAKA",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "09:10",
+              "scheduled_exit_time": "10:45",
+              "commercial_halt": false,
+              "station_code": "BAKA",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13242",
+          "train_name": "Rajendra Nagar - Banka Intercity",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "THU",
+            "SAT"
+          ],
+          "traction": "ELECTRIC_CONVENTIONAL",
+          "train_length_coaches": 14,
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "path_segments": [
+            {
+              "section_id": "SEC_ASN_DGHR_BAKA",
+              "from_station": "DGHR",
+              "to_station": "BAKA",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "15:20",
+              "scheduled_exit_time": "16:40",
+              "commercial_halt": false,
+              "station_code": "BAKA",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_MASTER_TIMETABLE_PATHS",
+      "zone_code": "ER",
+      "division_code": "HWH",
+      "sub_division": "HWH-MAIN-CHORD",
+      "effective_from": "2026-10-01",
+      "effective_to": "2027-03-31",
+      "generated_at": "2026-09-04T01:30:00+05:30",
+      "timetable_records": [
+        {
+          "train_number": "12303",
+          "train_name": "Poorva Express (via Main)",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "FRI",
+            "SAT"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 22,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_MAIN",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "08:00",
+              "scheduled_exit_time": "09:42",
+              "commercial_halt": true,
+              "station_code": "KAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13009",
+          "train_name": "Doon Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 24,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_MAIN",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "20:25",
+              "scheduled_exit_time": "22:18",
+              "commercial_halt": true,
+              "station_code": "KAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "37811",
+          "train_name": "Howrah - Barddhaman Main Line Local",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_EMU",
+          "train_length_coaches": 12,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_MAIN",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "10:15",
+              "scheduled_exit_time": "12:10",
+              "commercial_halt": false,
+              "station_code": "KAN",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12301",
+          "train_name": "Howrah Rajdhani Express (via Chord)",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 22,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_CHORD",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_CHORD",
+              "scheduled_entry_time": "16:55",
+              "scheduled_exit_time": "18:10",
+              "commercial_halt": true,
+              "station_code": "KAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "22301",
+          "train_name": "Howrah - NJP Vande Bharat Express",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "THU",
+            "FRI",
+            "SAT",
+            "SUN"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_CHORD",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_CHORD",
+              "scheduled_entry_time": "05:55",
+              "scheduled_exit_time": "06:50",
+              "commercial_halt": true,
+              "station_code": "KAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12313",
+          "train_name": "Sealdah Rajdhani Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 20,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_CHORD",
+              "from_station": "HWH",
+              "to_station": "KAN",
+              "assigned_line": "UP_CHORD",
+              "scheduled_entry_time": "17:35",
+              "scheduled_exit_time": "18:48",
+              "commercial_halt": true,
+              "station_code": "KAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12345",
+          "train_name": "Saraighat Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 24,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_GMAN",
+              "from_station": "KAN",
+              "to_station": "GMAN",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "17:15",
+              "scheduled_exit_time": "19:40",
+              "commercial_halt": true,
+              "station_code": "GMAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13149",
+          "train_name": "Kanchan Kanya Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 22,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_KAN_GMAN",
+              "from_station": "KAN",
+              "to_station": "GMAN",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "22:10",
+              "scheduled_exit_time": "01:05",
+              "commercial_halt": true,
+              "station_code": "GMAN",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13045",
+          "train_name": "Mayurakshi Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_CONVENTIONAL",
+          "train_length_coaches": 16,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_RPH_DUMK",
+              "from_station": "RPH",
+              "to_station": "DUMK",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "21:30",
+              "scheduled_exit_time": "23:05",
+              "commercial_halt": true,
+              "station_code": "DUMK",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13141",
+          "train_name": "Teesta Torsa Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 20,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_BDC_AZ",
+              "from_station": "BDC",
+              "to_station": "AZ",
+              "assigned_line": "UP_LOOP",
+              "scheduled_entry_time": "15:20",
+              "scheduled_exit_time": "18:45",
+              "commercial_halt": true,
+              "station_code": "AZ",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "37915",
+          "train_name": "Howrah - Katwa Local",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_EMU",
+          "train_length_coaches": 12,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_BDC_AZ",
+              "from_station": "BDC",
+              "to_station": "AZ",
+              "assigned_line": "UP_LOOP",
+              "scheduled_entry_time": "10:00",
+              "scheduled_exit_time": "12:15",
+              "commercial_halt": false,
+              "station_code": "AZ",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "CONCOR_CONTAINER_01",
+          "train_name": "CONCOR Freight ex-Kolkata Dock",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 45,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_DKAE_BTNG_RCD",
+              "from_station": "DKAE",
+              "to_station": "BTNG",
+              "assigned_line": "FREIGHT_BYPASS",
+              "scheduled_entry_time": "02:00",
+              "scheduled_exit_time": "02:40",
+              "commercial_halt": true,
+              "station_code": "BTNG",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "BOXN_STEEL_02",
+          "train_name": "TATA Steel Load ex-Shalimar",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 52,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_DKAE_BTNG_RCD",
+              "from_station": "DKAE",
+              "to_station": "BTNG",
+              "assigned_line": "FREIGHT_BYPASS",
+              "scheduled_entry_time": "04:15",
+              "scheduled_exit_time": "04:55",
+              "commercial_halt": true,
+              "station_code": "BTNG",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "37319",
+          "train_name": "Howrah - Tarakeswar Local",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_EMU",
+          "train_length_coaches": 12,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_SHE_TAK_GOGT",
+              "from_station": "SHE",
+              "to_station": "GOGT",
+              "assigned_line": "SUBURBAN_LINE",
+              "scheduled_entry_time": "10:30",
+              "scheduled_exit_time": "11:35",
+              "commercial_halt": false,
+              "station_code": "GOGT",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "37385",
+          "train_name": "Howrah - Arambagh Local",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_EMU",
+          "train_length_coaches": 12,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_SHE_TAK_GOGT",
+              "from_station": "SHE",
+              "to_station": "GOGT",
+              "assigned_line": "SUBURBAN_LINE",
+              "scheduled_entry_time": "14:15",
+              "scheduled_exit_time": "15:45",
+              "commercial_halt": false,
+              "station_code": "GOGT",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "37524",
+          "train_name": "Bandel - Naihati Local (via Jubilee/Sampreeti Setu)",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_EMU",
+          "train_length_coaches": 9,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_BDC_HYG",
+              "from_station": "BDC",
+              "to_station": "HYG",
+              "assigned_line": "BRIDGE_LINE",
+              "scheduled_entry_time": "08:10",
+              "scheduled_exit_time": "08:25",
+              "commercial_halt": false,
+              "station_code": "HYG",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "03067",
+          "train_name": "Azimganj - Rampurhat MEMU",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 8,
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "path_segments": [
+            {
+              "section_id": "SEC_HWH_AZ_NHT",
+              "from_station": "AZ",
+              "to_station": "NHT",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "11:45",
+              "scheduled_exit_time": "12:50",
+              "commercial_halt": false,
+              "station_code": "NHT",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_MASTER_TIMETABLE_PATHS",
+      "zone_code": "NR",
+      "division_code": "UMB",
+      "sub_division": "UMB-LDH-CORRIDOR",
+      "effective_from": "2026-10-01",
+      "effective_to": "2027-03-31",
+      "generated_at": "2026-09-04T01:30:00+05:30",
+      "timetable_records": [
+        {
+          "train_number": "12013",
+          "train_name": "New Delhi - Amritsar Shatabdi Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_LDH",
+              "from_station": "UMB",
+              "to_station": "LDH",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "19:05",
+              "scheduled_exit_time": "20:30",
+              "commercial_halt": true,
+              "station_code": "LDH",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "22439",
+          "train_name": "New Delhi - SMVD Katra Vande Bharat",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "WED",
+            "FRI",
+            "SAT",
+            "SUN"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_LDH",
+              "from_station": "UMB",
+              "to_station": "LDH",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "08:10",
+              "scheduled_exit_time": "09:20",
+              "commercial_halt": true,
+              "station_code": "LDH",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12919",
+          "train_name": "Malwa Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 24,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_LDH",
+              "from_station": "UMB",
+              "to_station": "LDH",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "07:30",
+              "scheduled_exit_time": "09:05",
+              "commercial_halt": true,
+              "station_code": "LDH",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "14626",
+          "train_name": "Intercity Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_LDH_BTI",
+              "from_station": "LDH",
+              "to_station": "BTI",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "11:15",
+              "scheduled_exit_time": "13:30",
+              "commercial_halt": true,
+              "station_code": "BTI",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12005",
+          "train_name": "Kalka Shatabdi Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_CDG_KLK",
+              "from_station": "UMB",
+              "to_station": "KLK",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "19:50",
+              "scheduled_exit_time": "21:15",
+              "commercial_halt": true,
+              "station_code": "KLK",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "22447",
+          "train_name": "New Delhi - Amb Andaura Vande Bharat",
+          "service_frequency": [
+            "MON",
+            "TUE",
+            "THU",
+            "FRI",
+            "SAT",
+            "SUN"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_CDG_KLK",
+              "from_station": "UMB",
+              "to_station": "KLK",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "08:00",
+              "scheduled_exit_time": "08:45",
+              "commercial_halt": true,
+              "station_code": "KLK",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "52451",
+          "train_name": "Shivalik Deluxe Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "DIESEL_NG",
+          "train_length_coaches": 7,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_KLK_SML",
+              "from_station": "KLK",
+              "to_station": "SML",
+              "assigned_line": "HERITAGE_NG_TRACK",
+              "scheduled_entry_time": "05:45",
+              "scheduled_exit_time": "10:35",
+              "commercial_halt": false,
+              "station_code": "SML",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "52453",
+          "train_name": "Kalka - Shimla Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "DIESEL_NG",
+          "train_length_coaches": 7,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_KLK_SML",
+              "from_station": "KLK",
+              "to_station": "SML",
+              "assigned_line": "HERITAGE_NG_TRACK",
+              "scheduled_entry_time": "06:20",
+              "scheduled_exit_time": "11:35",
+              "commercial_halt": false,
+              "station_code": "SML",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "14674",
+          "train_name": "Shaheed Express",
+          "service_frequency": [
+            "TUE",
+            "THU",
+            "FRI",
+            "SUN"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 22,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SRE",
+              "from_station": "UMB",
+              "to_station": "SRE",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "16:40",
+              "scheduled_exit_time": "18:05",
+              "commercial_halt": true,
+              "station_code": "SRE",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "13308",
+          "train_name": "Ganga Sutlej Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 24,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SRE",
+              "from_station": "UMB",
+              "to_station": "SRE",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "21:30",
+              "scheduled_exit_time": "23:05",
+              "commercial_halt": true,
+              "station_code": "SRE",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "04524",
+          "train_name": "Ambala - Saharanpur MEMU",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 12,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_JUDW",
+              "from_station": "UMB",
+              "to_station": "JUDW",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "08:15",
+              "scheduled_exit_time": "09:25",
+              "commercial_halt": false,
+              "station_code": "JUDW",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12012",
+          "train_name": "Kalka New Delhi Shatabdi Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_KKDE",
+              "from_station": "UMB",
+              "to_station": "KKDE",
+              "assigned_line": "DN_MAIN",
+              "scheduled_entry_time": "19:00",
+              "scheduled_exit_time": "19:35",
+              "commercial_halt": true,
+              "station_code": "KKDE",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12460",
+          "train_name": "Amritsar - New Delhi Intercity",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 20,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_KKDE",
+              "from_station": "UMB",
+              "to_station": "KKDE",
+              "assigned_line": "DN_MAIN",
+              "scheduled_entry_time": "10:50",
+              "scheduled_exit_time": "11:30",
+              "commercial_halt": true,
+              "station_code": "KKDE",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "14507",
+          "train_name": "Delhi - Fazilka Intercity",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_RPJ_BTI",
+              "from_station": "RPJ",
+              "to_station": "BTI",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "17:30",
+              "scheduled_exit_time": "20:50",
+              "commercial_halt": true,
+              "station_code": "BTI",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "04531",
+          "train_name": "Ambala - Dhuri Special",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 10,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_RPJ_DUI",
+              "from_station": "RPJ",
+              "to_station": "DUI",
+              "assigned_line": "UP_LINE",
+              "scheduled_entry_time": "13:10",
+              "scheduled_exit_time": "14:45",
+              "commercial_halt": false,
+              "station_code": "DUI",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "19611",
+          "train_name": "Ajmer - Amritsar Express",
+          "service_frequency": [
+            "THU",
+            "SAT"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 20,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_DUI_LDH",
+              "from_station": "DUI",
+              "to_station": "LDH",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "09:40",
+              "scheduled_exit_time": "11:05",
+              "commercial_halt": true,
+              "station_code": "LDH",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "14553",
+          "train_name": "Himachal Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SIR_NLDM",
+              "from_station": "SIR",
+              "to_station": "NLDM",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "04:15",
+              "scheduled_exit_time": "06:40",
+              "commercial_halt": true,
+              "station_code": "NLDM",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "22457",
+          "train_name": "Vande Bharat Express to Amb Andaura",
+          "service_frequency": [
+            "MON",
+            "WED",
+            "THU",
+            "FRI",
+            "SAT",
+            "SUN"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 16,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SIR_AADR",
+              "from_station": "NLDM",
+              "to_station": "AADR",
+              "assigned_line": "SINGLE_LINE",
+              "scheduled_entry_time": "10:15",
+              "scheduled_exit_time": "11:05",
+              "commercial_halt": true,
+              "station_code": "AADR",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "04764",
+          "train_name": "Patiala - Bathinda Passenger",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 10,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_PTA_DUI",
+              "from_station": "PTA",
+              "to_station": "DUI",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "06:30",
+              "scheduled_exit_time": "07:45",
+              "commercial_halt": false,
+              "station_code": "DUI",
+              "halt_duration_mins": 2,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "14731",
+          "train_name": "Kisan Express",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_BTI_ABOHAR",
+              "from_station": "BTI",
+              "to_station": "ABS",
+              "assigned_line": "COTTON_CORRIDOR",
+              "scheduled_entry_time": "22:15",
+              "scheduled_exit_time": "23:45",
+              "commercial_halt": true,
+              "station_code": "ABS",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "12056",
+          "train_name": "Dehradun New Delhi Jan Shatabdi",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 18,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SRE_UDN",
+              "from_station": "SRE",
+              "to_station": "DBD",
+              "assigned_line": "UP_MAIN",
+              "scheduled_entry_time": "08:15",
+              "scheduled_exit_time": "09:05",
+              "commercial_halt": true,
+              "station_code": "DBD",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        },
+        {
+          "train_number": "FREIGHT_KJGY_FOODGRAIN",
+          "train_name": "FCI Foodgrain rake ex-KJGY",
+          "service_frequency": [
+            "DAILY"
+          ],
+          "traction": "ELECTRIC_3PH",
+          "train_length_coaches": 42,
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "path_segments": [
+            {
+              "section_id": "SEC_UMB_SRE_UDN",
+              "from_station": "SRE",
+              "to_station": "DBD",
+              "assigned_line": "YARD_RECEPTION",
+              "scheduled_entry_time": "11:20",
+              "scheduled_exit_time": "12:15",
+              "commercial_halt": true,
+              "station_code": "DBD",
+              "halt_duration_mins": 5,
+              "operational_headway_buffer_prior_mins": 15,
+              "operational_headway_buffer_post_mins": 10
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "priority_policy_feeds": [
+    {
+      "feed_type": "COA_PRIORITY_CONSTRAINT_POLICY",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-UDL-SNT",
+      "corridor_classification": "FEEDER_CORRIDOR_MINING",
+      "policy_year": "2026",
+      "valid_from": "2026-04-01",
+      "priority_definitions": [
+        {
+          "tier": "TIER_1",
+          "class_labels": [
+            "VANDE_BHARAT",
+            "RAJDHANI",
+            "SHATABDI",
+            "TEJAS"
+          ],
+          "max_allowable_detention_minutes": 0,
+          "diversion_permitted": false,
+          "regulation_approval_authority": "RAILWAY_BOARD_ONLY",
+          "applies_to_subdivision": [
+            "ASN-UDL-SNT"
+          ]
+        },
+        {
+          "tier": "TIER_2",
+          "class_labels": [
+            "SUPERFAST_EXPRESS",
+            "MAIL_EXPRESS",
+            "GARIB_RATH"
+          ],
+          "max_allowable_detention_minutes": 20,
+          "diversion_permitted": true,
+          "regulation_approval_authority": "SR_DOM_OPERATING_ASN",
+          "applies_to_subdivision": [
+            "ASN-UDL-SNT"
+          ]
+        },
+        {
+          "tier": "TIER_3",
+          "class_labels": [
+            "MEMU",
+            "DEMU",
+            "PASSENGER_ORDINARY"
+          ],
+          "max_allowable_detention_minutes": 45,
+          "short_termination_permitted": true,
+          "regulation_approval_authority": "DOM_OPERATING_ASN",
+          "applies_to_subdivision": [
+            "ASN-UDL-SNT"
+          ]
+        },
+        {
+          "tier": "TIER_4",
+          "class_labels": [
+            "FREIGHT_CONTAINER",
+            "FREIGHT_BULK_COAL",
+            "EMPTY_RAKE"
+          ],
+          "max_allowable_detention_minutes": 240,
+          "yard_stabling_permitted": true,
+          "regulation_approval_authority": "SECTION_CONTROLLER_ASN_UDL_BOARD",
+          "applies_to_subdivision": [
+            "ASN-UDL-SNT"
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_PRIORITY_CONSTRAINT_POLICY",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-MDP-JSME",
+      "corridor_classification": "HIGH_DENSITY_NETWORK_HDN1",
+      "policy_year": "2026",
+      "valid_from": "2026-04-01",
+      "priority_definitions": [
+        {
+          "tier": "TIER_1",
+          "class_labels": [
+            "VANDE_BHARAT",
+            "RAJDHANI",
+            "SHATABDI",
+            "TEJAS"
+          ],
+          "max_allowable_detention_minutes": 0,
+          "diversion_permitted": false,
+          "regulation_approval_authority": "RAILWAY_BOARD_ONLY",
+          "applies_to_subdivision": [
+            "ASN-MDP-JSME"
+          ]
+        },
+        {
+          "tier": "TIER_2",
+          "class_labels": [
+            "SUPERFAST_EXPRESS",
+            "MAIL_EXPRESS",
+            "GARIB_RATH"
+          ],
+          "max_allowable_detention_minutes": 20,
+          "diversion_permitted": true,
+          "regulation_approval_authority": "SR_DOM_OPERATING_ASN",
+          "applies_to_subdivision": [
+            "ASN-MDP-JSME"
+          ]
+        },
+        {
+          "tier": "TIER_3",
+          "class_labels": [
+            "MEMU",
+            "DEMU",
+            "PASSENGER_ORDINARY"
+          ],
+          "max_allowable_detention_minutes": 45,
+          "short_termination_permitted": true,
+          "regulation_approval_authority": "DOM_OPERATING_ASN",
+          "applies_to_subdivision": [
+            "ASN-MDP-JSME"
+          ]
+        },
+        {
+          "tier": "TIER_4",
+          "class_labels": [
+            "FREIGHT_CONTAINER",
+            "FREIGHT_BULK_COAL",
+            "EMPTY_RAKE"
+          ],
+          "max_allowable_detention_minutes": 240,
+          "yard_stabling_permitted": true,
+          "regulation_approval_authority": "SECTION_CONTROLLER_ASN_MAIN_BOARD",
+          "applies_to_subdivision": [
+            "ASN-MDP-JSME"
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_PRIORITY_CONSTRAINT_POLICY",
+      "zone_code": "ER",
+      "division_code": "HWH",
+      "sub_division": "HWH-MAIN-CHORD",
+      "corridor_classification": "HIGH_DENSITY_NETWORK_HDN1",
+      "policy_year": "2026",
+      "valid_from": "2026-04-01",
+      "priority_definitions": [
+        {
+          "tier": "TIER_1",
+          "class_labels": [
+            "VANDE_BHARAT",
+            "RAJDHANI",
+            "SHATABDI",
+            "TEJAS"
+          ],
+          "max_allowable_detention_minutes": 0,
+          "diversion_permitted": false,
+          "regulation_approval_authority": "RAILWAY_BOARD_ONLY",
+          "applies_to_subdivision": [
+            "HWH-MAIN-CHORD"
+          ]
+        },
+        {
+          "tier": "TIER_2",
+          "class_labels": [
+            "SUPERFAST_EXPRESS",
+            "MAIL_EXPRESS",
+            "GARIB_RATH"
+          ],
+          "max_allowable_detention_minutes": 20,
+          "diversion_permitted": true,
+          "regulation_approval_authority": "SR_DOM_OPERATING_HWH",
+          "applies_to_subdivision": [
+            "HWH-MAIN-CHORD"
+          ]
+        },
+        {
+          "tier": "TIER_3",
+          "class_labels": [
+            "MEMU",
+            "DEMU",
+            "PASSENGER_ORDINARY"
+          ],
+          "max_allowable_detention_minutes": 45,
+          "short_termination_permitted": true,
+          "regulation_approval_authority": "DOM_OPERATING_HWH",
+          "applies_to_subdivision": [
+            "HWH-MAIN-CHORD"
+          ]
+        },
+        {
+          "tier": "TIER_4",
+          "class_labels": [
+            "FREIGHT_CONTAINER",
+            "FREIGHT_BULK_COAL",
+            "EMPTY_RAKE"
+          ],
+          "max_allowable_detention_minutes": 240,
+          "yard_stabling_permitted": true,
+          "regulation_approval_authority": "SECTION_CONTROLLER_HWH_CHORD_MAIN_BOARD",
+          "applies_to_subdivision": [
+            "HWH-MAIN-CHORD"
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_PRIORITY_CONSTRAINT_POLICY",
+      "zone_code": "NR",
+      "division_code": "UMB",
+      "sub_division": "UMB-LDH-CORRIDOR",
+      "corridor_classification": "HIGH_DENSITY_NETWORK_HDN2",
+      "policy_year": "2026",
+      "valid_from": "2026-04-01",
+      "priority_definitions": [
+        {
+          "tier": "TIER_1",
+          "class_labels": [
+            "VANDE_BHARAT",
+            "RAJDHANI",
+            "SHATABDI",
+            "TEJAS"
+          ],
+          "max_allowable_detention_minutes": 0,
+          "diversion_permitted": false,
+          "regulation_approval_authority": "RAILWAY_BOARD_ONLY",
+          "applies_to_subdivision": [
+            "UMB-LDH-CORRIDOR"
+          ]
+        },
+        {
+          "tier": "TIER_2",
+          "class_labels": [
+            "SUPERFAST_EXPRESS",
+            "MAIL_EXPRESS",
+            "GARIB_RATH"
+          ],
+          "max_allowable_detention_minutes": 20,
+          "diversion_permitted": true,
+          "regulation_approval_authority": "SR_DOM_OPERATING_UMB",
+          "applies_to_subdivision": [
+            "UMB-LDH-CORRIDOR"
+          ]
+        },
+        {
+          "tier": "TIER_3",
+          "class_labels": [
+            "MEMU",
+            "DEMU",
+            "PASSENGER_ORDINARY"
+          ],
+          "max_allowable_detention_minutes": 45,
+          "short_termination_permitted": true,
+          "regulation_approval_authority": "DOM_OPERATING_UMB",
+          "applies_to_subdivision": [
+            "UMB-LDH-CORRIDOR"
+          ]
+        },
+        {
+          "tier": "TIER_4",
+          "class_labels": [
+            "FREIGHT_CONTAINER",
+            "FREIGHT_BULK_COAL",
+            "EMPTY_RAKE"
+          ],
+          "max_allowable_detention_minutes": 240,
+          "yard_stabling_permitted": true,
+          "regulation_approval_authority": "SECTION_CONTROLLER_UMB_MAIN_BOARD",
+          "applies_to_subdivision": [
+            "UMB-LDH-CORRIDOR"
+          ]
+        }
+      ]
+    }
+  ],
+  "yard_capacity_feeds": [
+    {
+      "feed_type": "COA_WEEKLY_YARD_CAPACITY",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-UDL-SNT",
+      "target_week": "2026-W37",
+      "effective_period": {
+        "from": "2026-09-07",
+        "to": "2026-09-13"
+      },
+      "snapshot_timestamp": "2026-09-04T01:30:00+05:30",
+      "stations": [
+        {
+          "station_code": "UDL",
+          "station_name": "Andal Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "UKA",
+          "station_name": "Ukhra",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "PAW",
+          "station_name": "Pandabeswar",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DUJ",
+          "station_name": "Dubrajpur",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SURI",
+          "station_name": "Siuri",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SNT",
+          "station_name": "Sainthia Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "TOP",
+          "station_name": "Tapasi",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "IKRA",
+          "station_name": "Ikrah Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BBI",
+          "station_name": "Barabani",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "STN",
+          "station_name": "Sitarampur Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_YARD_CAPACITY",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-MDP-JSME",
+      "target_week": "2026-W37",
+      "effective_period": {
+        "from": "2026-09-07",
+        "to": "2026-09-13"
+      },
+      "snapshot_timestamp": "2026-09-04T01:30:00+05:30",
+      "stations": [
+        {
+          "station_code": "MDP",
+          "station_name": "Madhupur Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "JGD",
+          "station_name": "Jagdishpur",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 620,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MMD",
+          "station_name": "Maheshmunda",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "GRD",
+          "station_name": "Giridih",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "JSME",
+          "station_name": "Jasidih Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DGHR",
+          "station_name": "Deoghar Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BDME",
+          "station_name": "Baidyanathdham",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 610,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "CNPR",
+          "station_name": "Chandanpahari",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BSKH",
+          "station_name": "Basukinath",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DUMK",
+          "station_name": "Dumka",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KKRA",
+          "station_name": "Kakwara",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 620,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BAKA",
+          "station_name": "Banka Jn",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_YARD_CAPACITY",
+      "zone_code": "ER",
+      "division_code": "HWH",
+      "sub_division": "HWH-MAIN-CHORD",
+      "target_week": "2026-W37",
+      "effective_period": {
+        "from": "2026-09-07",
+        "to": "2026-09-13"
+      },
+      "snapshot_timestamp": "2026-09-04T01:30:00+05:30",
+      "stations": [
+        {
+          "station_code": "HWH",
+          "station_name": "Howrah",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BLY",
+          "station_name": "Bally",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BDC",
+          "station_name": "Bandel Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BWN",
+          "station_name": "Barddhaman",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KAN",
+          "station_name": "Khana Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DKAE",
+          "station_name": "Dankuni Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KQU",
+          "station_name": "Kamarkundu",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "GRAE",
+          "station_name": "Gurap",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MSAE",
+          "station_name": "Masagram",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SKG",
+          "station_name": "Saktigarh",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BHP",
+          "station_name": "Bolpur Shantiniketan",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SNT",
+          "station_name": "Sainthia Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "RPH",
+          "station_name": "Rampurhat Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "NHT",
+          "station_name": "Nalhati Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "PKR",
+          "station_name": "Pakur",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "GMAN",
+          "station_name": "Gumani",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "PRGR",
+          "station_name": "Pinargaria",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SKIP",
+          "station_name": "Shikaripara",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DUMK",
+          "station_name": "Dumka",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "ABKA",
+          "station_name": "Ambika Kalna",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "NDAE",
+          "station_name": "Nabadwip Dham",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KWAE",
+          "station_name": "Katwa Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SALE",
+          "station_name": "Salar",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "AZ",
+          "station_name": "Azimganj Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BTNG",
+          "station_name": "Bhattanagar",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "RCD",
+          "station_name": "Rajchandrapur",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SHE",
+          "station_name": "Sheoraphuli Jn",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DEA",
+          "station_name": "Diara",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "HPL",
+          "station_name": "Haripal",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "TAK",
+          "station_name": "Tarakeswar",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "AMBG",
+          "station_name": "Arambagh",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "GOGT",
+          "station_name": "Goghat",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "HYG",
+          "station_name": "Hooghly Ghat",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SDI",
+          "station_name": "Sagardighi",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MGAE",
+          "station_name": "Morgram",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_YARD_CAPACITY",
+      "zone_code": "NR",
+      "division_code": "UMB",
+      "sub_division": "UMB-LDH-CORRIDOR",
+      "target_week": "2026-W37",
+      "effective_period": {
+        "from": "2026-09-07",
+        "to": "2026-09-13"
+      },
+      "snapshot_timestamp": "2026-09-04T01:30:00+05:30",
+      "stations": [
+        {
+          "station_code": "UMB",
+          "station_name": "Ambala Cantt Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "RPJ",
+          "station_name": "Rajpura Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SIR",
+          "station_name": "Sirhind Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KNN",
+          "station_name": "Khanna",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DOA",
+          "station_name": "Doraha",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "LDH",
+          "station_name": "Ludhiana Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MLX",
+          "station_name": "Mullanpur",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "JGN",
+          "station_name": "Jagraon",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MOG",
+          "station_name": "Moga",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KKP",
+          "station_name": "Kotkapura Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BTI",
+          "station_name": "Bathinda Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "LLU",
+          "station_name": "Lalru",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "CDG",
+          "station_name": "Chandigarh Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "CNDM",
+          "station_name": "Chandi Mandir",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KLK",
+          "station_name": "Kalka",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DMP",
+          "station_name": "Dharampur Himachal",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 200,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 170,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BOF",
+          "station_name": "Barog",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 210,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 180,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SOL",
+          "station_name": "Solan",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 200,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 170,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KDGF",
+          "station_name": "Kandaghat",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 200,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 170,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SML",
+          "station_name": "Shimla",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 220,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 190,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "RAA",
+          "station_name": "Barara",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "YJUD",
+          "station_name": "Yamunanagar Jagadhri",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SSW",
+          "station_name": "Sarsawa",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SRE",
+          "station_name": "Saharanpur Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KES",
+          "station_name": "Kesri",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MFB",
+          "station_name": "Mustafabad",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "JUDW",
+          "station_name": "Jagadhri Workshop",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MOY",
+          "station_name": "Mohri",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SHDM",
+          "station_name": "Shahbad Markanda",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KKDE",
+          "station_name": "Kurukshetra Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "PTA",
+          "station_name": "Patiala",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "NBA",
+          "station_name": "Nabha",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DUI",
+          "station_name": "Dhuri Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BNN",
+          "station_name": "Barnala",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "PUL",
+          "station_name": "Rampura Phul",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KLI",
+          "station_name": "Kauli",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "CJL",
+          "station_name": "Chhajli",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MET",
+          "station_name": "Malerkotla",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "AHH",
+          "station_name": "Ahmedgarh",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "QRP",
+          "station_name": "Qila Raipur",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MRND",
+          "station_name": "Morinda Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "RPAR",
+          "station_name": "Rupnagar",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KART",
+          "station_name": "Kiratpur Sahib",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "ANSB",
+          "station_name": "Anandpur Sahib",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 740,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "NLDM",
+          "station_name": "Nangal Dam",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MTPR",
+          "station_name": "Mehatpur",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "UHL",
+          "station_name": "Una Himachal",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "CHTL",
+          "station_name": "Churaru Takrala",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "AADR",
+          "station_name": "Amb Andaura",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DBN",
+          "station_name": "Dhablan",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 650,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "SEQ",
+          "station_name": "Sekha",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 640,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BHX",
+          "station_name": "Balluana",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 660,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "GDB",
+          "station_name": "Giddarbaha",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "MOT",
+          "station_name": "Malout",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 710,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 680,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "ABS",
+          "station_name": "Abohar Jn",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 730,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "KJGY",
+          "station_name": "Khanalampura Yard",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 780,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 750,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "BAE",
+          "station_name": "Baliakheri",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 700,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 670,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        },
+        {
+          "station_code": "DBD",
+          "station_name": "Deoband",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "loops": [
+            {
+              "loop_number": "LOOP_1_UP",
+              "clear_standing_room_csr_meters": 720,
+              "electrified": true,
+              "usable_for_holding_freight": true,
+              "booked_or_maintenance_lock": false
+            },
+            {
+              "loop_number": "LOOP_2_COMMON",
+              "clear_standing_room_csr_meters": 690,
+              "electrified": true,
+              "usable_for_holding_freight": false,
+              "lock_reason": "RESERVED_FOR_CROSSING_MAIL_TRAINS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "offered_slots_feeds": [
+    {
+      "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-UDL-SNT",
+      "control_board": "ASN_UDL_BOARD",
+      "planning_week": "2026-W37",
+      "candidate_slots": [
+        {
+          "coa_slot_id": "COA_SLOT_ASN_UDL_SNT_2026_W37_001",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "section_id": "SEC_ASN_UDL_SNT",
+          "block_section": "Andal Jn (UDL) - Ukhra (UKA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "13017",
+            "train_name": "Ganadevata Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13051",
+            "train_name": "Hool Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13051",
+                "train_name": "Hool Express",
+                "regulation_station": "UDL",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_001",
+                "stabling_station": "UDL",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_ASN_UDL_STN_2026_W37_002",
+          "division_code": "ASN",
+          "sub_division": "ASN-UDL-SNT",
+          "section_id": "SEC_ASN_UDL_TOP_BBI_STN",
+          "block_section": "Andal Jn (UDL) - Tapasi (TOP)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "03543",
+            "train_name": "Andal - Gomoh Passenger Special",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "BOXN_COAL_ECL_01",
+            "train_name": "Coal Rake ex-Pandabeswar / Barabani",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "BOXN_COAL_ECL_01",
+                "train_name": "Coal Rake ex-Pandabeswar / Barabani",
+                "regulation_station": "UDL",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_002",
+                "stabling_station": "UDL",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+      "zone_code": "ER",
+      "division_code": "ASN",
+      "sub_division": "ASN-MDP-JSME",
+      "control_board": "ASN_MAIN_BOARD",
+      "planning_week": "2026-W37",
+      "candidate_slots": [
+        {
+          "coa_slot_id": "COA_SLOT_ASN_MDP_GRD_2026_W37_003",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "section_id": "SEC_ASN_MDP_GRD",
+          "block_section": "Madhupur Jn (MDP) - Jagdishpur (JGD)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "03525",
+            "train_name": "Madhupur - Giridih Passenger",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "18618",
+            "train_name": "Ranchi - Dumka Intercity",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "18618",
+                "train_name": "Ranchi - Dumka Intercity",
+                "regulation_station": "MDP",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_003",
+                "stabling_station": "MDP",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_ASN_JSME_BDME_2026_W37_004",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "section_id": "SEC_ASN_JSME_BDME",
+          "block_section": "Jasidih Jn (JSME) - Deoghar Jn (DGHR)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "03673",
+            "train_name": "Jasidih - Baidyanathdham MEMU",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "JSME",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_004",
+                "stabling_station": "JSME",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_ASN_JSME_DUMK_2026_W37_005",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "section_id": "SEC_ASN_JSME_DUMK",
+          "block_section": "Jasidih Jn (JSME) - Deoghar Jn (DGHR)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "13320",
+            "train_name": "Ranchi - Dumka Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "03781",
+            "train_name": "Jasidih - Dumka DEMU",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "03781",
+                "train_name": "Jasidih - Dumka DEMU",
+                "regulation_station": "JSME",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_005",
+                "stabling_station": "JSME",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_ASN_DGHR_BAKA_2026_W37_006",
+          "division_code": "ASN",
+          "sub_division": "ASN-MDP-JSME",
+          "section_id": "SEC_ASN_DGHR_BAKA",
+          "block_section": "Deoghar Jn (DGHR) - Kakwara (KKRA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "03241",
+            "train_name": "Deoghar - Banka Passenger Special",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13242",
+            "train_name": "Rajendra Nagar - Banka Intercity",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13242",
+                "train_name": "Rajendra Nagar - Banka Intercity",
+                "regulation_station": "DGHR",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_ASN_006",
+                "stabling_station": "DGHR",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+      "zone_code": "ER",
+      "division_code": "HWH",
+      "sub_division": "HWH-MAIN-CHORD",
+      "control_board": "HWH_CHORD_MAIN_BOARD",
+      "planning_week": "2026-W37",
+      "candidate_slots": [
+        {
+          "coa_slot_id": "COA_SLOT_HWH_HWH_KAN_2026_W37_007",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_KAN_MAIN",
+          "block_section": "Howrah (HWH) - Bally (BLY)",
+          "line": "UP_MAIN",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12303",
+            "train_name": "Poorva Express (via Main)",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13009",
+            "train_name": "Doon Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13009",
+                "train_name": "Doon Express",
+                "regulation_station": "HWH",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_007",
+                "stabling_station": "HWH",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_HWH_KAN_2026_W37_008",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_KAN_CHORD",
+          "block_section": "Howrah (HWH) - Dankuni Jn (DKAE)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12301",
+            "train_name": "Howrah Rajdhani Express (via Chord)",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "22301",
+            "train_name": "Howrah - NJP Vande Bharat Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "22301",
+                "train_name": "Howrah - NJP Vande Bharat Express",
+                "regulation_station": "HWH",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_008",
+                "stabling_station": "HWH",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_KAN_GMAN_2026_W37_009",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_KAN_GMAN",
+          "block_section": "Khana Jn (KAN) - Bolpur Shantiniketan (BHP)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12345",
+            "train_name": "Saraighat Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13149",
+            "train_name": "Kanchan Kanya Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13149",
+                "train_name": "Kanchan Kanya Express",
+                "regulation_station": "KAN",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_009",
+                "stabling_station": "KAN",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_RPH_DUMK_2026_W37_010",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_RPH_DUMK",
+          "block_section": "Rampurhat Jn (RPH) - Pinargaria (PRGR)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "13045",
+            "train_name": "Mayurakshi Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "RPH",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_010",
+                "stabling_station": "RPH",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_BDC_AZ_2026_W37_011",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_BDC_AZ",
+          "block_section": "Bandel Jn (BDC) - Ambika Kalna (ABKA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "13141",
+            "train_name": "Teesta Torsa Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "37915",
+            "train_name": "Howrah - Katwa Local",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "37915",
+                "train_name": "Howrah - Katwa Local",
+                "regulation_station": "BDC",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_011",
+                "stabling_station": "BDC",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_DKAE_BTNG_2026_W37_012",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_DKAE_BTNG_RCD",
+          "block_section": "Dankuni Jn (DKAE) - Bhattanagar (BTNG)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "CONCOR_CONTAINER_01",
+            "train_name": "CONCOR Freight ex-Kolkata Dock",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "BOXN_STEEL_02",
+            "train_name": "TATA Steel Load ex-Shalimar",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "BOXN_STEEL_02",
+                "train_name": "TATA Steel Load ex-Shalimar",
+                "regulation_station": "DKAE",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_012",
+                "stabling_station": "DKAE",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_SHE_GOGT_2026_W37_013",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_SHE_TAK_GOGT",
+          "block_section": "Sheoraphuli Jn (SHE) - Diara (DEA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "37319",
+            "train_name": "Howrah - Tarakeswar Local",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "37385",
+            "train_name": "Howrah - Arambagh Local",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "37385",
+                "train_name": "Howrah - Arambagh Local",
+                "regulation_station": "SHE",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_013",
+                "stabling_station": "SHE",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_BDC_HYG_2026_W37_014",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_BDC_HYG",
+          "block_section": "Bandel Jn (BDC) - Hooghly Ghat (HYG)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "37524",
+            "train_name": "Bandel - Naihati Local (via Jubilee/Sampreeti Setu)",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "BDC",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_014",
+                "stabling_station": "BDC",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_HWH_AZ_NHT_2026_W37_015",
+          "division_code": "HWH",
+          "sub_division": "HWH-MAIN-CHORD",
+          "section_id": "SEC_HWH_AZ_NHT",
+          "block_section": "Azimganj Jn (AZ) - Sagardighi (SDI)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "03067",
+            "train_name": "Azimganj - Rampurhat MEMU",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "AZ",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_HWH_015",
+                "stabling_station": "AZ",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+      "zone_code": "NR",
+      "division_code": "UMB",
+      "sub_division": "UMB-LDH-CORRIDOR",
+      "control_board": "UMB_MAIN_BOARD",
+      "planning_week": "2026-W37",
+      "candidate_slots": [
+        {
+          "coa_slot_id": "COA_SLOT_UMB_UMB_LDH_2026_W37_016",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_LDH",
+          "block_section": "Ambala Cantt Jn (UMB) - Rajpura Jn (RPJ)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12013",
+            "train_name": "New Delhi - Amritsar Shatabdi Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "22439",
+            "train_name": "New Delhi - SMVD Katra Vande Bharat",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "22439",
+                "train_name": "New Delhi - SMVD Katra Vande Bharat",
+                "regulation_station": "UMB",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_016",
+                "stabling_station": "UMB",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_LDH_BTI_2026_W37_017",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_LDH_BTI",
+          "block_section": "Ludhiana Jn (LDH) - Mullanpur (MLX)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "14626",
+            "train_name": "Intercity Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "LDH",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_017",
+                "stabling_station": "LDH",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_UMB_KLK_2026_W37_018",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_CDG_KLK",
+          "block_section": "Ambala Cantt Jn (UMB) - Lalru (LLU)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12005",
+            "train_name": "Kalka Shatabdi Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "22447",
+            "train_name": "New Delhi - Amb Andaura Vande Bharat",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "22447",
+                "train_name": "New Delhi - Amb Andaura Vande Bharat",
+                "regulation_station": "UMB",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_018",
+                "stabling_station": "UMB",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_KLK_SML_2026_W37_019",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_KLK_SML",
+          "block_section": "Kalka (KLK) - Dharampur Himachal (DMP)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "52451",
+            "train_name": "Shivalik Deluxe Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "52453",
+            "train_name": "Kalka - Shimla Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "52453",
+                "train_name": "Kalka - Shimla Express",
+                "regulation_station": "KLK",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_019",
+                "stabling_station": "KLK",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_UMB_SRE_2026_W37_020",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_SRE",
+          "block_section": "Ambala Cantt Jn (UMB) - Barara (RAA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "14674",
+            "train_name": "Shaheed Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13308",
+            "train_name": "Ganga Sutlej Express",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13308",
+                "train_name": "Ganga Sutlej Express",
+                "regulation_station": "UMB",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_020",
+                "stabling_station": "UMB",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_UMB_JUDW_2026_W37_021",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_JUDW",
+          "block_section": "Ambala Cantt Jn (UMB) - Kesri (KES)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "04524",
+            "train_name": "Ambala - Saharanpur MEMU",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "UMB",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_021",
+                "stabling_station": "UMB",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_UMB_KKDE_2026_W37_022",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_KKDE",
+          "block_section": "Ambala Cantt Jn (UMB) - Mohri (MOY)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12012",
+            "train_name": "Kalka New Delhi Shatabdi Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "12460",
+            "train_name": "Amritsar - New Delhi Intercity",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "12460",
+                "train_name": "Amritsar - New Delhi Intercity",
+                "regulation_station": "UMB",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_022",
+                "stabling_station": "UMB",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_RPJ_BTI_2026_W37_023",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_RPJ_BTI",
+          "block_section": "Rajpura Jn (RPJ) - Patiala (PTA)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "14507",
+            "train_name": "Delhi - Fazilka Intercity",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "RPJ",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_023",
+                "stabling_station": "RPJ",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_RPJ_DUI_2026_W37_024",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_RPJ_DUI",
+          "block_section": "Rajpura Jn (RPJ) - Kauli (KLI)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "04531",
+            "train_name": "Ambala - Dhuri Special",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "RPJ",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_024",
+                "stabling_station": "RPJ",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_DUI_LDH_2026_W37_025",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_DUI_LDH",
+          "block_section": "Dhuri Jn (DUI) - Malerkotla (MET)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "19611",
+            "train_name": "Ajmer - Amritsar Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "DUI",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_025",
+                "stabling_station": "DUI",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_SIR_NLDM_2026_W37_026",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_SIR_NLDM",
+          "block_section": "Sirhind Jn (SIR) - Morinda Jn (MRND)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "14553",
+            "train_name": "Himachal Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "SIR",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_026",
+                "stabling_station": "SIR",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_NLDM_AADR_2026_W37_027",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_SIR_AADR",
+          "block_section": "Nangal Dam (NLDM) - Mehatpur (MTPR)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "22457",
+            "train_name": "Vande Bharat Express to Amb Andaura",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "NLDM",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_027",
+                "stabling_station": "NLDM",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_PTA_DUI_2026_W37_028",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_PTA_DUI",
+          "block_section": "Patiala (PTA) - Dhablan (DBN)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "04764",
+            "train_name": "Patiala - Bathinda Passenger",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "PTA",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_028",
+                "stabling_station": "PTA",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_BTI_ABS_2026_W37_029",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_BTI_ABOHAR",
+          "block_section": "Bathinda Jn (BTI) - Balluana (BHX)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "14731",
+            "train_name": "Kisan Express",
+            "type": "SUPERFAST",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "13010",
+            "train_name": "Passenger",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "13010",
+                "train_name": "Passenger",
+                "regulation_station": "BTI",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_029",
+                "stabling_station": "BTI",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        },
+        {
+          "coa_slot_id": "COA_SLOT_UMB_SRE_DBD_2026_W37_030",
+          "division_code": "UMB",
+          "sub_division": "UMB-LDH-CORRIDOR",
+          "section_id": "SEC_UMB_SRE_UDN",
+          "block_section": "Saharanpur Jn (SRE) - Khanalampura Yard (KJGY)",
+          "line": "SINGLE_LINE",
+          "target_date": "2026-09-09",
+          "day_of_week": "WEDNESDAY",
+          "slot_window": {
+            "start_time": "11:45",
+            "end_time": "14:15",
+            "duration_minutes": 150
+          },
+          "preceding_service": {
+            "train_no": "12056",
+            "train_name": "Dehradun New Delhi Jan Shatabdi",
+            "type": "MAIL",
+            "projected_clearance_time_at_to_station": "11:40"
+          },
+          "following_service": {
+            "train_no": "FREIGHT_KJGY_FOODGRAIN",
+            "train_name": "FCI Foodgrain rake ex-KJGY",
+            "type": "MAIL_EXPRESS",
+            "projected_arrival_time_at_from_station": "14:25"
+          },
+          "contingency_regulation_playbook": {
+            "regulated_coaching_trains": [
+              {
+                "train_no": "FREIGHT_KJGY_FOODGRAIN",
+                "train_name": "FCI Foodgrain rake ex-KJGY",
+                "regulation_station": "SRE",
+                "detention_time_mins": 15,
+                "sr_dom_approved": true
+              }
+            ],
+            "regulated_freight_rakes": [
+              {
+                "freight_id": "FREIGHT_LOAD_UMB_030",
+                "stabling_station": "SRE",
+                "stabling_loop": "LOOP_1_UP",
+                "planned_hold_minutes": 120
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

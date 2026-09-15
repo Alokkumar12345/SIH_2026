@@ -1,0 +1,679 @@
+/* ==========================================================================
+   IMBPS - INDIAN RAILWAYS CRIS & MINISTRY OF RAILWAYS OFFICIAL DESIGN SYSTEM
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Official Indian Railways Color Palette */
+  --ir-maroon: #681214;
+  --ir-maroon-dark: #460c0d;
+  --ir-maroon-light: #8b1e20;
+  --ir-gold: #c8861e;
+  --ir-gold-light: #e09d3b;
+  --ir-navy: #0d3b66;
+  --ir-navy-dark: #071e33;
+  --ir-blue-portal: #005691;
+  --ir-cream-bg: #f7f5ed;
+  --ir-card-bg: #ffffff;
+  --ir-card-border: #e2dec9;
+  --ir-text-primary: #1e1e24;
+  --ir-text-secondary: #4a4a55;
+  --ir-text-muted: #737380;
+  
+  /* Department Colors */
+  --dept-tms: #0d47a1;      /* Civil Track Engineering - Blue */
+  --dept-smms: #1b5e20;     /* Signal & Telecom - Green */
+  --dept-tdms: #e65100;     /* Traction Distribution / OHE - Amber/Orange */
+
+  /* Status Colors */
+  --status-edited-bg: #fff7ed;
+  --status-edited-border: #f97316;
+  --status-edited-text: #c2410c;
+
+  --status-auth-bg: #f0fdf4;
+  --status-auth-border: #22c55e;
+  --status-auth-text: #15803d;
+
+  --status-pending-bg: #eff6ff;
+  --status-pending-border: #3b82f6;
+  --status-pending-text: #1d4ed8;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-hindi: 'Mukta', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --shadow-warm: 0 10px 30px rgba(104, 18, 20, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--ir-cream-bg);
+  color: var(--ir-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessibility & Utilities Top Bar */
+.ir-top-util-bar {
+  background-color: #0b3954;
+  color: #e0f2fe;
+  font-size: 0.8rem;
+  padding: 0.35rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ir-top-util-bar a, .ir-top-util-bar button {
+  color: #e0f2fe;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ir-top-util-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Authentic Ministry / CRIS Header */
+.ir-main-header {
+  background: linear-gradient(135deg, #4b0d0e 0%, #681214 45%, #7a1a1a 100%);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid var(--ir-gold);
+}
+
+.ir-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ir-emblem-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ir-logo-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid var(--ir-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ir-brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.ir-title-hindi {
+  font-family: var(--font-hindi);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff9db;
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+}
+
+.ir-title-english {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.ir-title-sub {
+  font-size: 0.78rem;
+  color: #fed7aa;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.ir-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ir-user-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(4px);
+}
+
+.ir-user-info-text {
+  text-align: right;
+  line-height: 1.2;
+}
+
+.ir-user-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.ir-user-role {
+  font-size: 0.72rem;
+  color: #fed7aa;
+  font-weight: 500;
+}
+
+/* Secondary Railway Nav Ribbon */
+.ir-nav-ribbon {
+  background-color: #0d3b66;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #071e33;
+}
+
+.ir-nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.ir-nav-link {
+  color: #e2e8f0;
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ir-nav-link:hover, .ir-nav-link.active {
+  background-color: #1e4e79;
+  color: #ffffff;
+}
+
+/* Primary Layout Container */
+.ir-page-container {
+  max-width: 1400px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+  min-height: calc(100vh - 190px);
+}
+
+/* Railway Cards */
+.ir-card {
+  background: var(--ir-card-bg);
+  border: 1px solid var(--ir-card-border);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.ir-card-header {
+  background: linear-gradient(90deg, #f8f6f0 0%, #fffdf8 100%);
+  border-bottom: 2px solid #e8e3d3;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ir-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ir-maroon);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ir-card-body {
+  padding: 1.25rem;
+}
+
+/* Action Buttons */
+.ir-btn {
+  padding: 0.55rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.ir-btn-primary {
+  background: linear-gradient(135deg, var(--ir-maroon) 0%, var(--ir-maroon-dark) 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(104, 18, 20, 0.25);
+  border: 1px solid #4a0c0e;
+}
+
+.ir-btn-primary:hover {
+  background: linear-gradient(135deg, #7a1a1c 0%, #581012 100%);
+  box-shadow: 0 4px 8px rgba(104, 18, 20, 0.35);
+  transform: translateY(-1px);
+}
+
+.ir-btn-secondary {
+  background: #0d47a1;
+  color: #ffffff;
+  border: 1px solid #083272;
+}
+
+.ir-btn-secondary:hover {
+  background: #1565c0;
+}
+
+.ir-btn-gold {
+  background: linear-gradient(135deg, #c8861e 0%, #a66a10 100%);
+  color: #ffffff;
+  border: 1px solid #8e5807;
+}
+
+.ir-btn-gold:hover {
+  background: linear-gradient(135deg, #db9424 0%, #b87612 100%);
+}
+
+.ir-btn-success {
+  background: #15803d;
+  color: #ffffff;
+  border: 1px solid #14532d;
+}
+
+.ir-btn-success:hover {
+  background: #16a34a;
+}
+
+.ir-btn-outline {
+  background: #ffffff;
+  color: var(--ir-text-primary);
+  border: 1px solid #cbd5e1;
+}
+
+.ir-btn-outline:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.ir-btn-print {
+  background: #264653;
+  color: #ffffff;
+  border: 1px solid #1a323c;
+  padding: 0.5rem 1rem;
+}
+
+.ir-btn-print:hover {
+  background: #2a9d8f;
+}
+
+.ir-btn-logout {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fee2e2;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.ir-btn-logout:hover {
+  background: rgba(239, 68, 68, 0.85);
+  color: #ffffff;
+}
+
+/* Railway Data Tables */
+.ir-table-container {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.ir-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.86rem;
+}
+
+.ir-table th {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #cbd5e1;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.ir-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1e293b;
+  vertical-align: middle;
+}
+
+.ir-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.ir-table tbody tr:nth-child(even) {
+  background-color: #fbfcfe;
+}
+
+/* Badges and Chips */
+.dept-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.dept-pill-tms {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.dept-pill-smms {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.dept-pill-tdms {
+  background: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.badge-edited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--status-edited-bg);
+  border: 1.5px solid var(--status-edited-border);
+  color: var(--status-edited-text);
+  padding: 0.28rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  animation: pulse-orange 2s infinite;
+}
+
+@keyframes pulse-orange {
+  0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.4); }
+  70% { box-shadow: 0 0 0 5px rgba(249, 115, 22, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+}
+
+.badge-authorized {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--status-auth-bg);
+  border: 1.5px solid var(--status-auth-border);
+  color: var(--status-auth-text);
+  padding: 0.28rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.badge-pending {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: var(--status-pending-bg);
+  border: 1.5px solid var(--status-pending-border);
+  color: var(--status-pending-text);
+  padding: 0.28rem 0.65rem;
+  border-radius: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+/* Metric Stats Cards */
+.ir-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.ir-stat-card {
+  background: #ffffff;
+  border: 1px solid var(--ir-card-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.ir-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--ir-maroon);
+}
+
+.ir-stat-card.stat-tms::before { background-color: var(--dept-tms); }
+.ir-stat-card.stat-smms::before { background-color: var(--dept-smms); }
+.ir-stat-card.stat-tdms::before { background-color: var(--dept-tdms); }
+.ir-stat-card.stat-gold::before { background-color: var(--ir-gold); }
+
+.ir-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  color: var(--ir-maroon);
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.stat-tms .ir-stat-icon { color: var(--dept-tms); background: #eff6ff; }
+.stat-smms .ir-stat-icon { color: var(--dept-smms); background: #f0fdf4; }
+.stat-tdms .ir-stat-icon { color: var(--dept-tdms); background: #fff7ed; }
+
+.ir-stat-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.ir-stat-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--ir-text-primary);
+  line-height: 1.1;
+}
+
+.ir-stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ir-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 0.2rem;
+}
+
+/* Footer styling */
+.ir-footer {
+  background: #3e1214;
+  color: #fed7aa;
+  padding: 1.25rem 2rem;
+  font-size: 0.82rem;
+  border-top: 2px solid var(--ir-gold);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ir-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ir-footer-right {
+  text-align: right;
+  color: #cbd5e1;
+}
+
+/* Modals */
+.ir-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ir-modal-content {
+  background: #ffffff;
+  border-radius: 8px;
+  max-width: 680px;
+  width: 92%;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--ir-card-border);
+  overflow: hidden;
+  animation: modal-fade 0.2s ease-out;
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.ir-modal-header {
+  background: linear-gradient(90deg, #681214 0%, #460c0d 100%);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ir-modal-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ir-modal-close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.ir-modal-body {
+  padding: 1.5rem;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.ir-form-group {
+  margin-bottom: 1.1rem;
+}
+
+.ir-form-label {
+  display: block;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.35rem;
+}
+
+.ir-form-input, .ir-form-select, .ir-form-textarea {
+  width: 100%;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+.ir-form-input:focus, .ir-form-select:focus, .ir-form-textarea:focus {
+  outline: none;
+  border-color: var(--ir-maroon);
+  box-shadow: 0 0 0 3px rgba(104, 18, 20, 0.15);
+}
+
+.ir-modal-footer {
+  background-color: #f8fafc;
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}

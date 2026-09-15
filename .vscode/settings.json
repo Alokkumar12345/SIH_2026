@@ -1,0 +1,17 @@
+{
+    "json.schemas": [
+        {
+            "permissions": {
+                "allow": [
+                    "write_file(*)",
+                    "read_file(*)"
+                ],
+                "ask": [],
+                "deny": [
+                    "read_file(~/.ssh/*)",
+                    "read_file(~/.aws/*)"
+                ]
+            }
+        }
+    ]
+}
