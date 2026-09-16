@@ -1,92 +1,111 @@
-# SIH_2026/backend/init_users_db.py
 import logging
-from passlib.context import CryptContext
 import psycopg2
-from psycopg2.extras import RealDictCursor
-
-# Import existing Neon DB URL from app.database
+import bcrypt
 from app.database import NEON_TMS_URL
-# Import current in-memory accounts to seed
 from app.auth import USERS_DB
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("IMBPS.InitAuthDB")
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Initial bootstrap passwords used ONLY to seed the database
+INITIAL_PASSWORDS = {
+    "railway_central": "RailBoard@2026",
+    "zone_er": "ZonalER@2026",
+    "zone_nr": "ZonalNR@2026",
+    "div_asn": "DivASN@2026",
+    "div_hwh": "DivHWH@2026",
+    "div_umb": "DivUMB@2026",
+    "tms_engineer": "TrackEng@2026",
+    "tms_hwh": "TrackHWH@2026",
+    "tms_umb": "TrackUMB@2026",
+    "smms_engineer": "SignalEng@2026",
+    "smms_hwh": "SignalHWH@2026",
+    "smms_umb": "SignalUMB@2026",
+    "tdms_engineer": "TrdEng@2026",
+    "tdms_hwh": "TrdHWH@2026",
+    "tdms_umb": "TrdUMB@2026"
+}
 
-CREATE_TABLE_SQL = """
-CREATE TABLE IF NOT EXISTS app_users (
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(64) UNIQUE NOT NULL,
-    hashed_password VARCHAR(255) NOT NULL,
-    name VARCHAR(128) NOT NULL,
-    role VARCHAR(32) NOT NULL,
-    role_display VARCHAR(128) NOT NULL,
-    zone VARCHAR(64),
-    zone_code VARCHAR(16),
-    division VARCHAR(64),
-    division_code VARCHAR(16),
-    department VARCHAR(32),
-    department_display VARCHAR(128),
-    section VARCHAR(64),
-    section_display VARCHAR(255),
-    is_active BOOLEAN DEFAULT TRUE,
-    created_by VARCHAR(64) DEFAULT 'SYSTEM',
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
-);
-
-CREATE INDEX IF NOT EXISTS idx_app_users_username ON app_users(username);
-"""
+def hash_pw(password: str) -> str:
+    return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
 
 def init_and_seed():
     logger.info("Connecting to Neon PostgreSQL...")
     conn = psycopg2.connect(NEON_TMS_URL)
     conn.autocommit = True
-    cursor = conn.cursor(cursor_factory=RealDictCursor)
+    cursor = conn.cursor()
 
-    logger.info("Creating app_users table...")
-    cursor.execute(CREATE_TABLE_SQL)
+    logger.info("Creating app_users table if not exists...")
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS app_users (
+            id SERIAL PRIMARY KEY,
+            username VARCHAR(50) UNIQUE NOT NULL,
+            hashed_password VARCHAR(255) NOT NULL,
+            name VARCHAR(100) NOT NULL,
+            role VARCHAR(50) NOT NULL,
+            role_display VARCHAR(100) NOT NULL,
+            zone VARCHAR(50),
+            zone_code VARCHAR(10),
+            division VARCHAR(50),
+            division_code VARCHAR(10),
+            department VARCHAR(50),
+            department_display VARCHAR(100),
+            section VARCHAR(50),
+            section_display VARCHAR(100),
+            is_active BOOLEAN DEFAULT TRUE,
+            created_by VARCHAR(50) DEFAULT 'system_seed',
+            created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        );
+    """)
 
     logger.info("Seeding initial accounts...")
     insert_sql = """
-    INSERT INTO app_users (
-        username, hashed_password, name, role, role_display,
-        zone, zone_code, division, division_code,
-        department, department_display, section, section_display,
-        created_by
-    ) VALUES (
-        %(username)s, %(hashed_password)s, %(name)s, %(role)s, %(role_display)s,
-        %(zone)s, %(zone_code)s, %(division)s, %(division_code)s,
-        %(department)s, %(department_display)s, %(section)s, %(section_display)s,
-        'SYSTEM_SEED'
-    ) ON CONFLICT (username) DO NOTHING;
+        INSERT INTO app_users (
+            username, hashed_password, name, role, role_display,
+            zone, zone_code, division, division_code,
+            department, department_display, section, section_display,
+            created_by
+        ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 'system_seed')
+        ON CONFLICT (username) DO UPDATE SET
+            hashed_password = EXCLUDED.hashed_password,
+            name = EXCLUDED.name,
+            role = EXCLUDED.role,
+            role_display = EXCLUDED.role_display,
+            zone = EXCLUDED.zone,
+            zone_code = EXCLUDED.zone_code,
+            division = EXCLUDED.division,
+            division_code = EXCLUDED.division_code,
+            department = EXCLUDED.department,
+            department_display = EXCLUDED.department_display,
+            section = EXCLUDED.section,
+            section_display = EXCLUDED.section_display,
+            is_active = TRUE;
     """
 
     for uname, data in USERS_DB.items():
         profile = data["profile"]
-        hashed = pwd_context.hash(data["password"])
-        
-        record = {
-            "username": uname,
-            "hashed_password": hashed,
-            "name": profile.get("name"),
-            "role": profile.get("role"),
-            "role_display": profile.get("role_display"),
-            "zone": profile.get("zone"),
-            "zone_code": profile.get("zone_code"),
-            "division": profile.get("division"),
-            "division_code": profile.get("division_code"),
-            "department": profile.get("department"),
-            "department_display": profile.get("department_display"),
-            "section": profile.get("section"),
-            "section_display": profile.get("section_display"),
-        }
-        cursor.execute(insert_sql, record)
-        logger.info(f"Account '{uname}' verified/seeded.")
+        plain_pw = INITIAL_PASSWORDS.get(uname, "Railway@2026")
+        hashed = hash_pw(plain_pw)
+
+        cursor.execute(insert_sql, (
+            uname,
+            hashed,
+            profile["name"],
+            profile["role"],
+            profile["role_display"],
+            profile.get("zone"),
+            profile.get("zone_code"),
+            profile.get("division"),
+            profile.get("division_code"),
+            profile.get("department"),
+            profile.get("department_display"),
+            profile.get("section"),
+            profile.get("section_display")
+        ))
 
     cursor.close()
     conn.close()
-    logger.info("Authentication Database Initialization Complete.")
+    logger.info("Successfully seeded all default accounts into Neon PostgreSQL.")
 
 if __name__ == "__main__":
     init_and_seed()
