@@ -141,7 +141,7 @@ export const ZonalDashboard = () => {
       )}
 
       {/* Tabs */}
-      <div className="no-print" style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '2px solid #e2dec9', paddingBottom: '0.5rem' }}>
+      <div className="central-tab-ribbon no-print" style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '2px solid #e2dec9', paddingBottom: '0.5rem' }}>
         <button 
           className={`ir-btn ${activeTab === 'div_summary' ? 'ir-btn-primary' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('div_summary')}

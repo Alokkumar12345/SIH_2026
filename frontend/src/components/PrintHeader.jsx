@@ -1,4 +1,5 @@
 import React from 'react';
+import railwayLogo from '../assets/Railway_logo.png';
 
 export const PrintHeader = ({ title, subtitle, metadata = {} }) => {
   const printDate = new Date().toLocaleString('en-IN', {
@@ -11,11 +12,7 @@ export const PrintHeader = ({ title, subtitle, metadata = {} }) => {
     <div className="print-letterhead print-only">
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', marginBottom: '8px' }}>
         {/* Ashoka Emblem SVG representation */}
-        <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="46" stroke="#000" strokeWidth="4"/>
-          <circle cx="50" cy="50" r="16" stroke="#000" strokeWidth="3"/>
-          <path d="M50 10 L50 90 M10 50 L90 50 M22 22 L78 78 M22 78 L78 22" stroke="#000" strokeWidth="2"/>
-        </svg>
+          <img src={railwayLogo} alt="Indian Railways Logo" style={{ width: '70px', height: '70px', objectFit: 'contain' }} />
         <div>
           <h1>GOVERNMENT OF INDIA / MINISTRY OF RAILWAYS</h1>
           <h2>INTEGRATED MAINTENANCE & BLOCK PLANNING SYSTEM (IMBPS)</h2>
