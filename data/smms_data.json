@@ -3296,5 +3296,749 @@
       "crank_handle_locked": true,
       "alternate_movement_possible": "Reverse line routes clamped and padlocked"
     }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/DDU/2026/SIG/1002",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_DDU",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "East Central Railway",
+      "division": "Pt. Deen Dayal Upadhyaya (DDU)",
+      "station_name": "DDU Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/DNR/2026/SIG/1005",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_DNR",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "East Central Railway",
+      "division": "Danapur (DNR)",
+      "station_name": "DNR Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/DHN/2026/SIG/1008",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_DHN",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "East Central Railway",
+      "division": "Dhanbad (DHN)",
+      "station_name": "DHN Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SDAH/2026/SIG/1011",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SDAH",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "division": "Sealdah",
+      "station_name": "SDAH Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/DLI/2026/SIG/1014",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_DLI",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "division": "Delhi (DLI)",
+      "station_name": "DLI Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/CSMT/2026/SIG/1017",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_CSMT",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "division": "Mumbai (CSMT)",
+      "station_name": "CSMT Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/CR-BSL/2026/SIG/1020",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_CR-BSL",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "division": "Bhusawal",
+      "station_name": "CR-BSL Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/CR-BB/2026/SIG/1023",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_CR-BB",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "division": "Mumbai",
+      "station_name": "CR-BB Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/MMCT/2026/SIG/1026",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_MMCT",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central (MMCT)",
+      "station_name": "MMCT Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BRC/2026/SIG/1029",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_BRC",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "division": "Vadodara (BRC)",
+      "station_name": "BRC Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/WR-BRC/2026/SIG/1032",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_WR-BRC",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "division": "Vadodara",
+      "station_name": "WR-BRC Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/WR-BCT/2026/SIG/1035",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_WR-BCT",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central",
+      "station_name": "WR-BCT Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/PRYJ/2026/SIG/1038",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_PRYJ",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj (PRYJ)",
+      "station_name": "PRYJ Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/NCR-JHS/2026/SIG/1041",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_NCR-JHS",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "North Central Railway",
+      "division": "Jhansi",
+      "station_name": "NCR-JHS Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/NCR-PRYJ/2026/SIG/1044",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_NCR-PRYJ",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj",
+      "station_name": "NCR-PRYJ Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SC/2026/SIG/1047",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SC",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad (SC)",
+      "station_name": "SC Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SCR-BZA/2026/SIG/1050",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SCR-BZA",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "division": "Vijayawada",
+      "station_name": "SCR-BZA Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SCR-SC/2026/SIG/1053",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SCR-SC",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad",
+      "station_name": "SCR-SC Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/MAS/2026/SIG/1056",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_MAS",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Southern Railway",
+      "division": "Chennai (MAS)",
+      "station_name": "MAS Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SR-MAS/2026/SIG/1059",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SR-MAS",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Southern Railway",
+      "division": "Chennai",
+      "station_name": "SR-MAS Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SR-PGT/2026/SIG/1062",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SR-PGT",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "Southern Railway",
+      "division": "Palakkad",
+      "station_name": "SR-PGT Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/KGP/2026/SIG/1065",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_KGP",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur (KGP)",
+      "station_name": "KGP Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SER-KGP/2026/SIG/1068",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SER-KGP",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur",
+      "station_name": "SER-KGP Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/KOTA/2026/SIG/1071",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_KOTA",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "West Central Railway",
+      "division": "Kota (KOTA)",
+      "station_name": "KOTA Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/WCR-JBP/2026/SIG/1074",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_WCR-JBP",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "West Central Railway",
+      "division": "Jabalpur",
+      "station_name": "WCR-JBP Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/ECoR-KUR/2026/SIG/1077",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_ECoR-KUR",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "EAST COAST RAILWAY",
+      "division": "Khurda Road",
+      "station_name": "ECoR-KUR Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SECR-BSP/2026/SIG/1080",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SECR-BSP",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "SOUTH EAST CENTRAL RAILWAY",
+      "division": "Bilaspur",
+      "station_name": "SECR-BSP Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SWR-SBC/2026/SIG/1083",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_SWR-SBC",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "SOUTH WESTERN RAILWAY",
+      "division": "Bengaluru",
+      "station_name": "SWR-SBC Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/NER-BSB/2026/SIG/1086",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_NER-BSB",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "NORTH EASTERN RAILWAY",
+      "division": "Varanasi",
+      "station_name": "NER-BSB Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/NFR-KIR/2026/SIG/1089",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_NFR-KIR",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "NORTHEAST FRONTIER RAILWAY",
+      "division": "Katihar",
+      "station_name": "NFR-KIR Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/NWR-JP/2026/SIG/1092",
+    "issuing_authority": {
+      "designation": "SSE_SIGNAL_NWR-JP",
+      "contact": "9876543211"
+    },
+    "asset_location": {
+      "zone": "NORTH WESTERN RAILWAY",
+      "division": "Jaipur",
+      "station_name": "NWR-JP Junction",
+      "geographical_chainage_km": 12.5
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Motor & Detection Overhaul",
+      "requires_traffic_block": true,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "12:00",
+        "end_time": "14:00",
+        "duration_minutes": 120
+      }
+    }
   }
 ]

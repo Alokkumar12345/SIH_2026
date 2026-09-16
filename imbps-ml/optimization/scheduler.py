@@ -197,34 +197,109 @@ class IMBPSBlockScheduler:
                 end_h, end_min_rem = divmod(end_m % 1440, 60)
                 day_offset = start_m // 1440
 
+                # Resolve realistic operational dates & day of week starting from operational baseline (16 Sep 2026)
+                base_operational_date = datetime(2026, 9, 16)
+                
+                # Candidate slot metadata override if provided
+                slot_date = assigned_slot_info.get("date") if assigned_slot_info else None
+                slot_day = assigned_slot_info.get("day_name") if assigned_slot_info else None
+                slot_week_label = assigned_slot_info.get("week_label") if assigned_slot_info else None
+
+                if slot_date:
+                    try:
+                        s_dt = datetime.strptime(slot_date, "%Y-%m-%d")
+                        calc_offset = max(0, (s_dt - base_operational_date).days)
+                        day_offset = calc_offset
+                    except Exception:
+                        pass
+
+                block_date_obj = base_operational_date + timedelta(days=day_offset)
+                scheduled_date = slot_date or block_date_obj.strftime("%Y-%m-%d")
+                day_name = slot_day or block_date_obj.strftime("%A")
+
+                # Parse actual date for month-based week calculation
+                try:
+                    s_dt = datetime.strptime(scheduled_date, "%Y-%m-%d")
+                except Exception:
+                    s_dt = block_date_obj
+
+                s_day = s_dt.day
+                s_month = s_dt.month
+                s_year = s_dt.year
+                if s_month in [1, 3, 5, 7, 8, 10, 12]:
+                    last_day = 31
+                elif s_month in [4, 6, 9, 11]:
+                    last_day = 30
+                else:
+                    last_day = 29 if (s_year % 4 == 0 and (s_year % 100 != 0 or s_year % 400 == 0)) else 28
+
+                if s_day <= 7:
+                    week_num = 1
+                    w_start = s_dt.replace(day=1)
+                    w_end = s_dt.replace(day=7)
+                elif s_day <= 14:
+                    week_num = 2
+                    w_start = s_dt.replace(day=8)
+                    w_end = s_dt.replace(day=14)
+                elif s_day <= 21:
+                    week_num = 3
+                    w_start = s_dt.replace(day=15)
+                    w_end = s_dt.replace(day=21)
+                else:
+                    week_num = 4
+                    w_start = s_dt.replace(day=22)
+                    w_end = s_dt.replace(day=last_day)
+
+                week_label = f"Week {week_num} ({w_start.strftime('%d %b')} - {w_end.strftime('%d %b %Y')})"
+
+                # Resolve designated Section Engineer by department
+                dept_raw = str(job.get("department", "TMS")).upper()
+                if "ENGINEERING" in dept_raw or "TMS" in dept_raw or "TRACK" in dept_raw:
+                    dept_norm = "TMS"
+                    default_eng = "Er. In-Charge (SSE/P-Way)"
+                elif "SIGNAL" in dept_raw or "SMMS" in dept_raw or "TELECOM" in dept_raw:
+                    dept_norm = "SMMS"
+                    default_eng = "Er. In-Charge (SSE/Signal)"
+                else:
+                    dept_norm = "TDMS"
+                    default_eng = "Er. In-Charge (SSE/TRD)"
+
+                assigned_engineer = job.get("assigned_engineer") or default_eng
+
                 # Check coordination requirements
                 req_power = self.constraint_engine.requires_power_block(job)
                 req_st = self.constraint_engine.requires_st_disconnection(job)
 
                 plan_item = {
                     "job_id": jid,
-                    "department": job.get("department"),
-                    "division": job.get("division"),
-                    "section": job.get("section"),
-                    "block_section": job.get("block_section"),
-                    "line": job.get("line"),
-                    "work_type": job.get("work_type"),
-                    "asset_type": job.get("asset_type"),
-                    "priority_score": job.get("priority_score"),
-                    "risk_probability": job.get("risk_probability"),
-                    "equipment": job.get("equipment"),
-                    "crew_size": job.get("crew_size"),
+                    "department": dept_norm,
+                    "division": job.get("division") or assigned_slot_info.get("division_code") if assigned_slot_info else "IR",
+                    "section": job.get("section") or (assigned_slot_info.get("section") if assigned_slot_info else "Section"),
+                    "block_section": job.get("block_section") or (assigned_slot_info.get("block_section") if assigned_slot_info else f"{job.get('section', 'SEC')}-BLK1"),
+                    "line": job.get("line", "UP_MAIN"),
+                    "work_type": job.get("work_type", "Track Maintenance"),
+                    "asset_type": job.get("asset_type", "Track"),
+                    "priority_score": job.get("priority_score", 85.0),
+                    "risk_probability": job.get("risk_probability", 0.35),
+                    "equipment": job.get("equipment", "Standard Machinery"),
+                    "crew_size": job.get("crew_size", 8),
+                    "assigned_engineer": assigned_engineer,
                     "day_index": day_offset + 1,
+                    "day_name": day_name,
+                    "scheduled_date": scheduled_date,
+                    "week_number": week_num,
+                    "week_label": week_label,
                     "start_minute": start_m,
                     "end_minute": end_m,
                     "scheduled_start_time": f"{start_h:02d}:{start_min_rem:02d}",
                     "scheduled_end_time": f"{end_h:02d}:{end_min_rem:02d}",
                     "assigned_duration_min": end_m - start_m,
-                    "assigned_slot_id": assigned_slot_info.get("slot_id") if assigned_slot_info else "SLOT_AUTO",
+                    "assigned_slot_id": assigned_slot_info.get("slot_id") if assigned_slot_info else f"SLOT_OPT_{day_offset+1}",
                     "coordination": {
                         "power_block_required": req_power,
                         "st_disconnection_required": req_st,
-                        "co_location_eligible": True
+                        "co_location_eligible": True,
+                        "joint_block": req_power or req_st
                     }
                 }
                 scheduled_plan.append(plan_item)
@@ -235,6 +310,9 @@ class IMBPSBlockScheduler:
                     "priority_score": job.get("priority_score"),
                     "reason": "Deferred to next cycle: slot capacity or higher priority preemption"
                 })
+
+        # Sort scheduled blocks strictly chronologically by execution date and start time
+        scheduled_plan.sort(key=lambda x: (x.get("scheduled_date", ""), x.get("start_minute", 0)))
 
         # Calculate KPIs
         total_requested = len(jobs)

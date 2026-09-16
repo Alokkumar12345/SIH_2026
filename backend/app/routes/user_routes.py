@@ -54,18 +54,22 @@ def log_completed_maintenance_history(payload: LogMaintenanceHistoryRequest):
 def get_engineer_logged_history(
     department: str = Query("TMS"),
     division: Optional[str] = Query("Asansol (ASN)"),
+    section: Optional[str] = Query(None, description="Section code, e.g., UDL-SNT"),
     limit: int = 50
 ):
     """
-    Retrieves previous maintenance history logged for this engineer's department.
+    Retrieves previous maintenance history logged for this engineer's department and designated section.
     """
     history = db_manager.get_maintenance_history(
         dept=department.upper(),
         division=division,
+        section=section,
         limit=limit
     )
     return {
         "department": department.upper(),
+        "division": division,
+        "section": section or "ALL",
         "count": len(history),
         "history": history
     }

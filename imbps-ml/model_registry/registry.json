@@ -2,16 +2,16 @@
   "duration_v1": {
     "model_version": "duration_v1",
     "algorithm": "Linear",
-    "trained_at": "2026-09-09T19:25:17.101722",
-    "total_records": 1805,
-    "train_records": 1263,
-    "val_records": 271,
-    "test_records": 271,
+    "trained_at": "2026-09-15T23:48:54.671708",
+    "total_records": 7500,
+    "train_records": 5250,
+    "val_records": 1125,
+    "test_records": 1125,
     "metrics": {
-      "val_mae": 8.719002964109734,
-      "test_mae": 8.729473422792118,
-      "test_rmse": 10.062666084367187,
-      "test_r2": 0.963577838296934
+      "val_mae": 6.658184306887071,
+      "test_mae": 6.617726082691346,
+      "test_rmse": 7.736793740956229,
+      "test_r2": 0.9869334250790119
     },
     "status": "PRODUCTION",
     "file_path": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v1.joblib"
@@ -20,22 +20,22 @@
     "model_version": "risk_v1",
     "type": "asset_risk",
     "mode": "domain_explainable_with_ml_interface",
-    "registered_at": "2026-09-09T19:25:35.135270",
+    "registered_at": "2026-09-15T23:49:34.465109",
     "status": "RETIRED_VIA_ROLLBACK",
     "file_path": "C:\\IMBPS\\imbps-ml\\model_registry\\risk_v1.joblib",
-    "mean_risk_benchmark": 0.647
+    "mean_risk_benchmark": 0.699
   },
   "duration_v2": {
     "model_version": "duration_v2",
     "algorithm": "GradientBoosting",
-    "trained_at": "2026-09-10T14:24:25.429200",
+    "trained_at": "2026-09-16T00:46:51.845533",
     "status": "STAGING_NOT_PROMOTED",
     "file_path": "C:\\IMBPS\\imbps-ml\\model_registry\\duration_v2.joblib",
     "metrics": {
-      "mae": 8.88785516295419,
-      "rmse": 10.720272343563481,
-      "r2": 0.9585467374654868
+      "mae": 6.720006350002211,
+      "rmse": 7.844603204327489,
+      "r2": 0.9860597266721939
     },
-    "trigger": "CENTRAL_BOARD_MANUAL_DISPATCH"
+    "trigger": "AUTOMATED_TEST_TRIGGER"
   }
 }

@@ -1,0 +1,2848 @@
+[
+  {
+    "coa_slot_id": "COA_SLOT_UMB_KLK_2026_W47_1001",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2026-W47",
+    "target_date": "2026-11-21",
+    "day_of_week": "SATURDAY",
+    "section_id": "SEC_UMB_CDG_KLK",
+    "block_section": "Ambala Cantt (UMB) - Chandigarh (CDG)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/NR/UMB/2026/PB/1356",
+    "slot_window": {
+      "start_time": "12:15",
+      "end_time": "14:15",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "11:59"
+    },
+    "following_service": {
+      "train_no": "12381",
+      "train_name": "Poorva Express",
+      "type": "SUPERFAST",
+      "projected_arrival_time": "14:26"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.48,
+      "maintenance_complexity_score": 0.53,
+      "predicted_delay_minutes": 1,
+      "slot_acceptance_probability": 0.78,
+      "operational_risk_score": 0.51,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2026_W42_1002",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W42",
+    "target_date": "2026-10-13",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "UP_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2026/PB/3472",
+    "slot_window": {
+      "start_time": "03:15",
+      "end_time": "05:45",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "03:07"
+    },
+    "following_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "06:07"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "14507",
+          "train_name": "Fazilka Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "SSM",
+          "detention_time_mins": 30,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BTPN_CEMENT_DDU_199",
+          "commodity": "CEMENT",
+          "rake_type": "BTPN",
+          "stabling_station": "SSM",
+          "stabling_loop": "LOOP_1_UP",
+          "planned_hold_minutes": 150
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.67,
+      "maintenance_complexity_score": 0.83,
+      "predicted_delay_minutes": 10,
+      "slot_acceptance_probability": 0.45,
+      "operational_risk_score": 0.77,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_KLK_2026_W38_1003",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2026-W38",
+    "target_date": "2026-09-18",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_UMB_CDG_KLK",
+    "block_section": "Ambala Cantt (UMB) - Chandigarh (CDG)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/UMB/2026/BLK/146",
+    "slot_window": {
+      "start_time": "13:00",
+      "end_time": "15:00",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_clearance_time": "12:44"
+    },
+    "following_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "15:10"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.58,
+      "maintenance_complexity_score": 0.49,
+      "predicted_delay_minutes": 19,
+      "slot_acceptance_probability": 0.74,
+      "operational_risk_score": 0.53,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_SDL_2026_W42_1004",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-BDL",
+    "control_board": "DDU_MGS_BOARD",
+    "planning_week": "2026-W42",
+    "target_date": "2026-10-18",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_DDU_GAYA_KCM_SDL",
+    "block_section": "Kuchman (KCM) - Sakaldiha (SDL)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "SMMS_TELECOM_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2026/TEL/275",
+    "slot_window": {
+      "start_time": "11:45",
+      "end_time": "13:15",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "11:29"
+    },
+    "following_service": {
+      "train_no": "13017",
+      "train_name": "Ganadevata Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "13:25"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.94,
+      "maintenance_complexity_score": 0.62,
+      "predicted_delay_minutes": 21,
+      "slot_acceptance_probability": 0.58,
+      "operational_risk_score": 0.75,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2026_W53_1005",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W53",
+    "target_date": "2027-01-03",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2027/DISC/374",
+    "slot_window": {
+      "start_time": "00:30",
+      "end_time": "01:30",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "00:25"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "01:48"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.59,
+      "maintenance_complexity_score": 0.79,
+      "predicted_delay_minutes": 11,
+      "slot_acceptance_probability": 0.73,
+      "operational_risk_score": 0.71,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2027_W05_1006",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W05",
+    "target_date": "2027-02-04",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_CHORD",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2027/PB/3087",
+    "slot_window": {
+      "start_time": "12:00",
+      "end_time": "13:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_clearance_time": "11:49"
+    },
+    "following_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_arrival_time": "13:50"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.44,
+      "maintenance_complexity_score": 0.3,
+      "predicted_delay_minutes": 12,
+      "slot_acceptance_probability": 0.8,
+      "operational_risk_score": 0.36,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2026_W53_1007",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W53",
+    "target_date": "2027-01-02",
+    "day_of_week": "SATURDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_MAIN",
+    "slot_purpose": "COMBINED_TMS_TDMS",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2027/PB/2078",
+    "slot_window": {
+      "start_time": "13:45",
+      "end_time": "14:30",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "13:32"
+    },
+    "following_service": {
+      "train_no": "13017",
+      "train_name": "Ganadevata Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "14:38"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03561",
+          "train_name": "Andal - Sainthia MEMU",
+          "type": "MEMU",
+          "regulation_station": "GRRU",
+          "detention_time_mins": 32,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.65,
+      "maintenance_complexity_score": 0.27,
+      "predicted_delay_minutes": 16,
+      "slot_acceptance_probability": 0.46,
+      "operational_risk_score": 0.42,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_SDL_2027_W06_1008",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-BDL",
+    "control_board": "DDU_MGS_BOARD",
+    "planning_week": "2027-W06",
+    "target_date": "2027-02-08",
+    "day_of_week": "MONDAY",
+    "section_id": "SEC_DDU_GAYA_KCM_SDL",
+    "block_section": "Kuchman (KCM) - Sakaldiha (SDL)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2027/PB/1079",
+    "slot_window": {
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "11:02"
+    },
+    "following_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "12:08"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.49,
+      "maintenance_complexity_score": 0.57,
+      "predicted_delay_minutes": 2,
+      "slot_acceptance_probability": 0.78,
+      "operational_risk_score": 0.54,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_SNT_2026_W41_1009",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-UDL-SNT",
+    "control_board": "ASN_UDL_BOARD",
+    "planning_week": "2026-W41",
+    "target_date": "2026-10-07",
+    "day_of_week": "WEDNESDAY",
+    "section_id": "SEC_ASN_UDL_SNT",
+    "block_section": "Andal Jn (UDL) - Sainthia Jn (SNT)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "COMBINED_TMS_TDMS",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ER/ASN/2026/PB/3161",
+    "slot_window": {
+      "start_time": "10:30",
+      "end_time": "11:15",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "10:13"
+    },
+    "following_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "11:27"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.93,
+      "maintenance_complexity_score": 0.8,
+      "predicted_delay_minutes": 28,
+      "slot_acceptance_probability": 0.58,
+      "operational_risk_score": 0.85,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_SDL_2027_W02_1010",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-BDL",
+    "control_board": "DDU_MGS_BOARD",
+    "planning_week": "2027-W02",
+    "target_date": "2027-01-12",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_DDU_GAYA_KCM_SDL",
+    "block_section": "Kuchman (KCM) - Sakaldiha (SDL)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2027/PB/1920",
+    "slot_window": {
+      "start_time": "02:00",
+      "end_time": "03:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "01:48"
+    },
+    "following_service": {
+      "train_no": "13051",
+      "train_name": "Hool Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "03:54"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.7,
+      "maintenance_complexity_score": 0.2,
+      "predicted_delay_minutes": 20,
+      "slot_acceptance_probability": 0.69,
+      "operational_risk_score": 0.4,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_AZ_2027_W10_1011",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2027-W10",
+    "target_date": "2027-03-09",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_HWH_BDC_AZ",
+    "block_section": "Bandel Jn (BDC) - Azimganj Jn (AZ)",
+    "line": "UP_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/HWH/2027/BLK/533",
+    "slot_window": {
+      "start_time": "10:15",
+      "end_time": "12:45",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "10:09"
+    },
+    "following_service": {
+      "train_no": "13051",
+      "train_name": "Hool Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "13:09"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03561",
+          "train_name": "Andal - Sainthia MEMU",
+          "type": "MEMU",
+          "regulation_station": "AZ",
+          "detention_time_mins": 14,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "12011",
+          "train_name": "Kalka Shatabdi Express",
+          "type": "SHATABDI",
+          "regulation_station": "AZ",
+          "detention_time_mins": 15,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.75,
+      "maintenance_complexity_score": 0.84,
+      "predicted_delay_minutes": 3,
+      "slot_acceptance_probability": 0.41,
+      "operational_risk_score": 0.8,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2027_W08_1012",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W08",
+    "target_date": "2027-02-28",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/DDU/2027/BLK/532",
+    "slot_window": {
+      "start_time": "00:45",
+      "end_time": "01:45",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "00:33"
+    },
+    "following_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "01:57"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.38,
+      "maintenance_complexity_score": 0.85,
+      "predicted_delay_minutes": 13,
+      "slot_acceptance_probability": 0.83,
+      "operational_risk_score": 0.66,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2026_W48_1013",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W48",
+    "target_date": "2026-11-24",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2026/DISC/985",
+    "slot_window": {
+      "start_time": "01:30",
+      "end_time": "03:30",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "12381",
+      "train_name": "Poorva Express",
+      "type": "SUPERFAST",
+      "projected_clearance_time": "01:18"
+    },
+    "following_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "03:53"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.91,
+      "maintenance_complexity_score": 0.71,
+      "predicted_delay_minutes": 10,
+      "slot_acceptance_probability": 0.59,
+      "operational_risk_score": 0.79,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2026_W52_1014",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W52",
+    "target_date": "2026-12-22",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/DDU/2026/BLK/709",
+    "slot_window": {
+      "start_time": "12:30",
+      "end_time": "14:30",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "12:16"
+    },
+    "following_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "14:55"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12011",
+          "train_name": "Kalka Shatabdi Express",
+          "type": "SHATABDI",
+          "regulation_station": "KVD",
+          "detention_time_mins": 9,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BCN_STEEL_DDU_170",
+          "commodity": "STEEL",
+          "rake_type": "BCN",
+          "stabling_station": "SSM",
+          "stabling_loop": "LOOP_1_UP",
+          "planned_hold_minutes": 90
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.72,
+      "maintenance_complexity_score": 0.47,
+      "predicted_delay_minutes": 17,
+      "slot_acceptance_probability": 0.43,
+      "operational_risk_score": 0.57,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2027_W05_1015",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W05",
+    "target_date": "2027-02-01",
+    "day_of_week": "MONDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_CHORD",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TMS/DDU/2027/BLK/371",
+    "slot_window": {
+      "start_time": "01:15",
+      "end_time": "02:00",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "01:05"
+    },
+    "following_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_arrival_time": "02:15"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12381",
+          "train_name": "Poorva Express",
+          "type": "SUPERFAST",
+          "regulation_station": "GAYA",
+          "detention_time_mins": 28,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "13051",
+          "train_name": "Hool Express",
+          "type": "EXPRESS",
+          "regulation_station": "DOS",
+          "detention_time_mins": 8,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.88,
+      "maintenance_complexity_score": 0.44,
+      "predicted_delay_minutes": 6,
+      "slot_acceptance_probability": 0.35,
+      "operational_risk_score": 0.62,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_AZ_2027_W03_1016",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2027-W03",
+    "target_date": "2027-01-24",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_HWH_BDC_AZ",
+    "block_section": "Bandel Jn (BDC) - Azimganj Jn (AZ)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/HWH/2027/DISC/936",
+    "slot_window": {
+      "start_time": "03:00",
+      "end_time": "03:45",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "02:47"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "03:53"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.88,
+      "maintenance_complexity_score": 0.68,
+      "predicted_delay_minutes": 5,
+      "slot_acceptance_probability": 0.6,
+      "operational_risk_score": 0.76,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2027_W07_1017",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2027-W07",
+    "target_date": "2027-02-18",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "UP_CHORD",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/HWH/2027/BLK/617",
+    "slot_window": {
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "12:30"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "14:01"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.38,
+      "maintenance_complexity_score": 0.42,
+      "predicted_delay_minutes": 2,
+      "slot_acceptance_probability": 0.83,
+      "operational_risk_score": 0.4,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_AZ_2026_W46_1018",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W46",
+    "target_date": "2026-11-12",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_HWH_BDC_AZ",
+    "block_section": "Bandel Jn (BDC) - Azimganj Jn (AZ)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/HWH/2026/BLK/136",
+    "slot_window": {
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "13:34"
+    },
+    "following_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_arrival_time": "15:40"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.61,
+      "maintenance_complexity_score": 0.23,
+      "predicted_delay_minutes": 9,
+      "slot_acceptance_probability": 0.73,
+      "operational_risk_score": 0.38,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W41_1019",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W41",
+    "target_date": "2026-10-06",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "UP_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "REQUIRES_REGULATION",
+    "conflict_severity": "HIGH",
+    "maintenance_reference_id": "TDMS/ER/HWH/2026/PB/2360",
+    "slot_window": {
+      "start_time": "01:15",
+      "end_time": "03:15",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "01:00"
+    },
+    "following_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "03:26"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03543",
+          "train_name": "Andal - Gomoh Passenger Special",
+          "type": "PASSENGER",
+          "regulation_station": "BWN",
+          "detention_time_mins": 12,
+          "sr_dom_approved": false
+        },
+        {
+          "train_no": "13009",
+          "train_name": "Doon Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "BLY",
+          "detention_time_mins": 33,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.82,
+      "maintenance_complexity_score": 0.27,
+      "predicted_delay_minutes": 29,
+      "slot_acceptance_probability": 0.38,
+      "operational_risk_score": 0.49,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_GRD_2026_W50_1020",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-MDP-JSME",
+    "control_board": "ASN_MAIN_BOARD",
+    "planning_week": "2026-W50",
+    "target_date": "2026-12-13",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_ASN_MDP_GRD",
+    "block_section": "Madhupur Jn (MDP) - Giridih (GRD)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/ASN/2026/BLK/328",
+    "slot_window": {
+      "start_time": "13:45",
+      "end_time": "15:15",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "13051",
+      "train_name": "Hool Express",
+      "type": "EXPRESS",
+      "projected_clearance_time": "13:27"
+    },
+    "following_service": {
+      "train_no": "13017",
+      "train_name": "Ganadevata Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "15:30"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.93,
+      "maintenance_complexity_score": 0.38,
+      "predicted_delay_minutes": 24,
+      "slot_acceptance_probability": 0.58,
+      "operational_risk_score": 0.6,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W38_1021",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W38",
+    "target_date": "2026-09-20",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "DOWN_CHORD",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ER/HWH/2026/PB/3205",
+    "slot_window": {
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "12:36"
+    },
+    "following_service": {
+      "train_no": "12802",
+      "train_name": "Purushottam Express",
+      "type": "SUPERFAST",
+      "projected_arrival_time": "13:58"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12301",
+          "train_name": "Howrah Rajdhani Express",
+          "type": "RAJDHANI",
+          "regulation_station": "HWH",
+          "detention_time_mins": 27,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "12011",
+          "train_name": "Kalka Shatabdi Express",
+          "type": "SHATABDI",
+          "regulation_station": "SHE",
+          "detention_time_mins": 21,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "CONTAINER_CONTAINERS_HWH_825",
+          "commodity": "CONTAINERS",
+          "rake_type": "CONTAINER",
+          "stabling_station": "BDC",
+          "stabling_loop": "GOODS_LOOP",
+          "planned_hold_minutes": 60
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.72,
+      "maintenance_complexity_score": 0.63,
+      "predicted_delay_minutes": 4,
+      "slot_acceptance_probability": 0.43,
+      "operational_risk_score": 0.67,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_SNT_2026_W44_1022",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-UDL-SNT",
+    "control_board": "ASN_UDL_BOARD",
+    "planning_week": "2026-W44",
+    "target_date": "2026-10-30",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_ASN_UDL_SNT",
+    "block_section": "Andal Jn (UDL) - Sainthia Jn (SNT)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/ASN/2026/BLK/667",
+    "slot_window": {
+      "start_time": "13:15",
+      "end_time": "15:15",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13051",
+      "train_name": "Hool Express",
+      "type": "EXPRESS",
+      "projected_clearance_time": "12:59"
+    },
+    "following_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "15:32"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.59,
+      "maintenance_complexity_score": 0.74,
+      "predicted_delay_minutes": 7,
+      "slot_acceptance_probability": 0.73,
+      "operational_risk_score": 0.68,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2026_W45_1023",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W45",
+    "target_date": "2026-11-06",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TMS/DDU/2026/BLK/330",
+    "slot_window": {
+      "start_time": "12:30",
+      "end_time": "15:00",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_clearance_time": "12:22"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "15:24"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03561",
+          "train_name": "Andal - Sainthia MEMU",
+          "type": "MEMU",
+          "regulation_station": "DOS",
+          "detention_time_mins": 17,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.38,
+      "maintenance_complexity_score": 0.84,
+      "predicted_delay_minutes": 9,
+      "slot_acceptance_probability": 0.58,
+      "operational_risk_score": 0.66,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_MAIN_2027_W07_1024",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2027-W07",
+    "target_date": "2027-02-19",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_UMB_LDH_MAIN",
+    "block_section": "Ambala Cantt (UMB) - Ludhiana Jn (LDH)",
+    "line": "UP_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/UMB/2027/BLK/575",
+    "slot_window": {
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_clearance_time": "11:18"
+    },
+    "following_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "12:50"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03561",
+          "train_name": "Andal - Sainthia MEMU",
+          "type": "MEMU",
+          "regulation_station": "UMB",
+          "detention_time_mins": 32,
+          "sr_dom_approved": false
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.9,
+      "maintenance_complexity_score": 0.28,
+      "predicted_delay_minutes": 5,
+      "slot_acceptance_probability": 0.34,
+      "operational_risk_score": 0.53,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_MAIN_2027_W06_1025",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2027-W06",
+    "target_date": "2027-02-08",
+    "day_of_week": "MONDAY",
+    "section_id": "SEC_UMB_LDH_MAIN",
+    "block_section": "Ambala Cantt (UMB) - Ludhiana Jn (LDH)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/UMB/2027/BLK/536",
+    "slot_window": {
+      "start_time": "12:30",
+      "end_time": "13:30",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "12:18"
+    },
+    "following_service": {
+      "train_no": "18618",
+      "train_name": "Ranchi - Dumka Intercity",
+      "type": "INTERCITY",
+      "projected_arrival_time": "13:54"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.8,
+      "maintenance_complexity_score": 0.75,
+      "predicted_delay_minutes": 9,
+      "slot_acceptance_probability": 0.64,
+      "operational_risk_score": 0.77,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_MAIN_2026_W49_1026",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2026-W49",
+    "target_date": "2026-12-01",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_UMB_LDH_MAIN",
+    "block_section": "Ambala Cantt (UMB) - Ludhiana Jn (LDH)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/UMB/2026/BLK/165",
+    "slot_window": {
+      "start_time": "12:15",
+      "end_time": "14:45",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_clearance_time": "11:59"
+    },
+    "following_service": {
+      "train_no": "12802",
+      "train_name": "Purushottam Express",
+      "type": "SUPERFAST",
+      "projected_arrival_time": "15:02"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13051",
+          "train_name": "Hool Express",
+          "type": "EXPRESS",
+          "regulation_station": "SIR",
+          "detention_time_mins": 25,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "12381",
+          "train_name": "Poorva Express",
+          "type": "SUPERFAST",
+          "regulation_station": "RPJ",
+          "detention_time_mins": 20,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.85,
+      "maintenance_complexity_score": 0.45,
+      "predicted_delay_minutes": 26,
+      "slot_acceptance_probability": 0.37,
+      "operational_risk_score": 0.61,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2026_W48_1027",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W48",
+    "target_date": "2026-11-29",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2026/DISC/129",
+    "slot_window": {
+      "start_time": "02:45",
+      "end_time": "03:30",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "02:40"
+    },
+    "following_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_arrival_time": "03:49"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "14507",
+          "train_name": "Fazilka Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "RFJ",
+          "detention_time_mins": 35,
+          "sr_dom_approved": false
+        },
+        {
+          "train_no": "12313",
+          "train_name": "Sealdah Rajdhani Express",
+          "type": "RAJDHANI",
+          "regulation_station": "RFJ",
+          "detention_time_mins": 25,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BCN_STEEL_DDU_546",
+          "commodity": "STEEL",
+          "rake_type": "BCN",
+          "stabling_station": "GAYA",
+          "stabling_loop": "LOOP_2_COMMON",
+          "planned_hold_minutes": 120
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.9,
+      "maintenance_complexity_score": 0.84,
+      "predicted_delay_minutes": 19,
+      "slot_acceptance_probability": 0.34,
+      "operational_risk_score": 0.86,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_SNT_2026_W46_1028",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-UDL-SNT",
+    "control_board": "ASN_UDL_BOARD",
+    "planning_week": "2026-W46",
+    "target_date": "2026-11-12",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_ASN_UDL_SNT",
+    "block_section": "Andal Jn (UDL) - Sainthia Jn (SNT)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/ASN/2026/DISC/870",
+    "slot_window": {
+      "start_time": "10:00",
+      "end_time": "12:00",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "12802",
+      "train_name": "Purushottam Express",
+      "type": "SUPERFAST",
+      "projected_clearance_time": "09:49"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "12:12"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12381",
+          "train_name": "Poorva Express",
+          "type": "SUPERFAST",
+          "regulation_station": "UDL",
+          "detention_time_mins": 16,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "13009",
+          "train_name": "Doon Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "DUJ",
+          "detention_time_mins": 18,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.8,
+      "maintenance_complexity_score": 0.23,
+      "predicted_delay_minutes": 30,
+      "slot_acceptance_probability": 0.39,
+      "operational_risk_score": 0.46,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2027_W10_1029",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W10",
+    "target_date": "2027-03-08",
+    "day_of_week": "MONDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2027/DISC/120",
+    "slot_window": {
+      "start_time": "10:15",
+      "end_time": "11:45",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "10:07"
+    },
+    "following_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "11:59"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.69,
+      "maintenance_complexity_score": 0.34,
+      "predicted_delay_minutes": 19,
+      "slot_acceptance_probability": 0.69,
+      "operational_risk_score": 0.48,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W39_1030",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W39",
+    "target_date": "2026-09-21",
+    "day_of_week": "MONDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "UP_CHORD",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/HWH/2026/BLK/210",
+    "slot_window": {
+      "start_time": "10:45",
+      "end_time": "12:15",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "10:38"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "12:32"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.4,
+      "maintenance_complexity_score": 0.65,
+      "predicted_delay_minutes": 10,
+      "slot_acceptance_probability": 0.82,
+      "operational_risk_score": 0.55,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2027_W08_1031",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W08",
+    "target_date": "2027-02-26",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_MAIN",
+    "slot_purpose": "SMMS_TELECOM_MAINTENANCE",
+    "slot_status": "RESERVED_FOR_MAINTENANCE",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/DDU/2027/TEL/750",
+    "slot_window": {
+      "start_time": "12:30",
+      "end_time": "13:15",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "12:16"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "13:26"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13051",
+          "train_name": "Hool Express",
+          "type": "EXPRESS",
+          "regulation_station": "GRRU",
+          "detention_time_mins": 21,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BTPN_FERTILIZER_DDU_208",
+          "commodity": "FERTILIZER",
+          "rake_type": "BTPN",
+          "stabling_station": "SEB",
+          "stabling_loop": "YARD_LINE_3",
+          "planned_hold_minutes": 150
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.93,
+      "maintenance_complexity_score": 0.38,
+      "predicted_delay_minutes": 30,
+      "slot_acceptance_probability": 0.33,
+      "operational_risk_score": 0.6,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W44_1032",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W44",
+    "target_date": "2026-10-28",
+    "day_of_week": "WEDNESDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "DOWN_CHORD",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TMS/HWH/2026/BLK/710",
+    "slot_window": {
+      "start_time": "12:15",
+      "end_time": "14:15",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13051",
+      "train_name": "Hool Express",
+      "type": "EXPRESS",
+      "projected_clearance_time": "12:07"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "14:25"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13009",
+          "train_name": "Doon Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "BDC",
+          "detention_time_mins": 26,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "13308",
+          "train_name": "Ganga Sutlej Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "SHE",
+          "detention_time_mins": 8,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BCN_CONTAINERS_HWH_386",
+          "commodity": "CONTAINERS",
+          "rake_type": "BCN",
+          "stabling_station": "BWN",
+          "stabling_loop": "GOODS_LOOP",
+          "planned_hold_minutes": 120
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.78,
+      "maintenance_complexity_score": 0.52,
+      "predicted_delay_minutes": 24,
+      "slot_acceptance_probability": 0.4,
+      "operational_risk_score": 0.62,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W47_1033",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W47",
+    "target_date": "2026-11-20",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "DOWN_CHORD",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ER/HWH/2026/PB/1996",
+    "slot_window": {
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_clearance_time": "13:55"
+    },
+    "following_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "15:40"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.68,
+      "maintenance_complexity_score": 0.42,
+      "predicted_delay_minutes": 27,
+      "slot_acceptance_probability": 0.69,
+      "operational_risk_score": 0.52,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_SDL_2027_W06_1034",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-BDL",
+    "control_board": "DDU_MGS_BOARD",
+    "planning_week": "2027-W06",
+    "target_date": "2027-02-13",
+    "day_of_week": "SATURDAY",
+    "section_id": "SEC_DDU_GAYA_KCM_SDL",
+    "block_section": "Kuchman (KCM) - Sakaldiha (SDL)",
+    "line": "UP_LOOP",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TMS/DDU/2027/BLK/298",
+    "slot_window": {
+      "start_time": "13:45",
+      "end_time": "14:45",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "13017",
+      "train_name": "Ganadevata Express",
+      "type": "EXPRESS",
+      "projected_clearance_time": "13:39"
+    },
+    "following_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "14:59"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12011",
+          "train_name": "Kalka Shatabdi Express",
+          "type": "SHATABDI",
+          "regulation_station": "DDU",
+          "detention_time_mins": 32,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BOST_FERTILIZER_DDU_952",
+          "commodity": "FERTILIZER",
+          "rake_type": "BOST",
+          "stabling_station": "DDU",
+          "stabling_loop": "GOODS_LOOP",
+          "planned_hold_minutes": 60
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.43,
+      "maintenance_complexity_score": 0.23,
+      "predicted_delay_minutes": 1,
+      "slot_acceptance_probability": 0.56,
+      "operational_risk_score": 0.31,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2027_W02_1035",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W02",
+    "target_date": "2027-01-15",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/DDU/2027/BLK/603",
+    "slot_window": {
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "10:43"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "12:53"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "03543",
+          "train_name": "Andal - Gomoh Passenger Special",
+          "type": "PASSENGER",
+          "regulation_station": "KVD",
+          "detention_time_mins": 23,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BTPN_COAL_DDU_510",
+          "commodity": "COAL",
+          "rake_type": "BTPN",
+          "stabling_station": "DOS",
+          "stabling_loop": "LOOP_1_UP",
+          "planned_hold_minutes": 60
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.95,
+      "maintenance_complexity_score": 0.28,
+      "predicted_delay_minutes": 29,
+      "slot_acceptance_probability": 0.32,
+      "operational_risk_score": 0.55,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W42_1036",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W42",
+    "target_date": "2026-10-16",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "COMBINED_TMS_TDMS",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ER/HWH/2026/PB/1246",
+    "slot_window": {
+      "start_time": "02:00",
+      "end_time": "03:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_clearance_time": "01:48"
+    },
+    "following_service": {
+      "train_no": "18618",
+      "train_name": "Ranchi - Dumka Intercity",
+      "type": "INTERCITY",
+      "projected_arrival_time": "03:47"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.92,
+      "maintenance_complexity_score": 0.34,
+      "predicted_delay_minutes": 8,
+      "slot_acceptance_probability": 0.59,
+      "operational_risk_score": 0.57,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2026_W46_1037",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W46",
+    "target_date": "2026-11-15",
+    "day_of_week": "SUNDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "UP_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/DDU/2026/BLK/398",
+    "slot_window": {
+      "start_time": "11:15",
+      "end_time": "13:45",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "11:08"
+    },
+    "following_service": {
+      "train_no": "12802",
+      "train_name": "Purushottam Express",
+      "type": "SUPERFAST",
+      "projected_arrival_time": "13:53"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.77,
+      "maintenance_complexity_score": 0.66,
+      "predicted_delay_minutes": 14,
+      "slot_acceptance_probability": 0.65,
+      "operational_risk_score": 0.7,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_MAIN_2027_W02_1038",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2027-W02",
+    "target_date": "2027-01-12",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_UMB_LDH_MAIN",
+    "block_section": "Ambala Cantt (UMB) - Ludhiana Jn (LDH)",
+    "line": "UP_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/NR/UMB/2027/PB/1920",
+    "slot_window": {
+      "start_time": "03:00",
+      "end_time": "04:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_clearance_time": "02:43"
+    },
+    "following_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_arrival_time": "04:44"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.45,
+      "maintenance_complexity_score": 0.4,
+      "predicted_delay_minutes": 13,
+      "slot_acceptance_probability": 0.8,
+      "operational_risk_score": 0.42,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_MAIN_2026_W40_1039",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2026-W40",
+    "target_date": "2026-10-01",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_UMB_LDH_MAIN",
+    "block_section": "Ambala Cantt (UMB) - Ludhiana Jn (LDH)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/NR/UMB/2026/PB/3022",
+    "slot_window": {
+      "start_time": "13:45",
+      "end_time": "16:15",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_clearance_time": "13:29"
+    },
+    "following_service": {
+      "train_no": "13017",
+      "train_name": "Ganadevata Express",
+      "type": "EXPRESS",
+      "projected_arrival_time": "16:35"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.79,
+      "maintenance_complexity_score": 0.59,
+      "predicted_delay_minutes": 1,
+      "slot_acceptance_probability": 0.64,
+      "operational_risk_score": 0.67,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_AZ_2026_W47_1040",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W47",
+    "target_date": "2026-11-17",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_HWH_BDC_AZ",
+    "block_section": "Bandel Jn (BDC) - Azimganj Jn (AZ)",
+    "line": "UP_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "REQUIRES_REGULATION",
+    "conflict_severity": "CRITICAL",
+    "maintenance_reference_id": "TMS/HWH/2026/BLK/786",
+    "slot_window": {
+      "start_time": "02:45",
+      "end_time": "05:15",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_clearance_time": "02:28"
+    },
+    "following_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "05:31"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "14507",
+          "train_name": "Fazilka Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "NDAE",
+          "detention_time_mins": 23,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BCN_FOODGRAINS_HWH_193",
+          "commodity": "FOODGRAINS",
+          "rake_type": "BCN",
+          "stabling_station": "AZ",
+          "stabling_loop": "YARD_LINE_3",
+          "planned_hold_minutes": 150
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.55,
+      "maintenance_complexity_score": 0.65,
+      "predicted_delay_minutes": 6,
+      "slot_acceptance_probability": 0.5,
+      "operational_risk_score": 0.61,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2027_W01_1041",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W01",
+    "target_date": "2027-01-09",
+    "day_of_week": "SATURDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "MEDIUM",
+    "maintenance_reference_id": "TMS/DDU/2027/BLK/394",
+    "slot_window": {
+      "start_time": "02:45",
+      "end_time": "03:45",
+      "duration_minutes": 60
+    },
+    "preceding_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "02:39"
+    },
+    "following_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_arrival_time": "04:03"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "12802",
+          "train_name": "Purushottam Express",
+          "type": "SUPERFAST",
+          "regulation_station": "KVD",
+          "detention_time_mins": 35,
+          "sr_dom_approved": true
+        },
+        {
+          "train_no": "12301",
+          "train_name": "Howrah Rajdhani Express",
+          "type": "RAJDHANI",
+          "regulation_station": "DOS",
+          "detention_time_mins": 35,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "CONTAINER_CEMENT_DDU_878",
+          "commodity": "CEMENT",
+          "rake_type": "CONTAINER",
+          "stabling_station": "DOS",
+          "stabling_loop": "YARD_LINE_3",
+          "planned_hold_minutes": 150
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.42,
+      "maintenance_complexity_score": 0.83,
+      "predicted_delay_minutes": 10,
+      "slot_acceptance_probability": 0.56,
+      "operational_risk_score": 0.67,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_DOS_2026_W38_1042",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2026-W38",
+    "target_date": "2026-09-16",
+    "day_of_week": "WEDNESDAY",
+    "section_id": "SEC_DDU_GAYA_SSM_DOS",
+    "block_section": "Sasaram (SSM) - Dehri On Sone (DOS)",
+    "line": "UP_MAIN",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TMS/DDU/2026/BLK/195",
+    "slot_window": {
+      "start_time": "01:45",
+      "end_time": "03:45",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "12423",
+      "train_name": "Dibrugarh Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "01:32"
+    },
+    "following_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "04:06"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.66,
+      "maintenance_complexity_score": 0.38,
+      "predicted_delay_minutes": 22,
+      "slot_acceptance_probability": 0.7,
+      "operational_risk_score": 0.49,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_HWH_BWN_2026_W52_1043",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "HWH",
+    "sub_division": "HWH-MAIN-CHORD",
+    "control_board": "HWH_CHORD_MAIN_BOARD",
+    "planning_week": "2026-W52",
+    "target_date": "2026-12-23",
+    "day_of_week": "WEDNESDAY",
+    "section_id": "SEC_HWH_MAIN_BWN",
+    "block_section": "Howrah Jn (HWH) - Barddhaman Jn (BWN)",
+    "line": "DOWN_CHORD",
+    "slot_purpose": "TMS_TRACK_MAINTENANCE",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/HWH/2026/BLK/775",
+    "slot_window": {
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "10:46"
+    },
+    "following_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "13:24"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13017",
+          "train_name": "Ganadevata Express",
+          "type": "EXPRESS",
+          "regulation_station": "BDC",
+          "detention_time_mins": 18,
+          "sr_dom_approved": false
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BTPN_COAL_HWH_693",
+          "commodity": "COAL",
+          "rake_type": "BTPN",
+          "stabling_station": "HWH",
+          "stabling_loop": "GOODS_LOOP",
+          "planned_hold_minutes": 180
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.68,
+      "maintenance_complexity_score": 0.55,
+      "predicted_delay_minutes": 12,
+      "slot_acceptance_probability": 0.44,
+      "operational_risk_score": 0.6,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_SDL_2026_W44_1044",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-BDL",
+    "control_board": "DDU_MGS_BOARD",
+    "planning_week": "2026-W44",
+    "target_date": "2026-10-27",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_DDU_GAYA_KCM_SDL",
+    "block_section": "Kuchman (KCM) - Sakaldiha (SDL)",
+    "line": "UP_LOOP",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "REQUIRES_REGULATION",
+    "conflict_severity": "HIGH",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2026/PB/1623",
+    "slot_window": {
+      "start_time": "03:15",
+      "end_time": "05:15",
+      "duration_minutes": 120
+    },
+    "preceding_service": {
+      "train_no": "13009",
+      "train_name": "Doon Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "03:04"
+    },
+    "following_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_arrival_time": "05:30"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13051",
+          "train_name": "Hool Express",
+          "type": "EXPRESS",
+          "regulation_station": "DDU",
+          "detention_time_mins": 23,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.87,
+      "maintenance_complexity_score": 0.77,
+      "predicted_delay_minutes": 15,
+      "slot_acceptance_probability": 0.36,
+      "operational_risk_score": 0.81,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_GRD_2027_W02_1045",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-MDP-JSME",
+    "control_board": "ASN_MAIN_BOARD",
+    "planning_week": "2027-W02",
+    "target_date": "2027-01-12",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_ASN_MDP_GRD",
+    "block_section": "Madhupur Jn (MDP) - Giridih (GRD)",
+    "line": "SINGLE_LINE",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/ASN/2027/DISC/580",
+    "slot_window": {
+      "start_time": "11:00",
+      "end_time": "11:45",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "13308",
+      "train_name": "Ganga Sutlej Express",
+      "type": "MAIL_EXPRESS",
+      "projected_clearance_time": "10:45"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "11:57"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.86,
+      "maintenance_complexity_score": 0.75,
+      "predicted_delay_minutes": 30,
+      "slot_acceptance_probability": 0.61,
+      "operational_risk_score": 0.79,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_KLK_2026_W44_1046",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2026-W44",
+    "target_date": "2026-10-29",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_UMB_CDG_KLK",
+    "block_section": "Ambala Cantt (UMB) - Chandigarh (CDG)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "COMBINED_TMS_SMMS",
+    "slot_status": "CONDITIONALLY_OFFERED",
+    "conflict_severity": "LOW",
+    "maintenance_reference_id": "TMS/UMB/2026/BLK/467",
+    "slot_window": {
+      "start_time": "03:00",
+      "end_time": "04:30",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "12011",
+      "train_name": "Kalka Shatabdi Express",
+      "type": "SHATABDI",
+      "projected_clearance_time": "02:43"
+    },
+    "following_service": {
+      "train_no": "18618",
+      "train_name": "Ranchi - Dumka Intercity",
+      "type": "INTERCITY",
+      "projected_arrival_time": "04:53"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "13009",
+          "train_name": "Doon Express",
+          "type": "MAIL_EXPRESS",
+          "regulation_station": "CDG",
+          "detention_time_mins": 15,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [
+        {
+          "freight_id": "BOXN_COAL_UMB_129",
+          "commodity": "COAL",
+          "rake_type": "BOXN",
+          "stabling_station": "CDG",
+          "stabling_loop": "LOOP_2_COMMON",
+          "planned_hold_minutes": 120
+        }
+      ],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.5,
+      "maintenance_complexity_score": 0.47,
+      "predicted_delay_minutes": 14,
+      "slot_acceptance_probability": 0.53,
+      "operational_risk_score": 0.48,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_SNT_2027_W05_1047",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-UDL-SNT",
+    "control_board": "ASN_UDL_BOARD",
+    "planning_week": "2027-W05",
+    "target_date": "2027-02-05",
+    "day_of_week": "FRIDAY",
+    "section_id": "SEC_ASN_UDL_SNT",
+    "block_section": "Andal Jn (UDL) - Sainthia Jn (SNT)",
+    "line": "UP_MAIN",
+    "slot_purpose": "SMMS_TELECOM_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/ASN/2027/TEL/246",
+    "slot_window": {
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "duration_minutes": 90
+    },
+    "preceding_service": {
+      "train_no": "03543",
+      "train_name": "Andal - Gomoh Passenger Special",
+      "type": "PASSENGER",
+      "projected_clearance_time": "10:19"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "12:15"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.75,
+      "maintenance_complexity_score": 0.78,
+      "predicted_delay_minutes": 14,
+      "slot_acceptance_probability": 0.66,
+      "operational_risk_score": 0.77,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_DDU_GAYA_2027_W03_1048",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ECR",
+    "division_code": "DDU",
+    "sub_division": "DDU-GAYA",
+    "control_board": "DDU_GAYA_MAIN_BOARD",
+    "planning_week": "2027-W03",
+    "target_date": "2027-01-23",
+    "day_of_week": "SATURDAY",
+    "section_id": "SEC_DDU_GAYA_DOS_GAYA",
+    "block_section": "Dehri On Sone (DOS) - Gaya Jn (GAYA)",
+    "line": "UP_CHORD",
+    "slot_purpose": "TDMS_OHE_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "TDMS/ECR/DDU/2027/PB/2024",
+    "slot_window": {
+      "start_time": "11:15",
+      "end_time": "12:00",
+      "duration_minutes": 45
+    },
+    "preceding_service": {
+      "train_no": "12802",
+      "train_name": "Purushottam Express",
+      "type": "SUPERFAST",
+      "projected_clearance_time": "11:05"
+    },
+    "following_service": {
+      "train_no": "22301",
+      "train_name": "Vande Bharat Express",
+      "type": "VANDE_BHARAT",
+      "projected_arrival_time": "12:17"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": [
+        "VIA_CHORD_LINE"
+      ]
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.86,
+      "maintenance_complexity_score": 0.27,
+      "predicted_delay_minutes": 13,
+      "slot_acceptance_probability": 0.61,
+      "operational_risk_score": 0.51,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_UMB_KLK_2027_W09_1049",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "NR",
+    "division_code": "UMB",
+    "sub_division": "UMB-LDH-CORRIDOR",
+    "control_board": "UMB_MAIN_BOARD",
+    "planning_week": "2027-W09",
+    "target_date": "2027-03-04",
+    "day_of_week": "THURSDAY",
+    "section_id": "SEC_UMB_CDG_KLK",
+    "block_section": "Ambala Cantt (UMB) - Chandigarh (CDG)",
+    "line": "DOWN_MAIN",
+    "slot_purpose": "SMMS_SIGNAL_MAINTENANCE",
+    "slot_status": "OFFERED",
+    "conflict_severity": "NONE",
+    "maintenance_reference_id": "SMMS/UMB/2027/DISC/108",
+    "slot_window": {
+      "start_time": "12:30",
+      "end_time": "15:00",
+      "duration_minutes": 150
+    },
+    "preceding_service": {
+      "train_no": "12301",
+      "train_name": "Howrah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_clearance_time": "12:15"
+    },
+    "following_service": {
+      "train_no": "12313",
+      "train_name": "Sealdah Rajdhani Express",
+      "type": "RAJDHANI",
+      "projected_arrival_time": "15:20"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 0,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.82,
+      "maintenance_complexity_score": 0.35,
+      "predicted_delay_minutes": 26,
+      "slot_acceptance_probability": 0.63,
+      "operational_risk_score": 0.54,
+      "synthetic_record": true
+    }
+  },
+  {
+    "coa_slot_id": "COA_SLOT_ASN_SNT_2027_W09_1050",
+    "feed_type": "COA_WEEKLY_OFFERED_SLOTS",
+    "zone_code": "ER",
+    "division_code": "ASN",
+    "sub_division": "ASN-UDL-SNT",
+    "control_board": "ASN_UDL_BOARD",
+    "planning_week": "2027-W09",
+    "target_date": "2027-03-02",
+    "day_of_week": "TUESDAY",
+    "section_id": "SEC_ASN_UDL_SNT",
+    "block_section": "Andal Jn (UDL) - Sainthia Jn (SNT)",
+    "line": "UP_MAIN",
+    "slot_purpose": "INTEGRATED_MAINTENANCE",
+    "slot_status": "REQUIRES_REGULATION",
+    "conflict_severity": "CRITICAL",
+    "maintenance_reference_id": "IMBPS/ASN/2027/INTEG/865",
+    "slot_window": {
+      "start_time": "12:00",
+      "end_time": "15:00",
+      "duration_minutes": 180
+    },
+    "preceding_service": {
+      "train_no": "03561",
+      "train_name": "Andal - Sainthia MEMU",
+      "type": "MEMU",
+      "projected_clearance_time": "11:44"
+    },
+    "following_service": {
+      "train_no": "14507",
+      "train_name": "Fazilka Express",
+      "type": "MAIL_EXPRESS",
+      "projected_arrival_time": "15:12"
+    },
+    "contingency_regulation_playbook": {
+      "regulated_coaching_trains": [
+        {
+          "train_no": "18618",
+          "train_name": "Ranchi - Dumka Intercity",
+          "type": "INTERCITY",
+          "regulation_station": "SNT",
+          "detention_time_mins": 28,
+          "sr_dom_approved": true
+        }
+      ],
+      "regulated_freight_rakes": [],
+      "maximum_permissible_delay_minutes": 30,
+      "alternative_routes": []
+    },
+    "predictive_ml_metadata": {
+      "traffic_density_score": 0.46,
+      "maintenance_complexity_score": 0.29,
+      "predicted_delay_minutes": 10,
+      "slot_acceptance_probability": 0.54,
+      "operational_risk_score": 0.36,
+      "synthetic_record": true
+    }
+  }
+]

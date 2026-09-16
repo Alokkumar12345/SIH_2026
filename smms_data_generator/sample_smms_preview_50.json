@@ -1,0 +1,3760 @@
+[
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BB/2026/DISC/00001",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5291370",
+      "designation": "JE_SIGNAL_CR_BB_KSRA",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Mumbai (CSTM)",
+      "division_code": "CR-BB",
+      "station_code": "KSRA",
+      "station_name": "Kasara",
+      "affected_gear": {
+        "gear_type": "IP-MPLS Router / SDH Equipment",
+        "gear_id": "IP-MPLS Router Core #403",
+        "structured_asset_id": "RTR-CR-BB-KSRA-403",
+        "signals_affected": [
+          "S-2"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Kasara"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Firmware security patch installation, Gigabit SFP module renewal and redundant power supply test",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-05",
+        "start_time": "19:00",
+        "end_time": "20:45",
+        "duration_minutes": 105
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Secondary router handling data traffic seamlessly",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.056,
+      "estimated_cost_inr": 64823,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 105
+    },
+    "predictive_condition": {
+      "asset_age_years": 4.7,
+      "condition_score": 84.1,
+      "risk_score": 21.0,
+      "battery_voltage": 23.6,
+      "insulation_resistance_mohm": 4.59,
+      "operation_count": 1259,
+      "cable_fault_count": 0,
+      "rainfall_mm": 44.5,
+      "temperature_celsius": 26.4,
+      "humidity_percent": 88.0,
+      "failure_occurred": false,
+      "failure_type": "SFP Transceiver Drift / Port Error",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/JBP/2026/DISC/00002",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5874629",
+      "designation": "SSE_SIGNAL_TELECOM_WCR_JBP_JBP",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "West Central Railway",
+      "zone_code": "WCR",
+      "division": "Jabalpur (JBP)",
+      "division_code": "WCR-JBP",
+      "station_code": "JBP",
+      "station_name": "Jabalpur Jn",
+      "affected_gear": {
+        "gear_type": "VHF / Control Communication System",
+        "gear_id": "Station VHF Base Station 25W #474",
+        "structured_asset_id": "VHF-WCR-JBP-JBP-474",
+        "signals_affected": [
+          "S-8",
+          "S-25",
+          "S-6"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Jabalpur Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Transceiver VSWR Measurement, Antenna Mast Guy Wire Tensioning & Emergency Audio Test",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-12",
+        "start_time": "12:00",
+        "end_time": "13:30",
+        "duration_minutes": 90
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Walkie-talkie backup communication channels enabled",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.081,
+      "estimated_cost_inr": 12996,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 90
+    },
+    "predictive_condition": {
+      "asset_age_years": 6.0,
+      "condition_score": 82.1,
+      "risk_score": 25.3,
+      "battery_voltage": 25.8,
+      "insulation_resistance_mohm": 8.13,
+      "operation_count": 1305,
+      "cable_fault_count": 0,
+      "rainfall_mm": 13.3,
+      "temperature_celsius": 9.1,
+      "humidity_percent": 65.8,
+      "failure_occurred": false,
+      "failure_type": "High Antenna VSWR / RF Power Drop",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00003",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5594732",
+      "designation": "ASTE_UMB_YJUD",
+      "contact": "99370XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "YJUD",
+      "station_name": "Yamunanagar Jagadhri",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #374 (VRLA/LM)",
+        "structured_asset_id": "BAT-NR-UMB-YJUD-374",
+        "signals_affected": [
+          "S-30"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Yamunanagar Jagadhri yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-12-22",
+        "start_time": "18:15",
+        "end_time": "20:00",
+        "duration_minutes": 105
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.102,
+      "estimated_cost_inr": 15664,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 105
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.6,
+      "condition_score": 88.7,
+      "risk_score": 28.1,
+      "battery_voltage": 22.8,
+      "insulation_resistance_mohm": 39.57,
+      "operation_count": 251,
+      "cable_fault_count": 1,
+      "rainfall_mm": 10.3,
+      "temperature_celsius": 7.1,
+      "humidity_percent": 69.7,
+      "failure_occurred": false,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00004",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5580100",
+      "designation": "SSE_TELECOM_HWH_BWN",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "BWN",
+      "station_name": "Barddhaman Jn",
+      "affected_gear": {
+        "gear_type": "Electronic Interlocking (EI)",
+        "gear_id": "EI Rack Unit #400",
+        "structured_asset_id": "EI-ER-HWH-BWN-400",
+        "signals_affected": [
+          "S-26",
+          "S-24",
+          "S-15"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Barddhaman Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Card replacement in Central Processing Unit & Warm-Standby VDU Synchronization",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-05",
+        "start_time": "16:30",
+        "end_time": "19:45",
+        "duration_minutes": 195
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "All signal aspects red; movements on Calling-on / Written Authority (T/369-3b)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "CRITICAL",
+      "condition_status": "Degraded",
+      "failure_probability": 0.393,
+      "estimated_cost_inr": 462977,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 195
+    },
+    "predictive_condition": {
+      "asset_age_years": 9.7,
+      "condition_score": 60.6,
+      "risk_score": 47.2,
+      "battery_voltage": 24.6,
+      "insulation_resistance_mohm": 6.44,
+      "operation_count": 380,
+      "cable_fault_count": 1,
+      "rainfall_mm": 48.0,
+      "temperature_celsius": 25.8,
+      "humidity_percent": 87.5,
+      "failure_occurred": true,
+      "failure_type": "Voter Board / Communication Card Degradation",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BRC/2027/DISC/00005",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5380613",
+      "designation": "JE_SIGNAL_WR_BRC_BH",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "zone_code": "WR",
+      "division": "Vadodara (BRC)",
+      "division_code": "WR-BRC",
+      "station_code": "BH",
+      "station_name": "Bharuch Jn",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 102 Clamp Assembly",
+        "structured_asset_id": "CLP-WR-BRC-BH-102",
+        "signals_affected": [
+          "S-12",
+          "S-33",
+          "S-7"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2027-01-11",
+        "start_time": "10:45",
+        "end_time": "13:15",
+        "duration_minutes": 150
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.069,
+      "estimated_cost_inr": 37119,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 150
+    },
+    "predictive_condition": {
+      "asset_age_years": 6.1,
+      "condition_score": 82.0,
+      "risk_score": 23.4,
+      "battery_voltage": 26.4,
+      "insulation_resistance_mohm": 29.27,
+      "operation_count": 47848,
+      "cable_fault_count": 0,
+      "rainfall_mm": 9.1,
+      "temperature_celsius": 6.1,
+      "humidity_percent": 82.9,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "winter_severe"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SDAH/2026/DISC/00006",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5067137",
+      "designation": "SSE_SIGNAL_SDAH_SDAH",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Sealdah (SDAH)",
+      "division_code": "SDAH",
+      "station_code": "SDAH",
+      "station_name": "Sealdah",
+      "affected_gear": {
+        "gear_type": "IP-MPLS Router / SDH Equipment",
+        "gear_id": "IP-MPLS Router Core #166",
+        "structured_asset_id": "RTR-ER-SDAH-SDAH-166",
+        "signals_affected": [
+          "S-11",
+          "S-17",
+          "S-34"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Sealdah"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Firmware security patch installation, Gigabit SFP module renewal and redundant power supply test",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-30",
+        "start_time": "16:15",
+        "end_time": "18:00",
+        "duration_minutes": 105
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Secondary router handling data traffic seamlessly",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.461,
+      "estimated_cost_inr": 72950,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 105
+    },
+    "predictive_condition": {
+      "asset_age_years": 8.2,
+      "condition_score": 67.6,
+      "risk_score": 50.3,
+      "battery_voltage": 27.5,
+      "insulation_resistance_mohm": 2.84,
+      "operation_count": 1649,
+      "cable_fault_count": 1,
+      "rainfall_mm": 131.7,
+      "temperature_celsius": 30.1,
+      "humidity_percent": 79.0,
+      "failure_occurred": false,
+      "failure_type": "SFP Transceiver Drift / Port Error",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BZA/2026/DISC/00007",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5056803",
+      "designation": "SSE_TELECOM_BZA_EE",
+      "contact": "99370XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Vijayawada (BZA)",
+      "division_code": "BZA",
+      "station_code": "EE",
+      "station_name": "Eluru",
+      "affected_gear": {
+        "gear_type": "Relay Interlocking (PI/RRI)",
+        "gear_id": "Relay Rack Bay #364",
+        "structured_asset_id": "RI-SCR-BZA-EE-364",
+        "signals_affected": [
+          "S-32",
+          "S-14"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Eluru"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Plug-in Type Q-Series Relay Contact Resistance Measurement & Cross-Talk Testing",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-16",
+        "start_time": "13:00",
+        "end_time": "15:15",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Non-interlocked reception authorized under Line Clear confirmation",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.039,
+      "estimated_cost_inr": 70305,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 3.2,
+      "condition_score": 96.6,
+      "risk_score": 16.7,
+      "battery_voltage": 23.5,
+      "insulation_resistance_mohm": 6.56,
+      "operation_count": 517,
+      "cable_fault_count": 1,
+      "rainfall_mm": 137.1,
+      "temperature_celsius": 28.3,
+      "humidity_percent": 90.7,
+      "failure_occurred": false,
+      "failure_type": "Contact Oxidation / High Resistance",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00008",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5946280",
+      "designation": "SSE_SIGNAL_TELECOM_HWH_RPH",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "RPH",
+      "station_name": "Rampurhat Jn",
+      "affected_gear": {
+        "gear_type": "Signalling Cable (6-Core / 12-Core / 24-Core)",
+        "gear_id": "Cable Feeder Bay #243 Main Trunk",
+        "structured_asset_id": "CAB-ER-HWH-RPH-243",
+        "signals_affected": [
+          "S-5"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Rampurhat Jn yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Signalling Main Underground Armoured Cable Meggering, Core Testing & Joint Enclosure Waterproofing",
+      "maintenance_category": "Cable Fault Rectification",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-07",
+        "start_time": "14:15",
+        "end_time": "16:45",
+        "duration_minutes": 150
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Local point operation with hand crank in case of disconnection",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.601,
+      "estimated_cost_inr": 89293,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 150
+    },
+    "predictive_condition": {
+      "asset_age_years": 14.7,
+      "condition_score": 58.4,
+      "risk_score": 56.5,
+      "battery_voltage": 23.0,
+      "insulation_resistance_mohm": 0.61,
+      "operation_count": 1088,
+      "cable_fault_count": 1,
+      "rainfall_mm": 56.6,
+      "temperature_celsius": 29.6,
+      "humidity_percent": 85.8,
+      "failure_occurred": false,
+      "failure_type": "Low Insulation Resistance / Water Ingress",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/LKO/2027/DISC/00009",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5903683",
+      "designation": "ADSTE_LKO_RBL",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Lucknow (LKO-NR)",
+      "division_code": "LKO",
+      "station_code": "RBL",
+      "station_name": "Rae Bareli Jn",
+      "affected_gear": {
+        "gear_type": "Relay Interlocking (PI/RRI)",
+        "gear_id": "Relay Rack Bay #180",
+        "structured_asset_id": "RI-NR-LKO-RBL-180",
+        "signals_affected": [
+          "S-14",
+          "S-4"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Rae Bareli Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Plug-in Type Q-Series Relay Contact Resistance Measurement & Cross-Talk Testing",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-03-02",
+        "start_time": "16:45",
+        "end_time": "21:45",
+        "duration_minutes": 300
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Non-interlocked reception authorized under Line Clear confirmation",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.715,
+      "estimated_cost_inr": 109122,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 300
+    },
+    "predictive_condition": {
+      "asset_age_years": 13.5,
+      "condition_score": 47.9,
+      "risk_score": 62.1,
+      "battery_voltage": 25.2,
+      "insulation_resistance_mohm": 74.36,
+      "operation_count": 352,
+      "cable_fault_count": 0,
+      "rainfall_mm": 6.3,
+      "temperature_celsius": 22.7,
+      "humidity_percent": 54.3,
+      "failure_occurred": false,
+      "failure_type": "Contact Oxidation / High Resistance",
+      "season": "spring_annual"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SDAH/2026/DISC/00010",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5365963",
+      "designation": "JE_SIGNAL_SDAH_NH",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Sealdah (SDAH)",
+      "division_code": "SDAH",
+      "station_code": "NH",
+      "station_name": "Naihati Jn",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #234 (VRLA/LM)",
+        "structured_asset_id": "BAT-ER-SDAH-NH-234",
+        "signals_affected": [
+          "S-21",
+          "S-16",
+          "S-17"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Naihati Jn yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-12-02",
+        "start_time": "18:30",
+        "end_time": "20:00",
+        "duration_minutes": 90
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.025,
+      "estimated_cost_inr": 13064,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 90
+    },
+    "predictive_condition": {
+      "asset_age_years": 3.2,
+      "condition_score": 91.4,
+      "risk_score": 11.6,
+      "battery_voltage": 25.6,
+      "insulation_resistance_mohm": 5.42,
+      "operation_count": 529,
+      "cable_fault_count": 0,
+      "rainfall_mm": 6.9,
+      "temperature_celsius": 17.0,
+      "humidity_percent": 88.1,
+      "failure_occurred": false,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00011",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5665096",
+      "designation": "JE_TELECOM_UMB_KNN",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "KNN",
+      "station_name": "Khanna",
+      "affected_gear": {
+        "gear_type": "Data Logger System",
+        "gear_id": "Data Logger DL-2048 #442",
+        "structured_asset_id": "DL-NR-UMB-KNN-442",
+        "signals_affected": [
+          "S-7",
+          "S-9",
+          "S-17"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Khanna"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Analog/Digital Channel Validation, Fault Logic Simulation & Network Clock Synchronization",
+      "maintenance_category": "Scheduled Inspection",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-12-20",
+        "start_time": "18:00",
+        "end_time": "19:15",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Passive monitoring equipment; zero train traffic disturbance",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "CRITICAL",
+      "condition_status": "Degraded",
+      "failure_probability": 0.718,
+      "estimated_cost_inr": 10268,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 16.1,
+      "condition_score": 51.8,
+      "risk_score": 62.3,
+      "battery_voltage": 25.9,
+      "insulation_resistance_mohm": 20.43,
+      "operation_count": 1201,
+      "cable_fault_count": 1,
+      "rainfall_mm": 2.3,
+      "temperature_celsius": 7.9,
+      "humidity_percent": 66.3,
+      "failure_occurred": true,
+      "failure_type": "Channel Optocoupler Glitch",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/ASN/2026/DISC/00012",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5818012",
+      "designation": "ADSTE_ASN_STN",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Asansol (ASN)",
+      "division_code": "ASN",
+      "station_code": "STN",
+      "station_name": "Sitarampur Jn",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 388 Clamp Assembly",
+        "structured_asset_id": "CLP-ER-ASN-STN-388",
+        "signals_affected": [
+          "S-5"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-12-09",
+        "start_time": "16:45",
+        "end_time": "19:15",
+        "duration_minutes": 150
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.778,
+      "estimated_cost_inr": 37028,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 150
+    },
+    "predictive_condition": {
+      "asset_age_years": 16.4,
+      "condition_score": 47.3,
+      "risk_score": 65.8,
+      "battery_voltage": 24.0,
+      "insulation_resistance_mohm": 10.74,
+      "operation_count": 62746,
+      "cable_fault_count": 1,
+      "rainfall_mm": 12.5,
+      "temperature_celsius": 12.2,
+      "humidity_percent": 64.4,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BSB/2027/DISC/00013",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5072793",
+      "designation": "ASTE_NER_BSB_DEOS",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "North Eastern Railway",
+      "zone_code": "NER",
+      "division": "Varanasi (BSB)",
+      "division_code": "NER-BSB",
+      "station_code": "DEOS",
+      "station_name": "Deoria Sadar",
+      "affected_gear": {
+        "gear_type": "IP-MPLS Router / SDH Equipment",
+        "gear_id": "IP-MPLS Router Core #192",
+        "structured_asset_id": "RTR-NER-BSB-DEOS-192",
+        "signals_affected": [
+          "S-16",
+          "S-18"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Deoria Sadar"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Firmware security patch installation, Gigabit SFP module renewal and redundant power supply test",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-01-26",
+        "start_time": "14:00",
+        "end_time": "16:00",
+        "duration_minutes": 120
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Secondary router handling data traffic seamlessly",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.674,
+      "estimated_cost_inr": 113449,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 120
+    },
+    "predictive_condition": {
+      "asset_age_years": 14.4,
+      "condition_score": 45.9,
+      "risk_score": 60.0,
+      "battery_voltage": 24.8,
+      "insulation_resistance_mohm": 41.75,
+      "operation_count": 1370,
+      "cable_fault_count": 0,
+      "rainfall_mm": 13.1,
+      "temperature_celsius": 16.0,
+      "humidity_percent": 66.7,
+      "failure_occurred": false,
+      "failure_type": "SFP Transceiver Drift / Port Error",
+      "season": "winter_severe"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BB/2027/DISC/00014",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5346240",
+      "designation": "ASTE_CR_BB_IGP",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Mumbai (CSTM)",
+      "division_code": "CR-BB",
+      "station_code": "IGP",
+      "station_name": "Igatpuri",
+      "affected_gear": {
+        "gear_type": "Level Crossing (LC) Gate Interlocking",
+        "gear_id": "LC Gate No. 120 Interlocking System",
+        "structured_asset_id": "LC-CR-BB-IGP-120",
+        "signals_affected": [
+          "S-28",
+          "S-23",
+          "S-21"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Igatpuri yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Electric Lifting Barrier Motor Servicing, Boom Interlocking Contact Overhaul & Warning Bell Testing",
+      "maintenance_category": "Scheduled Inspection",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-02-08",
+        "start_time": "10:30",
+        "end_time": "11:45",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Road traffic stopped with manual emergency chains; trains pass at normal signal",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.318,
+      "estimated_cost_inr": 16613,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 11.3,
+      "condition_score": 63.0,
+      "risk_score": 43.6,
+      "battery_voltage": 22.5,
+      "insulation_resistance_mohm": 59.61,
+      "operation_count": 2325,
+      "cable_fault_count": 0,
+      "rainfall_mm": 7.7,
+      "temperature_celsius": 29.5,
+      "humidity_percent": 47.6,
+      "failure_occurred": false,
+      "failure_type": "Barrier Interlock Failure / Microswitch Fault",
+      "season": "spring_annual"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BB/2026/DISC/00015",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5487576",
+      "designation": "S&T Inspector_CR_BB_KSRA",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Mumbai (CSTM)",
+      "division_code": "CR-BB",
+      "station_code": "KSRA",
+      "station_name": "Kasara",
+      "affected_gear": {
+        "gear_type": "DC Track Circuit",
+        "gear_id": "Track Circuit TC-384T",
+        "structured_asset_id": "TC-CR-BB-KSRA-384",
+        "signals_affected": [
+          "S-27"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Insulated Rail Joint (Glued Joint) End-Post renewal & Track Relay PU/DO Voltage check",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-22",
+        "start_time": "19:30",
+        "end_time": "21:00",
+        "duration_minutes": 90
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Manual track circuit clip verification before route setting",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.75,
+      "estimated_cost_inr": 17551,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 90
+    },
+    "predictive_condition": {
+      "asset_age_years": 17.0,
+      "condition_score": 47.8,
+      "risk_score": 64.1,
+      "battery_voltage": 22.5,
+      "insulation_resistance_mohm": 29.66,
+      "operation_count": 1295,
+      "cable_fault_count": 0,
+      "rainfall_mm": 13.5,
+      "temperature_celsius": 12.6,
+      "humidity_percent": 69.0,
+      "failure_occurred": false,
+      "failure_type": "Ballast Resistance Leakage / IRJ Failure",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BB/2026/DISC/00016",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5005815",
+      "designation": "ADSTE_CR_BB_TNA",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Mumbai (CSTM)",
+      "division_code": "CR-BB",
+      "station_code": "TNA",
+      "station_name": "Thane",
+      "affected_gear": {
+        "gear_type": "Route Indicator / Shunt Signal",
+        "gear_id": "Shunt Signal SH-148",
+        "structured_asset_id": "SHN-CR-BB-TNA-148",
+        "signals_affected": [
+          "S-20",
+          "S-15",
+          "S-13"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Thane"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Stencil Route Indicator LED matrix servicing & alignment verification",
+      "maintenance_category": "Signal Lamp/LED Replacement",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-12-10",
+        "start_time": "17:30",
+        "end_time": "18:30",
+        "duration_minutes": 60
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Hand piloting for shunting operations inside yard",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.03,
+      "estimated_cost_inr": 3405,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 60
+    },
+    "predictive_condition": {
+      "asset_age_years": 1.4,
+      "condition_score": 89.9,
+      "risk_score": 13.6,
+      "battery_voltage": 25.6,
+      "insulation_resistance_mohm": 23.65,
+      "operation_count": 916,
+      "cable_fault_count": 1,
+      "rainfall_mm": 7.1,
+      "temperature_celsius": 15.9,
+      "humidity_percent": 62.2,
+      "failure_occurred": false,
+      "failure_type": "Matrix LED Failure",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00017",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5299608",
+      "designation": "JE_TELECOM_HWH_PKR",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "PKR",
+      "station_name": "Pakur",
+      "affected_gear": {
+        "gear_type": "Relay Interlocking (PI/RRI)",
+        "gear_id": "Relay Rack Bay #338",
+        "structured_asset_id": "RI-ER-HWH-PKR-338",
+        "signals_affected": [
+          "S-40",
+          "S-33"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Pakur yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Plug-in Type Q-Series Relay Contact Resistance Measurement & Cross-Talk Testing",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-18",
+        "start_time": "15:15",
+        "end_time": "17:45",
+        "duration_minutes": 150
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Non-interlocked reception authorized under Line Clear confirmation",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.749,
+      "estimated_cost_inr": 64356,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 150
+    },
+    "predictive_condition": {
+      "asset_age_years": 15.1,
+      "condition_score": 51.5,
+      "risk_score": 64.0,
+      "battery_voltage": 23.7,
+      "insulation_resistance_mohm": 16.66,
+      "operation_count": 1255,
+      "cable_fault_count": 1,
+      "rainfall_mm": 13.5,
+      "temperature_celsius": 14.4,
+      "humidity_percent": 74.2,
+      "failure_occurred": false,
+      "failure_type": "Contact Oxidation / High Resistance",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/LKO/2026/DISC/00018",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5894906",
+      "designation": "JE_SIGNAL_LKO_LKO",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Lucknow (LKO-NR)",
+      "division_code": "LKO",
+      "station_code": "LKO",
+      "station_name": "Lucknow Charbagh",
+      "affected_gear": {
+        "gear_type": "DC Track Circuit",
+        "gear_id": "Track Circuit TC-133T",
+        "structured_asset_id": "TC-NR-LKO-LKO-133",
+        "signals_affected": [
+          "S-22",
+          "S-35"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Lucknow Charbagh yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Insulated Rail Joint (Glued Joint) End-Post renewal & Track Relay PU/DO Voltage check",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-08",
+        "start_time": "19:15",
+        "end_time": "20:30",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Manual track circuit clip verification before route setting",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.302,
+      "estimated_cost_inr": 14965,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 8.1,
+      "condition_score": 67.8,
+      "risk_score": 42.8,
+      "battery_voltage": 26.8,
+      "insulation_resistance_mohm": 5.72,
+      "operation_count": 1678,
+      "cable_fault_count": 1,
+      "rainfall_mm": 111.4,
+      "temperature_celsius": 31.3,
+      "humidity_percent": 86.7,
+      "failure_occurred": false,
+      "failure_type": "Ballast Resistance Leakage / IRJ Failure",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00019",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5872336",
+      "designation": "JE_TELECOM_UMB_PTA",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "PTA",
+      "station_name": "Patiala",
+      "affected_gear": {
+        "gear_type": "Signalling Cable (6-Core / 12-Core / 24-Core)",
+        "gear_id": "Cable Feeder Bay #166 Main Trunk",
+        "structured_asset_id": "CAB-NR-UMB-PTA-166",
+        "signals_affected": [
+          "S-38",
+          "S-37"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Signalling Main Underground Armoured Cable Meggering, Core Testing & Joint Enclosure Waterproofing",
+      "maintenance_category": "Cable Fault Rectification",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-25",
+        "start_time": "10:45",
+        "end_time": "14:30",
+        "duration_minutes": 225
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Local point operation with hand crank in case of disconnection",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.023,
+      "estimated_cost_inr": 130560,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 225
+    },
+    "predictive_condition": {
+      "asset_age_years": 1.5,
+      "condition_score": 96.8,
+      "risk_score": 10.7,
+      "battery_voltage": 23.6,
+      "insulation_resistance_mohm": 3.34,
+      "operation_count": 1458,
+      "cable_fault_count": 1,
+      "rainfall_mm": 63.1,
+      "temperature_celsius": 28.2,
+      "humidity_percent": 76.0,
+      "failure_occurred": false,
+      "failure_type": "Low Insulation Resistance / Water Ingress",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/MAS/2026/DISC/00020",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5606795",
+      "designation": "JE_TELECOM_SR_MAS_CGL",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Southern Railway",
+      "zone_code": "SR",
+      "division": "Chennai (MAS)",
+      "division_code": "SR-MAS",
+      "station_code": "CGL",
+      "station_name": "Chengalpattu Jn",
+      "affected_gear": {
+        "gear_type": "Relay Interlocking (PI/RRI)",
+        "gear_id": "Relay Rack Bay #116",
+        "structured_asset_id": "RI-SR-MAS-CGL-116",
+        "signals_affected": [
+          "S-2"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Chengalpattu Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Plug-in Type Q-Series Relay Contact Resistance Measurement & Cross-Talk Testing",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-12",
+        "start_time": "18:00",
+        "end_time": "20:15",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Non-interlocked reception authorized under Line Clear confirmation",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.061,
+      "estimated_cost_inr": 52359,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 3.6,
+      "condition_score": 80.8,
+      "risk_score": 22.0,
+      "battery_voltage": 26.3,
+      "insulation_resistance_mohm": 36.48,
+      "operation_count": 807,
+      "cable_fault_count": 0,
+      "rainfall_mm": 10.0,
+      "temperature_celsius": 11.9,
+      "humidity_percent": 66.5,
+      "failure_occurred": false,
+      "failure_type": "Contact Oxidation / High Resistance",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SC/2026/DISC/00021",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5456642",
+      "designation": "JE_TELECOM_SC_BG",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Secunderabad (SC)",
+      "division_code": "SC",
+      "station_code": "BG",
+      "station_name": "Bhongir",
+      "affected_gear": {
+        "gear_type": "Electronic Interlocking (EI)",
+        "gear_id": "EI Rack Unit #457",
+        "structured_asset_id": "EI-SCR-SC-BG-457",
+        "signals_affected": [
+          "S-39",
+          "S-8",
+          "S-37"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Bhongir"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Card replacement in Central Processing Unit & Warm-Standby VDU Synchronization",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-23",
+        "start_time": "11:00",
+        "end_time": "14:15",
+        "duration_minutes": 195
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "All signal aspects red; movements on Calling-on / Written Authority (T/369-3b)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.194,
+      "estimated_cost_inr": 362218,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 195
+    },
+    "predictive_condition": {
+      "asset_age_years": 6.9,
+      "condition_score": 75.6,
+      "risk_score": 36.3,
+      "battery_voltage": 26.6,
+      "insulation_resistance_mohm": 43.23,
+      "operation_count": 552,
+      "cable_fault_count": 1,
+      "rainfall_mm": 5.6,
+      "temperature_celsius": 11.1,
+      "humidity_percent": 70.2,
+      "failure_occurred": false,
+      "failure_type": "Voter Board / Communication Card Degradation",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BSL/2026/DISC/00022",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5994116",
+      "designation": "SSE_TELECOM_CR_BSL_CSN",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Bhusawal (BSL)",
+      "division_code": "CR-BSL",
+      "station_code": "CSN",
+      "station_name": "Chalisgaon Jn",
+      "affected_gear": {
+        "gear_type": "Optical Fibre Cable (OFC) System",
+        "gear_id": "OFC 24-Fiber Armoured Route Link #145",
+        "structured_asset_id": "OFC-CR-BSL-CSN-145",
+        "signals_affected": [
+          "S-16",
+          "S-30"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Chalisgaon Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "OTDR Fibre Attenuation Profiling, Fusion Splicing and Splice Enclosure Sealing",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-27",
+        "start_time": "13:15",
+        "end_time": "16:00",
+        "duration_minutes": 165
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Traffic signals unaffected; control speech on standby copper quad cable",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.543,
+      "estimated_cost_inr": 80416,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 165
+    },
+    "predictive_condition": {
+      "asset_age_years": 11.4,
+      "condition_score": 60.3,
+      "risk_score": 53.9,
+      "battery_voltage": 26.5,
+      "insulation_resistance_mohm": 14.55,
+      "operation_count": 1514,
+      "cable_fault_count": 1,
+      "rainfall_mm": 0.4,
+      "temperature_celsius": 15.9,
+      "humidity_percent": 65.5,
+      "failure_occurred": true,
+      "failure_type": "Fibre Cut / High Optical Attenuation",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/ASN/2027/DISC/00023",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5201940",
+      "designation": "SSE_TELECOM_ASN_CPLE",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Asansol (ASN)",
+      "division_code": "ASN",
+      "station_code": "CPLE",
+      "station_name": "Chinpai",
+      "affected_gear": {
+        "gear_type": "Route Indicator / Shunt Signal",
+        "gear_id": "Shunt Signal SH-109",
+        "structured_asset_id": "SHN-ER-ASN-CPLE-109",
+        "signals_affected": [
+          "S-15",
+          "S-26"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Stencil Route Indicator LED matrix servicing & alignment verification",
+      "maintenance_category": "Signal Lamp/LED Replacement",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-01-23",
+        "start_time": "15:45",
+        "end_time": "16:45",
+        "duration_minutes": 60
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Hand piloting for shunting operations inside yard",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.054,
+      "estimated_cost_inr": 2977,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 60
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.1,
+      "condition_score": 85.6,
+      "risk_score": 20.6,
+      "battery_voltage": 25.3,
+      "insulation_resistance_mohm": 49.85,
+      "operation_count": 1561,
+      "cable_fault_count": 1,
+      "rainfall_mm": 5.5,
+      "temperature_celsius": 11.7,
+      "humidity_percent": 70.3,
+      "failure_occurred": false,
+      "failure_type": "Matrix LED Failure",
+      "season": "winter_severe"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/JHS/2026/DISC/00024",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5461866",
+      "designation": "SSE_SIGNAL_TELECOM_NCR_JHS_GWL",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "North Central Railway",
+      "zone_code": "NCR",
+      "division": "Jhansi (VGLJ)",
+      "division_code": "NCR-JHS",
+      "station_code": "GWL",
+      "station_name": "Gwalior Jn",
+      "affected_gear": {
+        "gear_type": "Route Indicator / Shunt Signal",
+        "gear_id": "Shunt Signal SH-152",
+        "structured_asset_id": "SHN-NCR-JHS-GWL-152",
+        "signals_affected": [
+          "S-15",
+          "S-24"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Gwalior Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Stencil Route Indicator LED matrix servicing & alignment verification",
+      "maintenance_category": "Signal Lamp/LED Replacement",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-24",
+        "start_time": "17:30",
+        "end_time": "18:45",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Hand piloting for shunting operations inside yard",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.077,
+      "estimated_cost_inr": 4069,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 6.1,
+      "condition_score": 83.2,
+      "risk_score": 24.7,
+      "battery_voltage": 27.2,
+      "insulation_resistance_mohm": 2.69,
+      "operation_count": 2130,
+      "cable_fault_count": 0,
+      "rainfall_mm": 61.5,
+      "temperature_celsius": 25.3,
+      "humidity_percent": 76.1,
+      "failure_occurred": false,
+      "failure_type": "Matrix LED Failure",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/JBP/2026/DISC/00025",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5993621",
+      "designation": "JE_SIGNAL_WCR_JBP_NU",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "West Central Railway",
+      "zone_code": "WCR",
+      "division": "Jabalpur (JBP)",
+      "division_code": "WCR-JBP",
+      "station_code": "NU",
+      "station_name": "Narsinghpur",
+      "affected_gear": {
+        "gear_type": "DC Track Circuit",
+        "gear_id": "Track Circuit TC-178T",
+        "structured_asset_id": "TC-WCR-JBP-NU-178",
+        "signals_affected": [
+          "S-20",
+          "S-6",
+          "S-16"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Narsinghpur"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Insulated Rail Joint (Glued Joint) End-Post renewal & Track Relay PU/DO Voltage check",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-17",
+        "start_time": "17:00",
+        "end_time": "18:00",
+        "duration_minutes": 60
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Manual track circuit clip verification before route setting",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.495,
+      "estimated_cost_inr": 16113,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 60
+    },
+    "predictive_condition": {
+      "asset_age_years": 10.5,
+      "condition_score": 63.9,
+      "risk_score": 51.8,
+      "battery_voltage": 27.0,
+      "insulation_resistance_mohm": 3.35,
+      "operation_count": 1337,
+      "cable_fault_count": 1,
+      "rainfall_mm": 141.3,
+      "temperature_celsius": 29.3,
+      "humidity_percent": 90.5,
+      "failure_occurred": false,
+      "failure_type": "Ballast Resistance Leakage / IRJ Failure",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/ASN/2026/DISC/00026",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5278536",
+      "designation": "SSE_TELECOM_ASN_JSME",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Asansol (ASN)",
+      "division_code": "ASN",
+      "station_code": "JSME",
+      "station_name": "Jasidih Jn",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 250 Clamp Assembly",
+        "structured_asset_id": "CLP-ER-ASN-JSME-250",
+        "signals_affected": [
+          "S-19"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-10-03",
+        "start_time": "15:45",
+        "end_time": "18:00",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.049,
+      "estimated_cost_inr": 33741,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.8,
+      "condition_score": 86.9,
+      "risk_score": 19.4,
+      "battery_voltage": 25.4,
+      "insulation_resistance_mohm": 6.43,
+      "operation_count": 29696,
+      "cable_fault_count": 1,
+      "rainfall_mm": 52.1,
+      "temperature_celsius": 26.6,
+      "humidity_percent": 80.3,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00027",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5463712",
+      "designation": "SSE_SIGNAL_TELECOM_HWH_SHE",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "SHE",
+      "station_name": "Sheoraphuli Jn",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #357 (VRLA/LM)",
+        "structured_asset_id": "BAT-ER-HWH-SHE-357",
+        "signals_affected": [
+          "S-6",
+          "S-39"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Sheoraphuli Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-15",
+        "start_time": "14:30",
+        "end_time": "16:15",
+        "duration_minutes": 105
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.871,
+      "estimated_cost_inr": 22706,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 105
+    },
+    "predictive_condition": {
+      "asset_age_years": 16.1,
+      "condition_score": 51.7,
+      "risk_score": 73.0,
+      "battery_voltage": 26.8,
+      "insulation_resistance_mohm": 35.34,
+      "operation_count": 204,
+      "cable_fault_count": 1,
+      "rainfall_mm": 9.1,
+      "temperature_celsius": 4.4,
+      "humidity_percent": 66.9,
+      "failure_occurred": true,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/KIR/2027/DISC/00028",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5196695",
+      "designation": "ASTE_NFR_KIR_DQG",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northeast Frontier Railway",
+      "zone_code": "NFR",
+      "division": "Katihar (KIR)",
+      "division_code": "NFR-KIR",
+      "station_code": "DQG",
+      "station_name": "Dhupguri",
+      "affected_gear": {
+        "gear_type": "Digital Axle Counter (HASSDAC/MSDAC)",
+        "gear_id": "Axle Counter Unit DP-183",
+        "structured_asset_id": "DAC-NFR-KIR-DQG-183",
+        "signals_affected": [
+          "S-32",
+          "S-19"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Track Sensor TX/RX replacement and Wheel Detector Phase Angle calibration",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-03-03",
+        "start_time": "13:00",
+        "end_time": "14:15",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Block Section line clear verified via station master reset box",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.757,
+      "estimated_cost_inr": 31772,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 17.1,
+      "condition_score": 49.9,
+      "risk_score": 64.5,
+      "battery_voltage": 27.4,
+      "insulation_resistance_mohm": 32.63,
+      "operation_count": 1775,
+      "cable_fault_count": 0,
+      "rainfall_mm": 11.0,
+      "temperature_celsius": 27.9,
+      "humidity_percent": 49.4,
+      "failure_occurred": false,
+      "failure_type": "Phase Angle Drift / Sensor Attenuation",
+      "season": "spring_annual"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BB/2027/DISC/00029",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5306040",
+      "designation": "JE_TELECOM_CR_BB_LNL",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Mumbai (CSTM)",
+      "division_code": "CR-BB",
+      "station_code": "LNL",
+      "station_name": "Lonavala",
+      "affected_gear": {
+        "gear_type": "Relay Interlocking (PI/RRI)",
+        "gear_id": "Relay Rack Bay #458",
+        "structured_asset_id": "RI-CR-BB-LNL-458",
+        "signals_affected": [
+          "S-2"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Plug-in Type Q-Series Relay Contact Resistance Measurement & Cross-Talk Testing",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-01-07",
+        "start_time": "12:45",
+        "end_time": "15:15",
+        "duration_minutes": 150
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Non-interlocked reception authorized under Line Clear confirmation",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.597,
+      "estimated_cost_inr": 107084,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 150
+    },
+    "predictive_condition": {
+      "asset_age_years": 11.4,
+      "condition_score": 57.8,
+      "risk_score": 56.3,
+      "battery_voltage": 27.5,
+      "insulation_resistance_mohm": 9.19,
+      "operation_count": 584,
+      "cable_fault_count": 1,
+      "rainfall_mm": 2.4,
+      "temperature_celsius": 11.7,
+      "humidity_percent": 76.6,
+      "failure_occurred": true,
+      "failure_type": "Contact Oxidation / High Resistance",
+      "season": "winter_severe"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00030",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5477464",
+      "designation": "JE_SIGNAL_UMB_PTA",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "PTA",
+      "station_name": "Patiala",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 136 Clamp Assembly",
+        "structured_asset_id": "CLP-NR-UMB-PTA-136",
+        "signals_affected": [
+          "S-22",
+          "S-33"
+        ],
+        "interlocking_affected": "Yard Reception Siding and Shunting Neck No. 3"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-10-18",
+        "start_time": "17:15",
+        "end_time": "19:15",
+        "duration_minutes": 120
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.759,
+      "estimated_cost_inr": 33147,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 120
+    },
+    "predictive_condition": {
+      "asset_age_years": 14.9,
+      "condition_score": 47.4,
+      "risk_score": 64.6,
+      "battery_voltage": 23.2,
+      "insulation_resistance_mohm": 4.17,
+      "operation_count": 117888,
+      "cable_fault_count": 1,
+      "rainfall_mm": 90.8,
+      "temperature_celsius": 29.1,
+      "humidity_percent": 95.0,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BSB/2026/DISC/00031",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5161860",
+      "designation": "S&T Inspector_NER_BSB_SV",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "North Eastern Railway",
+      "zone_code": "NER",
+      "division": "Varanasi (BSB)",
+      "division_code": "NER-BSB",
+      "station_code": "SV",
+      "station_name": "Siwan Jn",
+      "affected_gear": {
+        "gear_type": "Colour Light Signal (LED)",
+        "gear_id": "Signal Post S-462",
+        "structured_asset_id": "SIG-NER-BSB-SV-462",
+        "signals_affected": [
+          "S-42",
+          "S-10"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Siwan Jn yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Main LED Signal Aspect Module Replacement and Current Regulator Tuning",
+      "maintenance_category": "Signal Lamp/LED Replacement",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-25",
+        "start_time": "19:45",
+        "end_time": "20:30",
+        "duration_minutes": 45
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Visual hand signal displayed by pilot guard during aspect replacement",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.938,
+      "estimated_cost_inr": 3457,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 45
+    },
+    "predictive_condition": {
+      "asset_age_years": 17.4,
+      "condition_score": 36.6,
+      "risk_score": 81.9,
+      "battery_voltage": 23.0,
+      "insulation_resistance_mohm": 6.84,
+      "operation_count": 1991,
+      "cable_fault_count": 0,
+      "rainfall_mm": 204.1,
+      "temperature_celsius": 27.3,
+      "humidity_percent": 77.0,
+      "failure_occurred": false,
+      "failure_type": "LED Array Degradation / Current Sense Trip",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/PRYJ/2026/DISC/00032",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5340132",
+      "designation": "JE_TELECOM_NCR_PRYJ_SFG",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "North Central Railway",
+      "zone_code": "NCR",
+      "division": "Prayagraj (PRYJ)",
+      "division_code": "NCR-PRYJ",
+      "station_code": "SFG",
+      "station_name": "Subedarganj",
+      "affected_gear": {
+        "gear_type": "Electric Point Machine",
+        "gear_id": "Point No. 263D",
+        "structured_asset_id": "EPM-NCR-PRYJ-SFG-263",
+        "signals_affected": [
+          "S-3",
+          "S-40",
+          "S-5"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Subedarganj"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Lubrication, Friction Clutch Slipping Current & Obstruction Test (5mm Test)",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-12-21",
+        "start_time": "18:45",
+        "end_time": "20:00",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Facing movements on Hand Signal after crank handle padlocking",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.289,
+      "estimated_cost_inr": 9450,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 11.7,
+      "condition_score": 69.1,
+      "risk_score": 42.1,
+      "battery_voltage": 25.7,
+      "insulation_resistance_mohm": 9.43,
+      "operation_count": 50579,
+      "cable_fault_count": 1,
+      "rainfall_mm": 15.0,
+      "temperature_celsius": 14.5,
+      "humidity_percent": 73.0,
+      "failure_occurred": false,
+      "failure_type": "Obstruction Slip / Mechanical Drag",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00033",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5313686",
+      "designation": "ADSTE_UMB_JUDW",
+      "contact": "99370XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "JUDW",
+      "station_name": "Jagadhri Workshop",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #141 (VRLA/LM)",
+        "structured_asset_id": "BAT-NR-UMB-JUDW-141",
+        "signals_affected": [
+          "S-16",
+          "S-32",
+          "S-38"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Jagadhri Workshop"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-19",
+        "start_time": "10:15",
+        "end_time": "11:30",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "CRITICAL",
+      "condition_status": "Degraded",
+      "failure_probability": 0.032,
+      "estimated_cost_inr": 24085,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 4.9,
+      "condition_score": 85.8,
+      "risk_score": 14.6,
+      "battery_voltage": 23.9,
+      "insulation_resistance_mohm": 25.94,
+      "operation_count": 2358,
+      "cable_fault_count": 0,
+      "rainfall_mm": 6.9,
+      "temperature_celsius": 13.3,
+      "humidity_percent": 87.0,
+      "failure_occurred": true,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BCT/2026/DISC/00034",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5651052",
+      "designation": "SSE_SIGNAL_TELECOM_WR_BCT_BYR",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "zone_code": "WR",
+      "division": "Mumbai Central (MMCT)",
+      "division_code": "WR-BCT",
+      "station_code": "BYR",
+      "station_name": "Bhayandar",
+      "affected_gear": {
+        "gear_type": "VHF / Control Communication System",
+        "gear_id": "Station VHF Base Station 25W #393",
+        "structured_asset_id": "VHF-WR-BCT-BYR-393",
+        "signals_affected": [
+          "S-19",
+          "S-19",
+          "S-2"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Transceiver VSWR Measurement, Antenna Mast Guy Wire Tensioning & Emergency Audio Test",
+      "maintenance_category": "Telecom Equipment Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-13",
+        "start_time": "11:45",
+        "end_time": "12:30",
+        "duration_minutes": 45
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Walkie-talkie backup communication channels enabled",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.342,
+      "estimated_cost_inr": 5031,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 45
+    },
+    "predictive_condition": {
+      "asset_age_years": 7.7,
+      "condition_score": 65.5,
+      "risk_score": 44.8,
+      "battery_voltage": 26.2,
+      "insulation_resistance_mohm": 7.33,
+      "operation_count": 1292,
+      "cable_fault_count": 0,
+      "rainfall_mm": 187.1,
+      "temperature_celsius": 30.4,
+      "humidity_percent": 94.5,
+      "failure_occurred": false,
+      "failure_type": "High Antenna VSWR / RF Power Drop",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BSL/2026/DISC/00035",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5078958",
+      "designation": "JE_SIGNAL_CR_BSL_BSL",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "Central Railway",
+      "zone_code": "CR",
+      "division": "Bhusawal (BSL)",
+      "division_code": "CR-BSL",
+      "station_code": "BSL",
+      "station_name": "Bhusawal Jn",
+      "affected_gear": {
+        "gear_type": "Point Machine",
+        "gear_id": "Point No. 147C",
+        "structured_asset_id": "PM-CR-BSL-BSL-147",
+        "signals_affected": [
+          "S-27",
+          "S-12"
+        ],
+        "interlocking_affected": "Down Main straight corridor signals S-2/S-4 at Bhusawal Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Preventive Replacement of Point Motor and Detector Contact Assembly",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-10-15",
+        "start_time": "19:15",
+        "end_time": "21:15",
+        "duration_minutes": 120
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Main line straight movements only (Point Normal clamped and locked)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.08,
+      "estimated_cost_inr": 39628,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 120
+    },
+    "predictive_condition": {
+      "asset_age_years": 3.2,
+      "condition_score": 89.5,
+      "risk_score": 25.1,
+      "battery_voltage": 23.8,
+      "insulation_resistance_mohm": 6.73,
+      "operation_count": 23830,
+      "cable_fault_count": 1,
+      "rainfall_mm": 205.2,
+      "temperature_celsius": 28.7,
+      "humidity_percent": 93.3,
+      "failure_occurred": false,
+      "failure_type": "Motor Burnout / Detection Slip",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/KGP/2027/DISC/00036",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5680777",
+      "designation": "SSE_TELECOM_SER_KGP_MCA",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Eastern Railway",
+      "zone_code": "SER",
+      "division": "Kharagpur (KGP)",
+      "division_code": "SER-KGP",
+      "station_code": "MCA",
+      "station_name": "Mecheda",
+      "affected_gear": {
+        "gear_type": "Digital Axle Counter (HASSDAC/MSDAC)",
+        "gear_id": "Axle Counter Unit DP-236",
+        "structured_asset_id": "DAC-SER-KGP-MCA-236",
+        "signals_affected": [
+          "S-24",
+          "S-17"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Mecheda"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Track Sensor TX/RX replacement and Wheel Detector Phase Angle calibration",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-03-08",
+        "start_time": "14:00",
+        "end_time": "15:45",
+        "duration_minutes": 105
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Block Section line clear verified via station master reset box",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.113,
+      "estimated_cost_inr": 64355,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 105
+    },
+    "predictive_condition": {
+      "asset_age_years": 7.5,
+      "condition_score": 77.5,
+      "risk_score": 29.3,
+      "battery_voltage": 27.2,
+      "insulation_resistance_mohm": 53.37,
+      "operation_count": 1463,
+      "cable_fault_count": 0,
+      "rainfall_mm": 7.4,
+      "temperature_celsius": 30.8,
+      "humidity_percent": 54.1,
+      "failure_occurred": false,
+      "failure_type": "Phase Angle Drift / Sensor Attenuation",
+      "season": "spring_annual"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SDAH/2027/DISC/00037",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5380304",
+      "designation": "ASTE_SDAH_RHA",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Sealdah (SDAH)",
+      "division_code": "SDAH",
+      "station_code": "RHA",
+      "station_name": "Ranaghat Jn",
+      "affected_gear": {
+        "gear_type": "Electric Point Machine",
+        "gear_id": "Point No. 299D",
+        "structured_asset_id": "EPM-ER-SDAH-RHA-299",
+        "signals_affected": [
+          "S-35",
+          "S-27"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Ranaghat Jn"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Lubrication, Friction Clutch Slipping Current & Obstruction Test (5mm Test)",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2027-02-08",
+        "start_time": "16:15",
+        "end_time": "17:45",
+        "duration_minutes": 90
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Facing movements on Hand Signal after crank handle padlocking",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.678,
+      "estimated_cost_inr": 11988,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 90
+    },
+    "predictive_condition": {
+      "asset_age_years": 13.6,
+      "condition_score": 49.3,
+      "risk_score": 60.2,
+      "battery_voltage": 27.3,
+      "insulation_resistance_mohm": 38.57,
+      "operation_count": 51244,
+      "cable_fault_count": 1,
+      "rainfall_mm": 8.3,
+      "temperature_celsius": 23.3,
+      "humidity_percent": 54.7,
+      "failure_occurred": false,
+      "failure_type": "Obstruction Slip / Mechanical Drag",
+      "season": "spring_annual"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SC/2026/DISC/00038",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5002974",
+      "designation": "SSE_SIGNAL_TELECOM_SC_ZN",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Secunderabad (SC)",
+      "division_code": "SC",
+      "station_code": "ZN",
+      "station_name": "Jangaon",
+      "affected_gear": {
+        "gear_type": "Electronic Interlocking (EI)",
+        "gear_id": "EI Rack Unit #440",
+        "structured_asset_id": "EI-SCR-SC-ZN-440",
+        "signals_affected": [
+          "S-41",
+          "S-39",
+          "S-2"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Jangaon"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Card replacement in Central Processing Unit & Warm-Standby VDU Synchronization",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-23",
+        "start_time": "15:00",
+        "end_time": "17:15",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "All signal aspects red; movements on Calling-on / Written Authority (T/369-3b)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.654,
+      "estimated_cost_inr": 164973,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 14.4,
+      "condition_score": 48.3,
+      "risk_score": 59.0,
+      "battery_voltage": 23.5,
+      "insulation_resistance_mohm": 6.24,
+      "operation_count": 1004,
+      "cable_fault_count": 0,
+      "rainfall_mm": 61.4,
+      "temperature_celsius": 29.0,
+      "humidity_percent": 76.4,
+      "failure_occurred": false,
+      "failure_type": "Voter Board / Communication Card Degradation",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/KIR/2026/DISC/00039",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5316283",
+      "designation": "SSE_SIGNAL_NFR_KIR_NJP",
+      "contact": "98290XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northeast Frontier Railway",
+      "zone_code": "NFR",
+      "division": "Katihar (KIR)",
+      "division_code": "NFR-KIR",
+      "station_code": "NJP",
+      "station_name": "New Jalpaiguri Jn",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 109 Clamp Assembly",
+        "structured_asset_id": "CLP-NFR-KIR-NJP-109",
+        "signals_affected": [
+          "S-4",
+          "S-9"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-09-15",
+        "start_time": "11:30",
+        "end_time": "13:45",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "CRITICAL",
+      "condition_status": "Degraded",
+      "failure_probability": 0.248,
+      "estimated_cost_inr": 68994,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 8.2,
+      "condition_score": 65.8,
+      "risk_score": 39.8,
+      "battery_voltage": 24.8,
+      "insulation_resistance_mohm": 4.95,
+      "operation_count": 43574,
+      "cable_fault_count": 0,
+      "rainfall_mm": 50.8,
+      "temperature_celsius": 28.1,
+      "humidity_percent": 82.2,
+      "failure_occurred": true,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00040",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5920342",
+      "designation": "JE_SIGNAL_HWH_HYG",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "HYG",
+      "station_name": "Hooghly Ghat",
+      "affected_gear": {
+        "gear_type": "Route Indicator / Shunt Signal",
+        "gear_id": "Shunt Signal SH-142",
+        "structured_asset_id": "SHN-ER-HWH-HYG-142",
+        "signals_affected": [
+          "S-10",
+          "S-5",
+          "S-9"
+        ],
+        "interlocking_affected": "Yard Reception Siding and Shunting Neck No. 3"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Stencil Route Indicator LED matrix servicing & alignment verification",
+      "maintenance_category": "Signal Lamp/LED Replacement",
+      "requires_traffic_block": false,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-04",
+        "start_time": "15:00",
+        "end_time": "16:15",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Hand piloting for shunting operations inside yard",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.393,
+      "estimated_cost_inr": 3617,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 11.6,
+      "condition_score": 63.4,
+      "risk_score": 47.2,
+      "battery_voltage": 25.0,
+      "insulation_resistance_mohm": 18.27,
+      "operation_count": 1882,
+      "cable_fault_count": 0,
+      "rainfall_mm": 10.7,
+      "temperature_celsius": 9.3,
+      "humidity_percent": 77.9,
+      "failure_occurred": false,
+      "failure_type": "Matrix LED Failure",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/LKO/2026/DISC/00041",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5960332",
+      "designation": "SSE_SIGNAL_LKO_AME",
+      "contact": "99370XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Lucknow (LKO-NR)",
+      "division_code": "LKO",
+      "station_code": "AME",
+      "station_name": "Amethi",
+      "affected_gear": {
+        "gear_type": "DC Track Circuit",
+        "gear_id": "Track Circuit TC-261T",
+        "structured_asset_id": "TC-NR-LKO-AME-261",
+        "signals_affected": [
+          "S-10",
+          "S-31"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Amethi"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Insulated Rail Joint (Glued Joint) End-Post renewal & Track Relay PU/DO Voltage check",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-15",
+        "start_time": "13:45",
+        "end_time": "14:45",
+        "duration_minutes": 60
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Manual track circuit clip verification before route setting",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.063,
+      "estimated_cost_inr": 14935,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 60
+    },
+    "predictive_condition": {
+      "asset_age_years": 2.6,
+      "condition_score": 83.2,
+      "risk_score": 22.3,
+      "battery_voltage": 22.8,
+      "insulation_resistance_mohm": 1.48,
+      "operation_count": 1470,
+      "cable_fault_count": 0,
+      "rainfall_mm": 113.4,
+      "temperature_celsius": 30.2,
+      "humidity_percent": 82.5,
+      "failure_occurred": false,
+      "failure_type": "Ballast Resistance Leakage / IRJ Failure",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/JBP/2026/DISC/00042",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5006403",
+      "designation": "SSE_SIGNAL_TELECOM_WCR_JBP_PPI",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "West Central Railway",
+      "zone_code": "WCR",
+      "division": "Jabalpur (JBP)",
+      "division_code": "WCR-JBP",
+      "station_code": "PPI",
+      "station_name": "Pipariya",
+      "affected_gear": {
+        "gear_type": "Electronic Interlocking (EI)",
+        "gear_id": "EI Rack Unit #280",
+        "structured_asset_id": "EI-WCR-JBP-PPI-280",
+        "signals_affected": [
+          "S-18"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Pipariya"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Card replacement in Central Processing Unit & Warm-Standby VDU Synchronization",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-09-21",
+        "start_time": "11:00",
+        "end_time": "14:00",
+        "duration_minutes": 180
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "All signal aspects red; movements on Calling-on / Written Authority (T/369-3b)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.075,
+      "estimated_cost_inr": 305829,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 180
+    },
+    "predictive_condition": {
+      "asset_age_years": 4.8,
+      "condition_score": 82.4,
+      "risk_score": 24.3,
+      "battery_voltage": 25.3,
+      "insulation_resistance_mohm": 5.56,
+      "operation_count": 1215,
+      "cable_fault_count": 0,
+      "rainfall_mm": 135.4,
+      "temperature_celsius": 30.4,
+      "humidity_percent": 87.4,
+      "failure_occurred": true,
+      "failure_type": "Voter Board / Communication Card Degradation",
+      "season": "monsoon"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BZA/2027/DISC/00043",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5286437",
+      "designation": "SSE_TELECOM_BZA_RJY",
+      "contact": "98480XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Vijayawada (BZA)",
+      "division_code": "BZA",
+      "station_code": "RJY",
+      "station_name": "Rajahmundry",
+      "affected_gear": {
+        "gear_type": "Electric Point Machine",
+        "gear_id": "Point No. 315D",
+        "structured_asset_id": "EPM-SCR-BZA-RJY-315",
+        "signals_affected": [
+          "S-11",
+          "S-24"
+        ],
+        "interlocking_affected": "Yard Reception Siding and Shunting Neck No. 3"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Point Machine Lubrication, Friction Clutch Slipping Current & Obstruction Test (5mm Test)",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2027-01-01",
+        "start_time": "11:45",
+        "end_time": "13:00",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Facing movements on Hand Signal after crank handle padlocking",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.39,
+      "estimated_cost_inr": 14210,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 13.3,
+      "condition_score": 61.4,
+      "risk_score": 47.1,
+      "battery_voltage": 25.6,
+      "insulation_resistance_mohm": 12.08,
+      "operation_count": 119979,
+      "cable_fault_count": 0,
+      "rainfall_mm": 8.5,
+      "temperature_celsius": 5.2,
+      "humidity_percent": 61.6,
+      "failure_occurred": false,
+      "failure_type": "Obstruction Slip / Mechanical Drag",
+      "season": "winter_severe"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00044",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5965909",
+      "designation": "ASTE_UMB_PTA",
+      "contact": "97014XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "PTA",
+      "station_name": "Patiala",
+      "affected_gear": {
+        "gear_type": "Point Machine",
+        "gear_id": "Point No. 104B",
+        "structured_asset_id": "PM-NR-UMB-PTA-104",
+        "signals_affected": [
+          "S-14",
+          "S-9"
+        ],
+        "interlocking_affected": "Yard Reception Siding and Shunting Neck No. 3"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Preventive Replacement of Point Motor and Detector Contact Assembly",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-11-10",
+        "start_time": "17:00",
+        "end_time": "19:00",
+        "duration_minutes": 120
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Main line straight movements only (Point Normal clamped and locked)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.115,
+      "estimated_cost_inr": 52110,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 120
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.9,
+      "condition_score": 73.3,
+      "risk_score": 29.5,
+      "battery_voltage": 23.7,
+      "insulation_resistance_mohm": 28.97,
+      "operation_count": 47654,
+      "cable_fault_count": 1,
+      "rainfall_mm": 7.5,
+      "temperature_celsius": 10.0,
+      "humidity_percent": 63.9,
+      "failure_occurred": true,
+      "failure_type": "Motor Burnout / Detection Slip",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/SC/2026/DISC/00045",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5949929",
+      "designation": "ASTE_SC_KMT",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Secunderabad (SC)",
+      "division_code": "SC",
+      "station_code": "KMT",
+      "station_name": "Khammam",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 417 Clamp Assembly",
+        "structured_asset_id": "CLP-SCR-SC-KMT-417",
+        "signals_affected": [
+          "S-24",
+          "S-6",
+          "S-28"
+        ],
+        "interlocking_affected": "Up Main to Down Loop route at Khammam"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-12-10",
+        "start_time": "13:15",
+        "end_time": "14:45",
+        "duration_minutes": 90
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.05,
+      "estimated_cost_inr": 20961,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 90
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.1,
+      "condition_score": 84.3,
+      "risk_score": 19.5,
+      "battery_voltage": 24.2,
+      "insulation_resistance_mohm": 20.28,
+      "operation_count": 24872,
+      "cable_fault_count": 0,
+      "rainfall_mm": 7.9,
+      "temperature_celsius": 9.5,
+      "humidity_percent": 69.3,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "winter"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BRC/2026/DISC/00046",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5317531",
+      "designation": "SSE_SIGNAL_WR_BRC_ST",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Western Railway",
+      "zone_code": "WR",
+      "division": "Vadodara (BRC)",
+      "division_code": "WR-BRC",
+      "station_code": "ST",
+      "station_name": "Surat",
+      "affected_gear": {
+        "gear_type": "Electronic Interlocking (EI)",
+        "gear_id": "EI Rack Unit #436",
+        "structured_asset_id": "EI-WR-BRC-ST-436",
+        "signals_affected": [
+          "S-41"
+        ],
+        "interlocking_affected": "Block Overlap detection circuit for Surat yard"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Card replacement in Central Processing Unit & Warm-Standby VDU Synchronization",
+      "maintenance_category": "Relay/Electronic Interlocking Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-05",
+        "start_time": "17:15",
+        "end_time": "19:30",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "All signal aspects red; movements on Calling-on / Written Authority (T/369-3b)",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "LOW",
+      "condition_status": "Good",
+      "failure_probability": 0.293,
+      "estimated_cost_inr": 148172,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 8.9,
+      "condition_score": 71.7,
+      "risk_score": 42.3,
+      "battery_voltage": 27.4,
+      "insulation_resistance_mohm": 5.32,
+      "operation_count": 1443,
+      "cable_fault_count": 1,
+      "rainfall_mm": 138.5,
+      "temperature_celsius": 29.8,
+      "humidity_percent": 92.6,
+      "failure_occurred": false,
+      "failure_type": "Voter Board / Communication Card Degradation",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/UMB/2026/DISC/00047",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5529058",
+      "designation": "SSE_SIGNAL_TELECOM_UMB_AADR",
+      "contact": "99370XXXXX"
+    },
+    "asset_location": {
+      "zone": "Northern Railway",
+      "zone_code": "NR",
+      "division": "Ambala (UMB)",
+      "division_code": "UMB",
+      "station_code": "AADR",
+      "station_name": "Amb Andaura",
+      "affected_gear": {
+        "gear_type": "Digital Axle Counter (HASSDAC/MSDAC)",
+        "gear_id": "Axle Counter Unit DP-415",
+        "structured_asset_id": "DAC-NR-UMB-AADR-415",
+        "signals_affected": [
+          "S-38",
+          "S-36"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Track Sensor TX/RX replacement and Wheel Detector Phase Angle calibration",
+      "maintenance_category": "Axle Counter/Track Circuit Testing",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-11-02",
+        "start_time": "09:00",
+        "end_time": "10:15",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Block Section line clear verified via station master reset box",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.772,
+      "estimated_cost_inr": 46109,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 16.2,
+      "condition_score": 46.3,
+      "risk_score": 65.4,
+      "battery_voltage": 23.3,
+      "insulation_resistance_mohm": 26.4,
+      "operation_count": 373,
+      "cable_fault_count": 1,
+      "rainfall_mm": 12.1,
+      "temperature_celsius": 13.1,
+      "humidity_percent": 69.6,
+      "failure_occurred": true,
+      "failure_type": "Phase Angle Drift / Sensor Attenuation",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00048",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5366814",
+      "designation": "ADSTE_HWH_BWN",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "BWN",
+      "station_name": "Barddhaman Jn",
+      "affected_gear": {
+        "gear_type": "Clamp Lock Point Machine",
+        "gear_id": "Turnout No. 310 Clamp Assembly",
+        "structured_asset_id": "CLP-ER-HWH-BWN-310",
+        "signals_affected": [
+          "S-39",
+          "S-4",
+          "S-41"
+        ],
+        "interlocking_affected": "Level Crossing Gate interlocked with Home Signal"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Clamp Lock Overhaul, Throw Rod Adjustment & Insulation Testing",
+      "maintenance_category": "Point Machine Maintenance",
+      "requires_traffic_block": true,
+      "requires_power_block": false,
+      "fouling_mark_infringed": true,
+      "requested_slot": {
+        "date": "2026-11-20",
+        "start_time": "12:45",
+        "end_time": "15:00",
+        "duration_minutes": 135
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": true,
+      "alternate_movement_possible": "Trailing line movements allowed with 15 kmph caution",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": false,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.1,
+      "estimated_cost_inr": 33673,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 135
+    },
+    "predictive_condition": {
+      "asset_age_years": 6.7,
+      "condition_score": 74.5,
+      "risk_score": 27.8,
+      "battery_voltage": 27.3,
+      "insulation_resistance_mohm": 43.32,
+      "operation_count": 56527,
+      "cable_fault_count": 0,
+      "rainfall_mm": 8.4,
+      "temperature_celsius": 9.4,
+      "humidity_percent": 67.6,
+      "failure_occurred": false,
+      "failure_type": "Clamp Lock Wear / Lost Motion",
+      "season": "winter_prep"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/HWH/2026/DISC/00049",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5353124",
+      "designation": "SSE_SIGNAL_TELECOM_HWH_GMAN",
+      "contact": "94190XXXXX"
+    },
+    "asset_location": {
+      "zone": "Eastern Railway",
+      "zone_code": "ER",
+      "division": "Howrah (HWH)",
+      "division_code": "HWH",
+      "station_code": "GMAN",
+      "station_name": "Gumani",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #431 (VRLA/LM)",
+        "structured_asset_id": "BAT-ER-HWH-GMAN-431",
+        "signals_affected": [
+          "S-24",
+          "S-2",
+          "S-24"
+        ],
+        "interlocking_affected": "Yard Reception Siding and Shunting Neck No. 3"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2026-10-13",
+        "start_time": "10:00",
+        "end_time": "11:15",
+        "duration_minutes": 75
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "HIGH",
+      "condition_status": "Degraded",
+      "failure_probability": 0.352,
+      "estimated_cost_inr": 14324,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 75
+    },
+    "predictive_condition": {
+      "asset_age_years": 4.1,
+      "condition_score": 80.7,
+      "risk_score": 45.3,
+      "battery_voltage": 22.9,
+      "insulation_resistance_mohm": 1.53,
+      "operation_count": 534,
+      "cable_fault_count": 4,
+      "rainfall_mm": 201.1,
+      "temperature_celsius": 28.4,
+      "humidity_percent": 79.5,
+      "failure_occurred": false,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "autumn"
+    }
+  },
+  {
+    "source_system": "SMMS_SIGNAL_TELECOM",
+    "disconnection_ref_id": "SMMS/BZA/2027/DISC/00050",
+    "form_type": "S&T(T/D) 351 (Electronic)",
+    "officer_in_charge": {
+      "emp_id": "5806815",
+      "designation": "ADSTE_BZA_RJY",
+      "contact": "97714XXXXX"
+    },
+    "asset_location": {
+      "zone": "South Central Railway",
+      "zone_code": "SCR",
+      "division": "Vijayawada (BZA)",
+      "division_code": "BZA",
+      "station_code": "RJY",
+      "station_name": "Rajahmundry",
+      "affected_gear": {
+        "gear_type": "Signalling Battery Bank (110V / 24V)",
+        "gear_id": "Battery Bank Bay #123 (VRLA/LM)",
+        "structured_asset_id": "BAT-SCR-BZA-RJY-123",
+        "signals_affected": [
+          "S-16",
+          "S-29"
+        ],
+        "interlocking_affected": "Interlocking panel / Central VDU routing for Rajahmundry"
+      }
+    },
+    "disconnection_specifications": {
+      "maintenance_nature": "Specific Gravity Measurement, Electrolyte Topping & Cell Discharge Capacity Testing",
+      "maintenance_category": "Battery and Power System Maintenance",
+      "requires_traffic_block": false,
+      "requires_power_block": true,
+      "fouling_mark_infringed": false,
+      "requested_slot": {
+        "date": "2027-01-25",
+        "start_time": "10:45",
+        "end_time": "12:45",
+        "duration_minutes": 120
+      }
+    },
+    "safety_protocols": {
+      "crank_handle_locked": false,
+      "alternate_movement_possible": "Main supply powering system via IPS float charger",
+      "signal_aspect_protection": true,
+      "route_release_verified": true,
+      "line_clear_confirmed": true,
+      "electrical_isolation_verified": true,
+      "staff_protection_confirmed": true,
+      "emergency_restoration_plan_available": true
+    },
+    "maintenance_metadata": {
+      "priority": "MEDIUM",
+      "condition_status": "Fair",
+      "failure_probability": 0.082,
+      "estimated_cost_inr": 18856,
+      "planned_by": "SSE_SIGNAL_TELECOM",
+      "work_status": "Planned",
+      "estimated_downtime_minutes": 120
+    },
+    "predictive_condition": {
+      "asset_age_years": 5.8,
+      "condition_score": 84.9,
+      "risk_score": 25.5,
+      "battery_voltage": 24.8,
+      "insulation_resistance_mohm": 41.39,
+      "operation_count": 914,
+      "cable_fault_count": 1,
+      "rainfall_mm": 6.7,
+      "temperature_celsius": 11.5,
+      "humidity_percent": 69.3,
+      "failure_occurred": false,
+      "failure_type": "Cell Sulphation / Weak Voltage Under Load",
+      "season": "winter_severe"
+    }
+  }
+]

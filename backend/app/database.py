@@ -32,6 +32,10 @@ NEON_TDMS_URL = os.getenv(
     "NEON_TDMS_URL",
     "postgresql://neondb_owner:npg_K5ZlxBYHoq6h@ep-winter-base-aya1ug0a-pooler.c-5.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 )
+NEON_COA_URL = os.getenv(
+    "NEON_COA_URL",
+    "postgresql://neondb_owner:npg_S93zlKUAetXr@ep-rough-resonance-ae5xzzjf-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+)
 
 DEPT_DB_URLS = {
     "TMS": NEON_TMS_URL,
@@ -39,7 +43,10 @@ DEPT_DB_URLS = {
     "TDMS": NEON_TDMS_URL,
     "ENGINEERING": NEON_TMS_URL,
     "SIGNAL_TELECOM": NEON_SMMS_URL,
-    "TRD": NEON_TDMS_URL
+    "TRD": NEON_TDMS_URL,
+    "COA": NEON_COA_URL,
+    "OPERATING": NEON_COA_URL,
+    "TRAFFIC": NEON_COA_URL
 }
 
 DEPT_TABLES = {
@@ -48,7 +55,10 @@ DEPT_TABLES = {
     "TDMS": "tdms_maintenance_history",
     "ENGINEERING": "tms_maintenance_history",
     "SIGNAL_TELECOM": "smms_maintenance_history",
-    "TRD": "tdms_maintenance_history"
+    "TRD": "tdms_maintenance_history",
+    "COA": "coa_offered_slots",
+    "OPERATING": "coa_offered_slots",
+    "TRAFFIC": "coa_offered_slots"
 }
 
 STATE_FILE = DATA_DIR / "divisional_blocks_state.json"
@@ -325,8 +335,8 @@ class IMBPSDatabaseManager:
 
         return results
 
-    def get_maintenance_history(self, dept: Optional[str] = None, zone: Optional[str] = None, division: Optional[str] = None, limit: int = 150) -> List[Dict[str, Any]]:
-        """Queries maintenance history from Neon PostgreSQL, fallback to local JSONs."""
+    def get_maintenance_history(self, dept: Optional[str] = None, zone: Optional[str] = None, division: Optional[str] = None, section: Optional[str] = None, limit: int = 150) -> List[Dict[str, Any]]:
+        """Queries maintenance history from Neon PostgreSQL, fallback to local JSONs, strictly filtered by section if provided."""
         history = []
         depts_to_query = ["TMS", "SMMS", "TDMS"] if not dept or dept == "ALL" else [dept]
 
@@ -343,8 +353,16 @@ class IMBPSDatabaseManager:
                     params = []
                     clauses = []
                     if division and division != "ALL":
-                        clauses.append("division ILIKE %s")
-                        params.append(f"%{division[:3]}%")
+                        import re
+                        from app.ml_bridge import resolve_division_info
+                        d_code, d_name, _, _ = resolve_division_info(division)
+                        d_short = d_code.split("-")[-1]
+                        d_clean = re.sub(r'\(.*?\)', '', d_name).strip()
+                        clauses.append("(division = %s OR division = %s OR division ILIKE %s)")
+                        params.extend([d_code, d_short, f"{d_clean}%"])
+                    if section and section != "ALL":
+                        clauses.append("(section ILIKE %s OR block_section ILIKE %s)")
+                        params.extend([f"%{section}%", f"%{section}%"])
                     if clauses:
                         query += " WHERE " + " AND ".join(clauses)
                     query += f" ORDER BY actual_start DESC LIMIT {limit};"
@@ -380,11 +398,18 @@ class IMBPSDatabaseManager:
                     except Exception as err:
                         logger.error(f"Error reading local {json_file}: {err}")
 
-        # Filter by zone / division if needed
+        # Filter by zone / division / section if needed
         if zone and zone != "ALL":
             history = [h for h in history if zone.lower() in str(h.get("zone", "")).lower() or zone.lower() in str(h.get("zone_code", "")).lower()]
         if division and division != "ALL":
-            history = [h for h in history if division[:3].lower() in str(h.get("division", "")).lower()]
+            from app.ml_bridge import resolve_division_info, is_matching_division
+            d_code, d_name, _, _ = resolve_division_info(division)
+            history = [
+                h for h in history 
+                if is_matching_division(h.get("division_code"), h.get("division"), d_code, d_name)
+            ]
+        if section and section != "ALL":
+            history = [h for h in history if section.lower() in str(h.get("section", "")).lower() or section.lower() in str(h.get("block_section", "")).lower()]
 
         return history
 
@@ -471,12 +496,30 @@ class IMBPSDatabaseManager:
         return blocks
 
     def get_authorized_blocks_for_engineer(self, dept: str, section: Optional[str] = None) -> List[Dict[str, Any]]:
-        """Retrieves present week's authorized blocks for a specific sectional engineer."""
+        """Retrieves present week's authorized blocks for a specific sectional engineer with strict section & dept isolation."""
         blocks = self.get_divisional_blocks_state()
         res = []
+        d_clean = dept.upper().strip() if dept else ""
+        s_clean = section.upper().strip() if section else ""
+
         for b in blocks:
-            if b.get("authorized") and b.get("department", "").upper() == dept.upper():
-                if not section or section in b.get("section", "") or b.get("section") in section:
+            b_dept = b.get("department", "").upper().strip()
+            # Strict department check
+            dept_matches = (
+                b_dept == d_clean or 
+                (d_clean == "TMS" and b_dept in ["ENGINEERING", "TMS"]) or
+                (d_clean == "SMMS" and b_dept in ["SIGNAL_TELECOM", "SMMS"]) or
+                (d_clean == "TDMS" and b_dept in ["TRD", "TDMS"]) or
+                (d_clean == "COA" and b_dept in ["COA", "OPERATING", "TRAFFIC"])
+            )
+            if b.get("authorized") and dept_matches:
+                b_sec = b.get("section", "").upper().strip()
+                b_bsec = b.get("block_section", "").upper().strip()
+                # If engineer is assigned to a specific section, only show that section!
+                if s_clean and s_clean != "ALL":
+                    if s_clean in b_sec or b_sec in s_clean or s_clean in b_bsec:
+                        res.append(b)
+                else:
                     res.append(b)
         return res
 
