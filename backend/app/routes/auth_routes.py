@@ -1,18 +1,57 @@
 import json
 from pathlib import Path
 from typing import Optional, List, Dict, Any
-from fastapi import APIRouter, HTTPException, status, Query
+from fastapi import APIRouter, HTTPException, status, Depends, Query
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from pydantic import BaseModel
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-from app.auth import authenticate_user, USERS_DB
+from app.auth import (
+    authenticate_user, 
+    create_access_token, 
+    decode_access_token, 
+    create_user_by_admin,
+    USERS_DB
+)
 from app.models import LoginRequest, LoginResponse
 from app.database import NEON_TMS_URL
 
 router = APIRouter(prefix="/api/auth", tags=["Authentication"])
+security = HTTPBearer()
 
-HIERARCHY_FILE = Path("c:/IMBPS/data/all_railway_entities.json")
+DATA_DIR = Path("c:/IMBPS/data")
+HIERARCHY_FILE = DATA_DIR / "railway_hierarchy.json"
 
+
+class CreateEmployeeRequest(BaseModel):
+    username: str
+    password: str
+    name: str
+    role: str                       # 'section_engineer', 'divisional_admin', etc.
+    role_display: str
+    zone: Optional[str] = None
+    zone_code: Optional[str] = None
+    division: Optional[str] = None
+    division_code: Optional[str] = None
+    department: Optional[str] = None
+    department_display: Optional[str] = None
+    section: Optional[str] = None
+    section_display: Optional[str] = None
+
+
+def get_current_user_token(credentials: HTTPAuthorizationCredentials = Depends(security)):
+    token = credentials.credentials
+    payload = decode_access_token(token)
+    if not payload:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Session has expired or token is invalid."
+        )
+    return payload
+
+
+# 1. Standard Login Endpoint (JWT signed session)
 @router.post("/login", response_model=LoginResponse)
 def login(request: LoginRequest):
     profile = authenticate_user(request.username, request.password)
@@ -21,13 +60,39 @@ def login(request: LoginRequest):
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Invalid Indian Railways User ID or Password."
         )
-    # Generate mock session token
-    token = f"IMBPS-IR-TOKEN-{profile.role.upper()}-{profile.username}"
+    
+    token = create_access_token(profile)
+    
     return LoginResponse(
         token=token,
         user=profile.model_dump()
     )
 
+
+# 2. Engineer/Admin Staff Provisioning Route (Protected)
+@router.post("/register-employee")
+def register_employee(
+    request: CreateEmployeeRequest, 
+    current_user: dict = Depends(get_current_user_token)
+):
+    allowed_creators = ["central_admin", "zonal_admin", "divisional_admin", "section_engineer"]
+    if current_user.get("role") not in allowed_creators:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Only authorized engineers or administrators can register staff."
+        )
+
+    success = create_user_by_admin(request.model_dump(), created_by=current_user.get("sub"))
+    if not success:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Failed to create employee. Username may already exist."
+        )
+
+    return {"status": "success", "message": f"Account for {request.username} successfully provisioned."}
+
+
+# 3. Verified Railway Accounts Query (Excludes password hashes)
 @router.get("/accounts")
 def get_accounts(
     role: Optional[str] = Query(None, description="Filter by role: central_admin, zonal_admin, divisional_admin, section_engineer"),
@@ -37,16 +102,12 @@ def get_accounts(
     search: Optional[str] = Query(None, description="Search by username, officer name, or section"),
     limit: int = Query(1000, description="Max accounts to return")
 ):
-    """
-    Returns verified railway accounts directly from Neon PostgreSQL Cloud app_users table,
-    with filtering across all Zones, Divisions, Sections, and Engineering Departments.
-    """
     accounts = []
     try:
         conn = psycopg2.connect(NEON_TMS_URL, cursor_factory=RealDictCursor, connect_timeout=4)
         cur = conn.cursor()
         query = """
-            SELECT username, hashed_password as password, name, role, role_display,
+            SELECT username, name, role, role_display,
                    zone, zone_code, division, division_code,
                    department, department_display, section, section_display
             FROM app_users
@@ -75,11 +136,10 @@ def get_accounts(
         for r in rows:
             accounts.append(dict(r))
         return accounts
-    except Exception as e:
-        # Fallback to local USERS_DB
+    except Exception:
+        # Fallback to in-memory USERS_DB profiles
         for uname, data in USERS_DB.items():
             prof = data.get("profile", {})
-            # apply simple filtering
             if role and role != "ALL" and prof.get("role") != role:
                 continue
             if zone and zone != "ALL" and zone.lower() not in str(prof.get("zone", "")).lower() and zone.lower() not in str(prof.get("zone_code", "")).lower():
@@ -90,7 +150,6 @@ def get_accounts(
                 continue
             accounts.append({
                 "username": uname,
-                "password": data["password"],
                 "name": prof.get("name"),
                 "role": prof.get("role"),
                 "role_display": prof.get("role_display"),
@@ -107,11 +166,10 @@ def get_accounts(
                 break
         return accounts
 
+
+# 4. Live Statistics for Dashboard Widgets
 @router.get("/stats")
 def get_auth_stats():
-    """
-    Returns live statistics of accounts, zones, divisions, and sections synced in Neon Cloud.
-    """
     try:
         conn = psycopg2.connect(NEON_TMS_URL, cursor_factory=RealDictCursor, connect_timeout=4)
         cur = conn.cursor()
@@ -161,15 +219,11 @@ def get_auth_stats():
             "message": str(e)
         }
 
+
+# 5. Full Railway Hierarchy
 @router.get("/railway-hierarchy")
 def get_railway_hierarchy():
-    """
-    Returns full railway hierarchy (16 Zones, 35 Divisions, 98 Sections)
-    mapped across TMS, SMMS, TDMS, and COA.
-    """
     if HIERARCHY_FILE.exists():
         with open(HIERARCHY_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
-
-

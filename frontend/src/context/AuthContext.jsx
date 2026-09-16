@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext(null);
 
@@ -91,8 +91,17 @@ export const AuthProvider = ({ children }) => {
     };
   }, [logout]);
 
+  // Helper function to call backend with JWT
+  const authFetch = async (url, options = {}) => {
+    const headers = {
+      ...options.headers,
+      'Authorization': `Bearer ${token}`
+    };
+    return fetch(url, { ...options, headers });
+  };
+
   return (
-    <AuthContext.Provider value={{ user, token, login, logout }}>
+    <AuthContext.Provider value={{ user, token, login, logout, authFetch }}>
       {children}
     </AuthContext.Provider>
   );
