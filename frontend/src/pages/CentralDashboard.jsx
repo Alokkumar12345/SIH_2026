@@ -103,30 +103,20 @@ export const CentralDashboard = () => {
       />
 
       {/* Hero Welcome Banner */}
-      <div className="ir-card no-print" style={{
-        background: 'linear-gradient(135deg, #420a0b 0%, #681214 60%, #1e3a5f 100%)',
-        color: '#ffffff',
-        padding: '1.25rem 1.75rem',
-        borderRadius: '8px',
-        marginBottom: '1.5rem',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        borderLeft: '6px solid #c8861e'
-      }}>
+      <div className="central-hero-banner no-print">
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.3rem' }}>
             <Building2 size={24} color="#fed7aa" />
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 700 }}>
+            <h2 style={{ fontSize: '1.35rem', fontWeight: 700 }}>
               Centralized Railway Board Control Panel
             </h2>
           </div>
-          <p style={{ color: '#fed7aa', fontSize: '0.9rem' }}>
+          <p style={{ color: '#fed7aa', fontSize: '0.88rem', lineHeight: 1.4 }}>
             Pan-India Zonal Coordination, Pending Requisitions Audit & ML Optimization Governance
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '0.75rem' }}>
+        <div className="central-hero-actions">
           <button className="ir-btn ir-btn-gold" onClick={() => setActiveTab('ml_training')}>
             <Cpu size={16} />
             <span>Train ML Model</span>
@@ -176,34 +166,34 @@ export const CentralDashboard = () => {
       )}
 
       {/* Tab Navigation Controls */}
-      <div className="no-print" style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '2px solid #e2dec9', paddingBottom: '0.5rem' }}>
+      <div className="central-tab-ribbon no-print">
         <button 
           className={`ir-btn ${activeTab === 'zonal_summary' ? 'ir-btn-primary' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('zonal_summary')}
         >
           <Building2 size={16} />
-          Pan-India Zonal Summary
+          <span>Pan-India Zonal Summary</span>
         </button>
         <button 
           className={`ir-btn ${activeTab === 'pending_works' ? 'ir-btn-primary' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('pending_works')}
         >
           <AlertCircle size={16} />
-          Detailed Pending Requisitions ({pendingWorks.length})
+          <span>Detailed Pending Requisitions ({pendingWorks.length})</span>
         </button>
         <button 
           className={`ir-btn ${activeTab === 'history' ? 'ir-btn-primary' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('history')}
         >
           <Calendar size={16} />
-          Maintenance History Archive ({historyData.length})
+          <span>Maintenance History Archive ({historyData.length})</span>
         </button>
         <button 
           className={`ir-btn ${activeTab === 'ml_training' ? 'ir-btn-gold' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('ml_training')}
         >
           <Cpu size={16} />
-          ML Model Training Hub
+          <span>ML Model Training Hub</span>
         </button>
       </div>
 
@@ -213,9 +203,9 @@ export const CentralDashboard = () => {
           <div className="ir-card-header">
             <div className="ir-card-title">
               <Building2 size={18} />
-              Zonal Level Pending Works Breakdown for September 2026
+              <span>Zonal Level Pending Works Breakdown for September 2026</span>
             </div>
-            <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+            <div style={{ fontSize: '0.82rem', color: '#64748b' }}>
               Reporting Month: <strong>September 2026</strong> • Integrated TMS / SMMS / TDMS
             </div>
           </div>
@@ -281,11 +271,11 @@ export const CentralDashboard = () => {
           <div className="ir-card-header">
             <div className="ir-card-title">
               <AlertCircle size={18} />
-              National Pending Maintenance Requisitions ({pendingWorks.length} Requisitions)
+              <span>National Pending Maintenance Requisitions ({pendingWorks.length})</span>
             </div>
             <button className="ir-btn ir-btn-print" onClick={handlePrint}>
               <Printer size={14} />
-              Print Requisitions
+              <span>Print Requisitions</span>
             </button>
           </div>
           <div className="ir-card-body">
@@ -324,7 +314,7 @@ export const CentralDashboard = () => {
                       <td>{item.preferred_date}</td>
                       <td>{item.duration_minutes} Mins</td>
                       <td>
-                        <div style={{ display: 'flex', gap: '0.3rem' }}>
+                        <div style={{ display: 'flex', gap: '0.3rem', flexWrap: 'wrap' }}>
                           {item.power_block_required && (
                             <span style={{ background: '#fee2e2', color: '#991b1b', padding: '2px 6px', borderRadius: '4px', fontSize: '0.7rem', fontWeight: 600 }}>
                               OHE Power Block
@@ -355,9 +345,9 @@ export const CentralDashboard = () => {
           <div className="ir-card-header">
             <div className="ir-card-title">
               <Calendar size={18} />
-              Pan-India Maintenance History Archive ({historyData.length} Records)
+              <span>Pan-India Maintenance History Archive ({historyData.length} Records)</span>
             </div>
-            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            <div className="card-header-actions">
               <select
                 className="ir-form-select"
                 value={historyTimeframe}
@@ -370,7 +360,7 @@ export const CentralDashboard = () => {
               </select>
               <button className="ir-btn ir-btn-print" onClick={handlePrint}>
                 <Printer size={14} />
-                Print History
+                <span>Print History</span>
               </button>
             </div>
           </div>
@@ -433,41 +423,41 @@ export const CentralDashboard = () => {
           <div className="ir-card-header">
             <div className="ir-card-title">
               <Cpu size={18} />
-              Machine Learning Continuous Retraining Hub & Governance
+              <span>Machine Learning Continuous Retraining Hub & Governance</span>
             </div>
             <div style={{ background: '#f0fdf4', color: '#166534', padding: '0.25rem 0.75rem', borderRadius: '4px', fontSize: '0.78rem', fontWeight: 700 }}>
               Production Engine Active
             </div>
           </div>
           <div className="ir-card-body">
-            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '1.5rem', marginBottom: '1.5rem' }}>
+            <div className="ml-training-grid">
               <div>
-                <h4 style={{ color: '#4a0c0e', marginBottom: '0.5rem', fontSize: '1rem' }}>
+                <h4 style={{ color: '#4a0c0e', marginBottom: '0.5rem', fontSize: '0.98rem' }}>
                   Model Governance & Automated Pipeline Architecture
                 </h4>
-                <p style={{ fontSize: '0.88rem', color: '#475569', lineHeight: 1.5, marginBottom: '1rem' }}>
+                <p style={{ fontSize: '0.86rem', color: '#475569', lineHeight: 1.5, marginBottom: '1rem' }}>
                   The IMBPS ML core trains predictive duration regression and risk estimation models 
                   directly on unified operational data synced across Neon PostgreSQL tables 
                   (<code>tms_maintenance_history</code>, <code>smms_maintenance_history</code>, <code>tdms_maintenance_history</code>).
                 </p>
 
                 <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '6px', padding: '1rem', marginBottom: '1.25rem' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '0.75rem' }}>
                     <div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>ACTIVE MODEL VERSION</div>
-                      <div style={{ fontSize: '1rem', fontWeight: 700, color: '#0d47a1' }}>{modelStatus?.active_version || 'duration_v1'}</div>
+                      <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>ACTIVE MODEL VERSION</div>
+                      <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#0d47a1' }}>{modelStatus?.active_version || 'duration_v1'}</div>
                     </div>
                     <div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>VALIDATION MAE</div>
-                      <div style={{ fontSize: '1rem', fontWeight: 700, color: '#15803d' }}>{modelStatus?.val_mae || '12.8'} Minutes</div>
+                      <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>VALIDATION MAE</div>
+                      <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#15803d' }}>{modelStatus?.val_mae || '12.8'} Minutes</div>
                     </div>
                     <div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>R² ACCURACY SCORE</div>
-                      <div style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b' }}>{modelStatus?.r2_score || '0.884'}</div>
+                      <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>R² ACCURACY SCORE</div>
+                      <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#1e293b' }}>{modelStatus?.r2_score || '0.884'}</div>
                     </div>
                     <div>
-                      <div style={{ fontSize: '0.75rem', color: '#64748b', fontWeight: 600 }}>TRAINING FEED</div>
-                      <div style={{ fontSize: '0.9rem', fontWeight: 600, color: '#c8861e' }}>Neon Cloud + Local Mirror</div>
+                      <div style={{ fontSize: '0.72rem', color: '#64748b', fontWeight: 600 }}>TRAINING FEED</div>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 600, color: '#c8861e' }}>Neon Cloud Mirror</div>
                     </div>
                   </div>
                 </div>
@@ -479,12 +469,12 @@ export const CentralDashboard = () => {
                   style={{ width: '100%', padding: '0.85rem' }}
                 >
                   <Play size={18} />
-                  {isTraining ? 'Retraining ML Models on Neon Data...' : 'Trigger ML Model Retraining Pipeline'}
+                  <span>{isTraining ? 'Retraining ML Models on Neon Data...' : 'Trigger ML Model Retraining Pipeline'}</span>
                 </button>
               </div>
 
               <div>
-                <h4 style={{ color: '#4a0c0e', marginBottom: '0.5rem', fontSize: '1rem' }}>
+                <h4 style={{ color: '#4a0c0e', marginBottom: '0.5rem', fontSize: '0.98rem' }}>
                   Live Retraining Pipeline Output
                 </h4>
                 <div style={{
@@ -495,7 +485,7 @@ export const CentralDashboard = () => {
                   borderRadius: '6px',
                   height: '240px',
                   overflowY: 'auto',
-                  fontSize: '0.82rem',
+                  fontSize: '0.8rem',
                   lineHeight: 1.4
                 }}>
                   {isTraining && (

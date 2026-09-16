@@ -23,72 +23,6 @@ export const DivisionalDashboard = () => {
   const [editingBlock, setEditingBlock] = useState(null);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
-  // Helper to strictly synchronize week number, date range, day name, and day index with the scheduled date
-  const getWeekDetails = (scheduledDate, blk) => {
-    let dateObj = null;
-    if (scheduledDate) {
-      const parts = String(scheduledDate).split('-');
-      if (parts.length === 3) {
-        dateObj = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
-      }
-    }
-    if (!dateObj || isNaN(dateObj.getTime())) {
-      const baseDate = new Date(2026, 8, 16);
-      const dayOff = (blk?.day_index || 1) - 1;
-      dateObj = new Date(baseDate.getTime() + dayOff * 86400000);
-    }
-
-    const year = dateObj.getFullYear();
-    const month = dateObj.getMonth();
-    const day = dateObj.getDate();
-
-    // Month-based week calculation:
-    // Week 1: 1st - 7th
-    // Week 2: 8th - 14th
-    // Week 3: 15th - 21st
-    // Week 4: 22nd - end of month (e.g. 30th/31st)
-    let weekNum;
-    let wStartDate;
-    let wEndDate;
-
-    const lastDayOfMonth = new Date(year, month + 1, 0).getDate();
-
-    if (day <= 7) {
-      weekNum = 1;
-      wStartDate = new Date(year, month, 1);
-      wEndDate = new Date(year, month, 7);
-    } else if (day <= 14) {
-      weekNum = 2;
-      wStartDate = new Date(year, month, 8);
-      wEndDate = new Date(year, month, 14);
-    } else if (day <= 21) {
-      weekNum = 3;
-      wStartDate = new Date(year, month, 15);
-      wEndDate = new Date(year, month, 21);
-    } else {
-      weekNum = 4;
-      wStartDate = new Date(year, month, 22);
-      wEndDate = new Date(year, month, lastDayOfMonth);
-    }
-
-    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    const formatShort = (d) => `${String(d.getDate()).padStart(2, '0')} ${monthNames[d.getMonth()]}`;
-    const weekLabel = `Week ${weekNum} (${formatShort(wStartDate)} - ${formatShort(wEndDate)} ${wEndDate.getFullYear()})`;
-    const dayName = dayNames[dateObj.getDay()];
-    const dayIndex = day; // Day of the month (e.g. Day 30 on 30 Sep)
-    const formattedDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-
-    return {
-      weekNum,
-      weekLabel,
-      dayName,
-      dayIndex,
-      formattedDate
-    };
-  };
-
   // Maintenance History
   const [historyData, setHistoryData] = useState([]);
   const [historyTimeframe, setHistoryTimeframe] = useState('all');
@@ -107,9 +41,6 @@ export const DivisionalDashboard = () => {
       const res = await fetch(`/api/divisional/optimize-weekly?division=${encodeURIComponent(divisionName)}`, {
         method: 'POST'
       });
-      if (!res.ok) {
-        throw new Error(`Server returned HTTP ${res.status}. Please ensure backend is running.`);
-      }
       const data = await res.json();
       setOptimizedPlan(data);
     } catch (err) {
@@ -126,9 +57,6 @@ export const DivisionalDashboard = () => {
       const res = await fetch(`/api/divisional/optimize-monthly?division=${encodeURIComponent(divisionName)}`, {
         method: 'POST'
       });
-      if (!res.ok) {
-        throw new Error(`Server returned HTTP ${res.status}. Please ensure backend is running.`);
-      }
       const data = await res.json();
       setOptimizedPlan(data);
     } catch (err) {
@@ -141,7 +69,6 @@ export const DivisionalDashboard = () => {
   const fetchBlocksAhead = async () => {
     try {
       const res = await fetch(`/api/divisional/blocks-ahead?division=${encodeURIComponent(divisionName)}`);
-      if (!res.ok) return;
       const data = await res.json();
       setBlocksAhead(data.blocks || []);
     } catch (err) {
@@ -152,7 +79,6 @@ export const DivisionalDashboard = () => {
   const fetchDivisionalHistory = async (timeframe) => {
     try {
       const res = await fetch(`/api/divisional/maintenance-history?division=${encodeURIComponent(divisionName)}&timeframe=${timeframe}`);
-      if (!res.ok) return;
       const data = await res.json();
       setHistoryData(data.history || []);
       setHistoryTimeframe(timeframe);
@@ -255,7 +181,7 @@ export const DivisionalDashboard = () => {
       </div>
 
       {/* Navigation Tabs */}
-      <div className="no-print" style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '2px solid #e2dec9', paddingBottom: '0.5rem' }}>
+      <div className="central-tab-ribbon no-print" style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem', borderBottom: '2px solid #e2dec9', paddingBottom: '0.5rem' }}>
         <button 
           className={`ir-btn ${activeTab === 'optimization' ? 'ir-btn-primary' : 'ir-btn-outline'}`}
           onClick={() => setActiveTab('optimization')}
@@ -318,16 +244,6 @@ export const DivisionalDashboard = () => {
                     <Clock size={18} />
                     <span>Generate Weekly Optimized Maintenance Data</span>
                   </button>
-
-                  {/* Print Button for Optimization Plan */}
-                  <button 
-                    className="ir-btn ir-btn-print"
-                    onClick={handlePrint}
-                    style={{ padding: '0.65rem 1.1rem' }}
-                  >
-                    <Printer size={18} />
-                    <span>Print Plan Hard Copy</span>
-                  </button>
                 </div>
               </div>
             </div>
@@ -372,30 +288,13 @@ export const DivisionalDashboard = () => {
 
           {/* Optimized Results Table */}
           <div className="ir-card">
-            <div className="ir-card-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
-              <div>
-                <div className="ir-card-title">
-                  <Train size={18} />
-                  {planType === 'MONTHLY' 
-                    ? 'Monthly Aggregated Optimization Schedule (4-Week Horizon)' 
-                    : 'Weekly Detailed Corridor Maintenance Schedule (7-Day Working Horizon)'}
-                </div>
-                <div style={{ fontSize: '0.85rem', color: '#64748b', marginTop: '2px' }}>
-                  Engine: <strong>Google OR-Tools CP-SAT (OPTIMAL)</strong> • Division: <strong>{divisionName}</strong> • Mode: <span style={{ fontWeight: 700, color: planType === 'MONTHLY' ? '#b45309' : '#0d47a1' }}>{planType} OPTIMIZED</span>
-                </div>
+            <div className="ir-card-header">
+              <div className="ir-card-title">
+                <Train size={18} />
+                {planType === 'MONTHLY' ? 'Monthly Aggregated Optimization Schedule' : 'Weekly Detailed Corridor Maintenance Schedule'}
               </div>
-              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                <span style={{ 
-                  background: planType === 'MONTHLY' ? '#fef3c7' : '#e0f2fe', 
-                  color: planType === 'MONTHLY' ? '#92400e' : '#075985',
-                  padding: '0.35rem 0.75rem',
-                  borderRadius: '20px',
-                  fontWeight: 700,
-                  fontSize: '0.8rem',
-                  border: '1px solid ' + (planType === 'MONTHLY' ? '#f59e0b' : '#38bdf8')
-                }}>
-                  {planType === 'MONTHLY' ? '📅 4-Week Rolling Horizon' : '⏱️ 7-Day Day-by-Day Horizon'}
-                </span>
+              <div style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                Engine: <strong>Google OR-Tools CP-SAT (OPTIMAL)</strong> • Division: <strong>{divisionName}</strong>
               </div>
             </div>
             <div className="ir-card-body">
@@ -408,107 +307,49 @@ export const DivisionalDashboard = () => {
                       <th>Section & Block Section</th>
                       <th>Line</th>
                       <th>Work Description</th>
-                      <th>Execution Date & Day</th>
-                      <th>Scheduled Slot Window</th>
-                      <th>Designated Section Engineer</th>
-                      <th>Priority & Risk</th>
-                      <th>Multi-Dept Coordination</th>
+                      <th>Scheduled Slot</th>
+                      <th>Assigned Duration</th>
+                      <th>Priority Score</th>
+                      <th>Risk Est.</th>
+                      <th>Co-Location Permitted</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {([...(optimizedPlan?.scheduled_blocks || [])].sort((a, b) => {
-                      if (a.scheduled_date !== b.scheduled_date) {
-                        return (a.scheduled_date || '').localeCompare(b.scheduled_date || '');
-                      }
-                      return (a.start_minute || 0) - (b.start_minute || 0);
-                    })).map((blk, idx) => {
-                      const weekInfo = getWeekDetails(blk.scheduled_date, blk);
-                      return (
-                        <tr key={idx} style={{ background: idx % 2 === 0 ? '#ffffff' : '#fcfbf8' }}>
-                          <td style={{ fontFamily: 'monospace', fontWeight: 700, color: '#4a0c0e' }}>
-                            {blk.job_id}
-                          </td>
-                          <td>
-                            <span className={`dept-pill dept-pill-${blk.department ? (blk.department.includes('ENGINEERING') || blk.department === 'TMS' ? 'tms' : blk.department.includes('SIGNAL') || blk.department === 'SMMS' ? 'smms' : 'tdms') : 'tms'}`}>
-                              {blk.department ? (blk.department.includes('ENGINEERING') || blk.department === 'TMS' ? 'TMS' : blk.department.includes('SIGNAL') || blk.department === 'SMMS' ? 'SMMS' : 'TDMS') : 'TMS'}
-                            </span>
-                          </td>
-                          <td>
-                            <strong style={{ color: '#1e293b' }}>{blk.section}</strong>
-                            <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{blk.block_section}</div>
-                          </td>
-                          <td>
-                            <span style={{ fontWeight: 600, fontSize: '0.82rem' }}>{blk.line}</span>
-                          </td>
-                          <td style={{ maxWidth: '220px' }}>
-                            <div style={{ fontWeight: 600, fontSize: '0.85rem' }}>{blk.work_type}</div>
-                            <div style={{ fontSize: '0.74rem', color: '#64748b' }}>Equip: {blk.equipment} • Gang: {blk.crew_size}</div>
-                          </td>
-                          <td>
-                            {/* Clearly visible Date and Day of Week */}
-                            {planType === 'MONTHLY' && (
-                              <div style={{ marginBottom: '3px' }}>
-                                <span style={{ 
-                                  background: '#fef3c7', 
-                                  color: '#92400e', 
-                                  fontSize: '0.72rem', 
-                                  padding: '1px 6px', 
-                                  borderRadius: '4px', 
-                                  fontWeight: 700 
-                                }}>
-                                  {weekInfo.weekLabel}
-                                </span>
-                              </div>
-                            )}
-                            <div style={{ fontWeight: 800, color: '#0d47a1', fontSize: '0.92rem' }}>
-                              {weekInfo.formattedDate}
-                            </div>
-                            <div style={{ fontWeight: 700, color: '#1e293b', fontSize: '0.82rem' }}>
-                              {weekInfo.dayName} (Day {weekInfo.dayIndex})
-                            </div>
-                          </td>
+                    {optimizedPlan?.scheduled_blocks?.map((blk, idx) => (
+                      <tr key={idx}>
+                        <td style={{ fontFamily: 'monospace', fontWeight: 600 }}>{blk.job_id}</td>
                         <td>
-                          <div style={{ fontWeight: 700, color: '#15803d', fontSize: '0.88rem' }}>
-                            {blk.scheduled_start_time} - {blk.scheduled_end_time}
-                          </div>
-                          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>
-                            Duration: <strong>{blk.assigned_duration_min} Mins</strong>
-                          </div>
+                          <span className={`dept-pill dept-pill-${blk.department ? (blk.department.includes('ENGINEERING') ? 'tms' : blk.department.includes('SIGNAL') ? 'smms' : 'tdms') : 'tms'}`}>
+                            {blk.department ? (blk.department.includes('ENGINEERING') ? 'TMS' : blk.department.includes('SIGNAL') ? 'SMMS' : 'TDMS') : 'TMS'}
+                          </span>
                         </td>
                         <td>
-                          <div style={{ fontWeight: 600, color: '#334155', fontSize: '0.84rem' }}>
-                            {blk.assigned_engineer || 'Section Engineer In-Charge'}
-                          </div>
-                          <div style={{ fontSize: '0.74rem', color: '#64748b' }}>
-                            Slot: {blk.assigned_slot_id}
-                          </div>
+                          <strong>{blk.section}</strong>
+                          <div style={{ fontSize: '0.75rem', color: '#64748b' }}>{blk.block_section}</div>
+                        </td>
+                        <td>{blk.line}</td>
+                        <td style={{ maxWidth: '240px' }}>{blk.work_type}</td>
+                        <td>
+                          <strong>Day {blk.day_index || 1}</strong>: {blk.scheduled_start_time} - {blk.scheduled_end_time}
+                        </td>
+                        <td>{blk.assigned_duration_min} Mins</td>
+                        <td>
+                          <span style={{ fontWeight: 700, color: '#15803d' }}>
+                            {typeof blk.priority_score === 'number' ? blk.priority_score.toFixed(1) : '82.5'}
+                          </span>
                         </td>
                         <td>
-                          <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
-                            <span style={{ fontWeight: 700, color: '#15803d', fontSize: '0.85rem' }}>
-                              Score: {typeof blk.priority_score === 'number' ? blk.priority_score.toFixed(1) : '85.0'}
-                            </span>
-                          </div>
-                          <div style={{ fontSize: '0.74rem', color: blk.risk_probability > 0.5 ? '#b91c1c' : '#0369a1', fontWeight: 600 }}>
-                            Risk: {blk.risk_probability ? (blk.risk_probability * 100).toFixed(0) + '%' : '35%'}
-                          </div>
+                          <span style={{ color: blk.risk_probability > 0.5 ? '#b91c1c' : '#0369a1', fontWeight: 600 }}>
+                            {blk.risk_probability ? (blk.risk_probability * 100).toFixed(0) + '%' : '34%'}
+                          </span>
                         </td>
                         <td>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '2px', fontSize: '0.74rem' }}>
-                            {blk.coordination?.power_block_required && (
-                              <span style={{ color: '#b91c1c', fontWeight: 700 }}>⚡ 25kV OHE Cut</span>
-                            )}
-                            {blk.coordination?.st_disconnection_required && (
-                              <span style={{ color: '#c2410c', fontWeight: 700 }}>🚦 S&T Disconnect</span>
-                            )}
-                            <span style={{ color: '#15803d', fontWeight: 600 }}>
-                              ✓ Joint Possession Synced
-                            </span>
-                          </div>
+                          <span style={{ color: '#15803d', fontWeight: 600, fontSize: '0.8rem' }}>
+                            ✓ Co-location Active
+                          </span>
                         </td>
                       </tr>
-                    );
-                  })}
+                    ))}
                   </tbody>
                 </table>
               </div>
