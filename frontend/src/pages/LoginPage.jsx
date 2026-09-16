@@ -13,20 +13,23 @@ export const LoginPage = () => {
 
   // Demo accounts for instant 1-click testing
   const DEMO_ACCOUNTS = [
-    { label: 'Central Admin (Railway Board)', u: 'railway_central', p: 'RailBoard@2026', role: 'Central Admin' },
-    { label: 'Zonal Admin (Eastern Railway ER)', u: 'zone_er', p: 'ZonalER@2026', role: 'Zonal ER' },
-    { label: 'Zonal Admin (Northern Railway NR)', u: 'zone_nr', p: 'ZonalNR@2026', role: 'Zonal NR' },
-    { label: 'Divisional Admin (Asansol ASN)', u: 'div_asn', p: 'DivASN@2026', role: 'Divisional ASN' },
-    { label: 'Divisional Admin (Howrah HWH)', u: 'div_hwh', p: 'DivHWH@2026', role: 'Divisional HWH' },
-    { label: 'Divisional Admin (Ambala UMB)', u: 'div_umb', p: 'DivUMB@2026', role: 'Divisional UMB' },
-    { label: 'TMS Engineer (Civil Track)', u: 'tms_engineer', p: 'TrackEng@2026', role: 'Section TMS' },
-    { label: 'SMMS Engineer (Signal & Telecom)', u: 'smms_engineer', p: 'SignalEng@2026', role: 'Section SMMS' },
-    { label: 'TDMS Engineer (Traction OHE)', u: 'tdms_engineer', p: 'TrdEng@2026', role: 'Section TDMS' },
+    { label: 'Railway Board Central Admin', u: 'railway_central', p: 'RailBoard@2026', role: 'Central Admin (Board)' },
+    { label: 'Railway Board Operations / COA', u: 'railway_board_ops', p: 'RailBoard@2026', role: 'Board Ops (COA)' },
+    { label: 'Eastern Railway Zonal GM / PCE', u: 'zone_er', p: 'ZonalER@2026', role: 'Zonal Admin (ER)' },
+    { label: 'Northern Railway Zonal GM', u: 'zone_nr', p: 'ZonalNR@2026', role: 'Zonal Admin (NR)' },
+    { label: 'Divisional Admin (Asansol ASN)', u: 'div_asn', p: 'DivASN@2026', role: 'Divisional DRM (ASN)' },
+    { label: 'Divisional Admin (Howrah HWH)', u: 'div_hwh', p: 'DivHWH@2026', role: 'Divisional DRM (HWH)' },
+    { label: 'Divisional Admin (Ambala UMB)', u: 'div_umb', p: 'DivUMB@2026', role: 'Divisional DRM (UMB)' },
+    { label: 'Divisional Admin (DDU Division)', u: 'div_ddu', p: 'DivDDU@2026', role: 'Divisional DRM (DDU)' },
+    { label: 'TMS Engineer (UDL-SNT Section)', u: 'tms_engineer', p: 'TrackEng@2026', role: 'TMS (Andal P-Way)' },
+    { label: 'SMMS Engineer (UDL-SNT Section)', u: 'smms_engineer', p: 'SignalEng@2026', role: 'SMMS (Andal Signal)' },
+    { label: 'TDMS Engineer (UDL-SNT Section)', u: 'tdms_engineer', p: 'TrdEng@2026', role: 'TDMS (Andal TRD/OHE)' },
+    { label: 'COA Section Controller (Andal)', u: 'coa_controller', p: 'CoaEng@2026', role: 'COA (Train Controller)' },
   ];
 
   const handleSelectAccount = (acc) => {
-    setUsername(acc.u);
-    setPassword(acc.p);
+    setUsername(acc.u || acc.username);
+    setPassword(acc.p || acc.password || acc.hashed_password);
     setErrorMsg('');
   };
 

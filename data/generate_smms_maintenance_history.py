@@ -785,6 +785,8 @@ def generate_smms_data():
 
     records = []
     job_counter = 1
+    target_records = 2500
+    base_records, remainder = divmod(target_records, len(SECTIONS_CONFIG))
 
     # Typical railway traffic block start hours:
     # Early morning shadow block: 00:30 - 04:30
@@ -796,14 +798,14 @@ def generate_smms_data():
         (15, 17)   # Afternoon window 15:00 to 17:59
     ]
 
-    for sec in SECTIONS_CONFIG:
+    for section_index, sec in enumerate(SECTIONS_CONFIG):
         div = sec["division"]
         sec_code = sec["section"]
         bsecs = sec["block_sections"]
         lines = sec["lines"]
 
-        # Number of records per section: 24 to 28 records across July-September
-        num_records_for_section = random.randint(24, 27)
+        # Distribute the target evenly so every configured section is represented.
+        num_records_for_section = base_records + (1 if section_index < remainder else 0)
 
         # Generate timestamps evenly distributed across date range
         timestamps = []

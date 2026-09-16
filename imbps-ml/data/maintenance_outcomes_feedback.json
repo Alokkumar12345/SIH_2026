@@ -40,5 +40,19 @@
     "resource_usage": "CSM + 8 Gangmen",
     "completion_status": "Completed",
     "logged_at": "2026-09-09T19:25:56.361857"
+  },
+  {
+    "job_id": "TMS-JOB-101",
+    "predicted_duration_min": 156.7,
+    "actual_duration_min": 162.0,
+    "predicted_start": "2026-10-05T11:00:00",
+    "actual_start": "2026-10-05T11:04:00",
+    "predicted_end": "2026-10-05T13:36:00",
+    "actual_end": "2026-10-05T13:46:00",
+    "train_delay_minutes": 5.0,
+    "block_utilization_percent": 94.2,
+    "resource_usage": "CSM + 8 Gangmen",
+    "completion_status": "Completed",
+    "logged_at": "2026-09-16T00:46:38.640738"
   }
 ]

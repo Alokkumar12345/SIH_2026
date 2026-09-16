@@ -23,11 +23,17 @@ export const AuthProvider = ({ children }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
       });
-      if (!res.ok) {
-        const err = await res.json();
-        throw new Error(err.detail || 'Authentication failed');
+      let data = {};
+      try {
+        data = await res.json();
+      } catch (e) {
+        if (!res.ok) {
+          throw new Error(`Backend server unavailable (Status ${res.status}). Please check backend status.`);
+        }
       }
-      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.detail || 'Authentication failed');
+      }
       setUser(data.user);
       setToken(data.token);
       localStorage.setItem('imbps_user', JSON.stringify(data.user));

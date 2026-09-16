@@ -43,9 +43,17 @@ def get_blocks_ahead_for_authorization(
     """
     blocks = db_manager.get_divisional_blocks_state()
     filtered = []
-    for b in blocks:
-        if not division or division == "ALL" or division[:3].lower() in b.get("division", "").lower():
-            filtered.append(b)
+    if not division or division == "ALL":
+        filtered = blocks
+    else:
+        from app.ml_bridge import resolve_division_info, is_matching_division, is_section_in_division
+        code, name, _, target_sections = resolve_division_info(division)
+        for b in blocks:
+            b_div = str(b.get("division", ""))
+            b_code = str(b.get("division_code", ""))
+            b_sec = str(b.get("section", ""))
+            if is_matching_division(b_code, b_div, code, name) and is_section_in_division(b_sec, code, target_sections):
+                filtered.append(b)
     return {
         "division": division,
         "count": len(filtered),

@@ -4126,5 +4126,718 @@
       "diesel_loco_movement_permissible": true,
       "adjacent_line_restricted": false
     }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/DDU/2026/TRD/1003",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_DDU",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "East Central Railway",
+      "division": "Pt. Deen Dayal Upadhyaya (DDU)",
+      "traction_sub_station": "DDU TSS",
+      "elementry_section": "DDU-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/DNR/2026/TRD/1006",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_DNR",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "East Central Railway",
+      "division": "Danapur (DNR)",
+      "traction_sub_station": "DNR TSS",
+      "elementry_section": "DNR-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/DHN/2026/TRD/1009",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_DHN",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "East Central Railway",
+      "division": "Dhanbad (DHN)",
+      "traction_sub_station": "DHN TSS",
+      "elementry_section": "DHN-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SDAH/2026/TRD/1012",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SDAH",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Eastern Railway",
+      "division": "Sealdah",
+      "traction_sub_station": "SDAH TSS",
+      "elementry_section": "SDAH-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/DLI/2026/TRD/1015",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_DLI",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Northern Railway",
+      "division": "Delhi (DLI)",
+      "traction_sub_station": "DLI TSS",
+      "elementry_section": "DLI-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/CSMT/2026/TRD/1018",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_CSMT",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Central Railway",
+      "division": "Mumbai (CSMT)",
+      "traction_sub_station": "CSMT TSS",
+      "elementry_section": "CSMT-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/CR-BSL/2026/TRD/1021",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_CR-BSL",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Central Railway",
+      "division": "Bhusawal",
+      "traction_sub_station": "CR-BSL TSS",
+      "elementry_section": "CR-BSL-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/CR-BB/2026/TRD/1024",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_CR-BB",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Central Railway",
+      "division": "Mumbai",
+      "traction_sub_station": "CR-BB TSS",
+      "elementry_section": "CR-BB-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/MMCT/2026/TRD/1027",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_MMCT",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central (MMCT)",
+      "traction_sub_station": "MMCT TSS",
+      "elementry_section": "MMCT-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/BRC/2026/TRD/1030",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_BRC",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Western Railway",
+      "division": "Vadodara (BRC)",
+      "traction_sub_station": "BRC TSS",
+      "elementry_section": "BRC-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/WR-BRC/2026/TRD/1033",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_WR-BRC",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Western Railway",
+      "division": "Vadodara",
+      "traction_sub_station": "WR-BRC TSS",
+      "elementry_section": "WR-BRC-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/WR-BCT/2026/TRD/1036",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_WR-BCT",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central",
+      "traction_sub_station": "WR-BCT TSS",
+      "elementry_section": "WR-BCT-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/PRYJ/2026/TRD/1039",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_PRYJ",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj (PRYJ)",
+      "traction_sub_station": "PRYJ TSS",
+      "elementry_section": "PRYJ-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/NCR-JHS/2026/TRD/1042",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_NCR-JHS",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "North Central Railway",
+      "division": "Jhansi",
+      "traction_sub_station": "NCR-JHS TSS",
+      "elementry_section": "NCR-JHS-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/NCR-PRYJ/2026/TRD/1045",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_NCR-PRYJ",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj",
+      "traction_sub_station": "NCR-PRYJ TSS",
+      "elementry_section": "NCR-PRYJ-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SC/2026/TRD/1048",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SC",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad (SC)",
+      "traction_sub_station": "SC TSS",
+      "elementry_section": "SC-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SCR-BZA/2026/TRD/1051",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SCR-BZA",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "South Central Railway",
+      "division": "Vijayawada",
+      "traction_sub_station": "SCR-BZA TSS",
+      "elementry_section": "SCR-BZA-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SCR-SC/2026/TRD/1054",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SCR-SC",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad",
+      "traction_sub_station": "SCR-SC TSS",
+      "elementry_section": "SCR-SC-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/MAS/2026/TRD/1057",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_MAS",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Southern Railway",
+      "division": "Chennai (MAS)",
+      "traction_sub_station": "MAS TSS",
+      "elementry_section": "MAS-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SR-MAS/2026/TRD/1060",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SR-MAS",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Southern Railway",
+      "division": "Chennai",
+      "traction_sub_station": "SR-MAS TSS",
+      "elementry_section": "SR-MAS-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SR-PGT/2026/TRD/1063",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SR-PGT",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "Southern Railway",
+      "division": "Palakkad",
+      "traction_sub_station": "SR-PGT TSS",
+      "elementry_section": "SR-PGT-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/KGP/2026/TRD/1066",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_KGP",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur (KGP)",
+      "traction_sub_station": "KGP TSS",
+      "elementry_section": "KGP-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SER-KGP/2026/TRD/1069",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SER-KGP",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur",
+      "traction_sub_station": "SER-KGP TSS",
+      "elementry_section": "SER-KGP-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/KOTA/2026/TRD/1072",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_KOTA",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "West Central Railway",
+      "division": "Kota (KOTA)",
+      "traction_sub_station": "KOTA TSS",
+      "elementry_section": "KOTA-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/WCR-JBP/2026/TRD/1075",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_WCR-JBP",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "West Central Railway",
+      "division": "Jabalpur",
+      "traction_sub_station": "WCR-JBP TSS",
+      "elementry_section": "WCR-JBP-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/ECoR-KUR/2026/TRD/1078",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_ECoR-KUR",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "EAST COAST RAILWAY",
+      "division": "Khurda Road",
+      "traction_sub_station": "ECoR-KUR TSS",
+      "elementry_section": "ECoR-KUR-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SECR-BSP/2026/TRD/1081",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SECR-BSP",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "SOUTH EAST CENTRAL RAILWAY",
+      "division": "Bilaspur",
+      "traction_sub_station": "SECR-BSP TSS",
+      "elementry_section": "SECR-BSP-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/SWR-SBC/2026/TRD/1084",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_SWR-SBC",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "SOUTH WESTERN RAILWAY",
+      "division": "Bengaluru",
+      "traction_sub_station": "SWR-SBC TSS",
+      "elementry_section": "SWR-SBC-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/NER-BSB/2026/TRD/1087",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_NER-BSB",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "NORTH EASTERN RAILWAY",
+      "division": "Varanasi",
+      "traction_sub_station": "NER-BSB TSS",
+      "elementry_section": "NER-BSB-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/NFR-KIR/2026/TRD/1090",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_NFR-KIR",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "NORTHEAST FRONTIER RAILWAY",
+      "division": "Katihar",
+      "traction_sub_station": "NFR-KIR TSS",
+      "elementry_section": "NFR-KIR-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
+  },
+  {
+    "source_system": "TDMS_TRACTION_DISTRIBUTION",
+    "requisition_id": "TDMS/NWR-JP/2026/TRD/1093",
+    "supervising_engineer": {
+      "designation": "SSE_TRD_NWR-JP",
+      "contact_number": "9876543212"
+    },
+    "electrical_section_details": {
+      "zone": "NORTH WESTERN RAILWAY",
+      "division": "Jaipur",
+      "traction_sub_station": "NWR-JP TSS",
+      "elementry_section": "NWR-JP-ES-01"
+    },
+    "requisition_type": "Cantilever & Contact Wire Replacement",
+    "block_specifications": {
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    }
   }
 ]

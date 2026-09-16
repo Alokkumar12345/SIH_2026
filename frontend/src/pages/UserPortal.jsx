@@ -63,7 +63,7 @@ export const UserPortal = () => {
 
   const fetchMyHistory = async () => {
     try {
-      const res = await fetch(`/api/engineer/my-history?department=${department}&division=${encodeURIComponent(user?.division || 'Asansol (ASN)')}`);
+      const res = await fetch(`/api/engineer/my-history?department=${department}&division=${encodeURIComponent(user?.division || 'Asansol (ASN)')}&section=${encodeURIComponent(userSection)}`);
       const data = await res.json();
       setMyHistory(data.history || []);
     } catch (err) {
@@ -146,11 +146,13 @@ export const UserPortal = () => {
           ? 'linear-gradient(135deg, #0d47a1 0%, #1565c0 55%, #1e293b 100%)' 
           : department === 'SMMS'
           ? 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 55%, #1e293b 100%)'
-          : 'linear-gradient(135deg, #b45309 0%, #d97706 55%, #1e293b 100%)',
+          : department === 'TDMS'
+          ? 'linear-gradient(135deg, #b45309 0%, #d97706 55%, #1e293b 100%)'
+          : 'linear-gradient(135deg, #581c87 0%, #7e22ce 55%, #1e293b 100%)',
         color: '#ffffff',
         padding: '1.25rem 1.75rem',
         borderRadius: '8px',
-        marginBottom: '1.5rem',
+        marginBottom: '1rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -161,6 +163,7 @@ export const UserPortal = () => {
             {department === 'TMS' && <Wrench size={26} color="#93c5fd" />}
             {department === 'SMMS' && <Radio size={26} color="#86efac" />}
             {department === 'TDMS' && <Zap size={26} color="#fed7aa" />}
+            {department === 'COA' && <Database size={26} color="#e9d5ff" />}
             <h2 style={{ fontSize: '1.35rem', fontWeight: 700 }}>
               {deptDisplay}
             </h2>
@@ -176,6 +179,41 @@ export const UserPortal = () => {
             <span>Print Report</span>
           </button>
         </div>
+      </div>
+
+      {/* Section Isolation & Security Notice */}
+      <div className="no-print" style={{
+        background: '#f8fafc',
+        border: '1.5px solid #cbd5e1',
+        borderLeft: '5px solid #0d47a1',
+        borderRadius: '6px',
+        padding: '0.65rem 1rem',
+        marginBottom: '1.25rem',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        fontSize: '0.84rem'
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <span style={{ fontSize: '1.1rem' }}>🔒</span>
+          <div>
+            <strong style={{ color: '#1e293b' }}>Authenticated Section Isolation:</strong>{' '}
+            <span style={{ color: '#475569' }}>
+              Showing only authorized blocks and logged work for <strong>{department}</strong> in Section <strong>{userSection}</strong> ({userSectionDisplay}).
+              Other departmental sections are access-restricted.
+            </span>
+          </div>
+        </div>
+        <span style={{ 
+          background: '#dbeafe', 
+          color: '#1e40af', 
+          padding: '2px 8px', 
+          borderRadius: '4px', 
+          fontSize: '0.75rem', 
+          fontWeight: 700 
+        }}>
+          Gated by User ID: {user?.username}
+        </span>
       </div>
 
       {/* The 2 Primary Sections as required by User prompt */}

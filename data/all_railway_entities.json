@@ -1,0 +1,649 @@
+{
+  "ECR": {
+    "name": "East Central Railway",
+    "divisions": {
+      "DDU": {
+        "name": "Pt. Deen Dayal Upadhyaya (DDU)",
+        "sections": [
+          {
+            "code": "DDU-GAYA",
+            "name": "DDU-GAYA"
+          },
+          {
+            "code": "SEC_DDU_GAYA_DDU_SSM",
+            "name": "DDU - Sasaram"
+          },
+          {
+            "code": "SEC_DDU_BDL_KCA_SLD",
+            "name": "Kuchman - Sakaldiha"
+          },
+          {
+            "code": "SEC_DDU_GAYA_SSM_DOS",
+            "name": "Sasaram - Dehri-on-Sone"
+          },
+          {
+            "code": "SEC_DDU_GAYA_DOS_GAYA",
+            "name": "Dehri-on-Sone - Gaya"
+          },
+          {
+            "code": "DDU-BDL",
+            "name": "DDU-BDL"
+          }
+        ]
+      },
+      "DNR": {
+        "name": "Danapur (DNR)",
+        "sections": [
+          {
+            "code": "DNR-MKA",
+            "name": "DNR-MKA"
+          },
+          {
+            "code": "SEC_DNR_PNBE_MKA",
+            "name": "Danapur - Patna - Mokama"
+          }
+        ]
+      },
+      "DHN": {
+        "name": "Dhanbad (DHN)",
+        "sections": [
+          {
+            "code": "DHN-GMO-KQR",
+            "name": "DHN-GMO-KQR"
+          },
+          {
+            "code": "SEC_DHN_GMO_PNME",
+            "name": "Dhanbad - Gomoh - Parasnath"
+          }
+        ]
+      }
+    }
+  },
+  "ER": {
+    "name": "Eastern Railway",
+    "divisions": {
+      "ASN": {
+        "name": "Asansol (ASN)",
+        "sections": [
+          {
+            "code": "SEC_ASN_UDL_STN",
+            "name": "Andal - Sitarampur Loop"
+          },
+          {
+            "code": "Andal - Tapasi - Barabani - Sitarampur",
+            "name": "Andal - Tapasi - Barabani - Sitarampur"
+          },
+          {
+            "code": "Jasidih - Baidyanathdham",
+            "name": "Jasidih - Baidyanathdham"
+          },
+          {
+            "code": "Madhupur - Giridih",
+            "name": "Madhupur - Giridih"
+          },
+          {
+            "code": "SEC_ASN_UDL_SNT",
+            "name": "Andal - Sainthia"
+          },
+          {
+            "code": "SEC_ASN_JSME_DGHR",
+            "name": "Jasidih - Deoghar"
+          },
+          {
+            "code": "Andal - Sainthia",
+            "name": "Andal - Sainthia"
+          },
+          {
+            "code": "Sitarampur - Asansol - Raniganj Main Line",
+            "name": "Sitarampur - Asansol - Raniganj Main Line"
+          },
+          {
+            "code": "ASN-UDL-SNT",
+            "name": "ASN-UDL-SNT"
+          },
+          {
+            "code": "Deoghar - Banka",
+            "name": "Deoghar - Banka"
+          },
+          {
+            "code": "ASN-MDP-JSME",
+            "name": "ASN-MDP-JSME"
+          },
+          {
+            "code": "Jasidih - Dumka",
+            "name": "Jasidih - Dumka"
+          },
+          {
+            "code": "SEC_ASN_MDP_GRD",
+            "name": "Madhupur - Giridih"
+          },
+          {
+            "code": "SEC_ASN_MAIN_STN_CRJ_MDP",
+            "name": "Asansol - Chittaranjan - Madhupur"
+          }
+        ]
+      },
+      "HWH": {
+        "name": "Howrah (HWH)",
+        "sections": [
+          {
+            "code": "Azimganj - Nalhati",
+            "name": "Azimganj - Nalhati"
+          },
+          {
+            "code": "Khana - Gumani",
+            "name": "Khana - Gumani"
+          },
+          {
+            "code": "Bandel - Hooghly Ghat",
+            "name": "Bandel - Hooghly Ghat"
+          },
+          {
+            "code": "SEC_HWH_MAIN_BWN",
+            "name": "Howrah - Barddhaman Main Line"
+          },
+          {
+            "code": "HWH-MAIN-CHORD",
+            "name": "HWH-MAIN-CHORD"
+          },
+          {
+            "code": "SEC_HWH_CHORD_DKAE_BWN",
+            "name": "Dankuni - Barddhaman Chord"
+          },
+          {
+            "code": "Rampurhat - Dumka",
+            "name": "Rampurhat - Dumka"
+          },
+          {
+            "code": "SEC_HWH_BDC_AZ",
+            "name": "Bandel - Azimganj"
+          },
+          {
+            "code": "Bandel - Azimganj",
+            "name": "Bandel - Azimganj"
+          },
+          {
+            "code": "Sheoraphuli - Tarakeswar - Goghat",
+            "name": "Sheoraphuli - Tarakeswar - Goghat"
+          },
+          {
+            "code": "Howrah - Khana Main Line",
+            "name": "Howrah - Khana Main Line"
+          },
+          {
+            "code": "SEC_HWH_SHE_TAK",
+            "name": "Sheoraphuli - Tarakeswar"
+          },
+          {
+            "code": "Howrah - Khana Chord Line",
+            "name": "Howrah - Khana Chord Line"
+          },
+          {
+            "code": "Dankuni - Bhattanagar",
+            "name": "Dankuni - Bhattanagar"
+          }
+        ]
+      },
+      "SDAH": {
+        "name": "Sealdah",
+        "sections": [
+          {
+            "code": "Barasat - Bongaon Section",
+            "name": "Barasat - Bongaon Section"
+          },
+          {
+            "code": "Sealdah - Ranaghat Main Line",
+            "name": "Sealdah - Ranaghat Main Line"
+          },
+          {
+            "code": "Ranaghat - Gede International Corridor",
+            "name": "Ranaghat - Gede International Corridor"
+          }
+        ]
+      },
+      "Asansol (ASN)": {
+        "name": "Asansol Division",
+        "sections": [
+          {
+            "code": "UDL-SNT",
+            "name": "Andal - Sainthia"
+          }
+        ]
+      }
+    }
+  },
+  "NR": {
+    "name": "Northern Railway",
+    "divisions": {
+      "UMB": {
+        "name": "Ambala (UMB)",
+        "sections": [
+          {
+            "code": "UMB-LDH-CORRIDOR",
+            "name": "UMB-LDH-CORRIDOR"
+          },
+          {
+            "code": "SEC_UMB_CDG_KLK",
+            "name": "Ambala - Chandigarh - Kalka"
+          },
+          {
+            "code": "Ambala - Kurukshetra (UMB-KKDE)",
+            "name": "Ambala - Kurukshetra (UMB-KKDE)"
+          },
+          {
+            "code": "Ludhiana - Bathinda (LDH-BTI)",
+            "name": "Ludhiana - Bathinda (LDH-BTI)"
+          },
+          {
+            "code": "Ambala - Chandigarh - Kalka (UMB-CDG-KLK)",
+            "name": "Ambala - Chandigarh - Kalka (UMB-CDG-KLK)"
+          },
+          {
+            "code": "Sirhind - Nangal Dam (SIR-NLDM)",
+            "name": "Sirhind - Nangal Dam (SIR-NLDM)"
+          },
+          {
+            "code": "SEC_UMB_SRE_MAIN",
+            "name": "Ambala Cantt - Saharanpur"
+          },
+          {
+            "code": "Kalka - Shimla Heritage Railway (KLK-SML)",
+            "name": "Kalka - Shimla Heritage Railway (KLK-SML)"
+          },
+          {
+            "code": "Rajpura - Bathinda (RPJ-BTI)",
+            "name": "Rajpura - Bathinda (RPJ-BTI)"
+          },
+          {
+            "code": "Ambala - Saharanpur (UMB-SRE)",
+            "name": "Ambala - Saharanpur (UMB-SRE)"
+          },
+          {
+            "code": "SEC_UMB_RPJ_BTI",
+            "name": "Rajpura - Dhuri - Bathinda"
+          },
+          {
+            "code": "Ambala Cantt - Ludhiana (UMB-LDH)",
+            "name": "Ambala Cantt - Ludhiana (UMB-LDH)"
+          },
+          {
+            "code": "SEC_UMB_LDH_MAIN",
+            "name": "Ambala Cantt - Ludhiana"
+          }
+        ]
+      },
+      "DLI": {
+        "name": "Delhi (DLI)",
+        "sections": [
+          {
+            "code": "DLI-NDLS-GZB",
+            "name": "DLI-NDLS-GZB"
+          },
+          {
+            "code": "Delhi - Panipat - Ambala Corridor",
+            "name": "Delhi - Panipat - Ambala Corridor"
+          },
+          {
+            "code": "SEC_NDLS_GZB_MAIN",
+            "name": "New Delhi - Ghaziabad"
+          },
+          {
+            "code": "New Delhi - Palwal Main Line",
+            "name": "New Delhi - Palwal Main Line"
+          }
+        ]
+      }
+    }
+  },
+  "CR": {
+    "name": "Central Railway",
+    "divisions": {
+      "CSMT": {
+        "name": "Mumbai (CSMT)",
+        "sections": [
+          {
+            "code": "SEC_CSMT_KYN_KSRA",
+            "name": "Kalyan - Kasara"
+          },
+          {
+            "code": "CSMT-KYN-KSRA",
+            "name": "CSMT-KYN-KSRA"
+          }
+        ]
+      },
+      "CR-BSL": {
+        "name": "Bhusawal",
+        "sections": [
+          {
+            "code": "Igatpuri - Manmad - Bhusawal",
+            "name": "Igatpuri - Manmad - Bhusawal"
+          }
+        ]
+      },
+      "CR-BB": {
+        "name": "Mumbai",
+        "sections": [
+          {
+            "code": "Kalyan - Kasara - Igatpuri (Thal Ghat)",
+            "name": "Kalyan - Kasara - Igatpuri (Thal Ghat)"
+          },
+          {
+            "code": "CSMT - Kalyan Quadruple Corridor",
+            "name": "CSMT - Kalyan Quadruple Corridor"
+          },
+          {
+            "code": "Kalyan - Karjat (Bhor Ghat Approach)",
+            "name": "Kalyan - Karjat (Bhor Ghat Approach)"
+          }
+        ]
+      }
+    }
+  },
+  "WR": {
+    "name": "Western Railway",
+    "divisions": {
+      "MMCT": {
+        "name": "Mumbai Central (MMCT)",
+        "sections": [
+          {
+            "code": "SEC_VR_DRD_MAIN",
+            "name": "Virar - Dahanu Road"
+          },
+          {
+            "code": "BVI-VR-DRD",
+            "name": "BVI-VR-DRD"
+          }
+        ]
+      },
+      "BRC": {
+        "name": "Vadodara (BRC)",
+        "sections": [
+          {
+            "code": "ST-BRC",
+            "name": "ST-BRC"
+          },
+          {
+            "code": "SEC_ST_BH_BRC",
+            "name": "Surat - Bharuch - Vadodara"
+          }
+        ]
+      },
+      "WR-BRC": {
+        "name": "Vadodara",
+        "sections": [
+          {
+            "code": "Surat - Vadodara Golden Corridor",
+            "name": "Surat - Vadodara Golden Corridor"
+          }
+        ]
+      },
+      "WR-BCT": {
+        "name": "Mumbai Central",
+        "sections": [
+          {
+            "code": "Churchgate - Virar - Dahanu Road",
+            "name": "Churchgate - Virar - Dahanu Road"
+          }
+        ]
+      }
+    }
+  },
+  "NCR": {
+    "name": "North Central Railway",
+    "divisions": {
+      "PRYJ": {
+        "name": "Prayagraj (PRYJ)",
+        "sections": [
+          {
+            "code": "SEC_PRYJ_FTP_CNB",
+            "name": "Prayagraj - Fatehpur - Kanpur"
+          },
+          {
+            "code": "PRYJ-CNB",
+            "name": "PRYJ-CNB"
+          }
+        ]
+      },
+      "NCR-JHS": {
+        "name": "Jhansi",
+        "sections": [
+          {
+            "code": "Agra - Gwalior - Jhansi - Bina",
+            "name": "Agra - Gwalior - Jhansi - Bina"
+          }
+        ]
+      },
+      "NCR-PRYJ": {
+        "name": "Prayagraj",
+        "sections": [
+          {
+            "code": "Kanpur - Prayagraj - Pt. Deen Dayal Upadhyaya",
+            "name": "Kanpur - Prayagraj - Pt. Deen Dayal Upadhyaya"
+          }
+        ]
+      }
+    }
+  },
+  "SCR": {
+    "name": "South Central Railway",
+    "divisions": {
+      "SC": {
+        "name": "Secunderabad (SC)",
+        "sections": [
+          {
+            "code": "SEC_KZJ_SC_MAIN",
+            "name": "Kazipet - Secunderabad"
+          },
+          {
+            "code": "KZJ-SC",
+            "name": "KZJ-SC"
+          }
+        ]
+      },
+      "SCR-BZA": {
+        "name": "Vijayawada",
+        "sections": [
+          {
+            "code": "Kazipet - Vijayawada - Gudur Coastal Corridor",
+            "name": "Kazipet - Vijayawada - Gudur Coastal Corridor"
+          }
+        ]
+      },
+      "SCR-SC": {
+        "name": "Secunderabad",
+        "sections": [
+          {
+            "code": "Secunderabad - Kazipet Grand Trunk",
+            "name": "Secunderabad - Kazipet Grand Trunk"
+          }
+        ]
+      }
+    }
+  },
+  "SR": {
+    "name": "Southern Railway",
+    "divisions": {
+      "MAS": {
+        "name": "Chennai (MAS)",
+        "sections": [
+          {
+            "code": "MAS-AJJ-KPD",
+            "name": "MAS-AJJ-KPD"
+          },
+          {
+            "code": "SEC_MAS_AJJ_KPD",
+            "name": "Chennai - Arakkonam - Katpadi"
+          }
+        ]
+      },
+      "SR-MAS": {
+        "name": "Chennai",
+        "sections": [
+          {
+            "code": "Chennai Central - Arakkonam Trunk Line",
+            "name": "Chennai Central - Arakkonam Trunk Line"
+          },
+          {
+            "code": "Chennai Beach - Chengalpattu Suburban",
+            "name": "Chennai Beach - Chengalpattu Suburban"
+          }
+        ]
+      },
+      "SR-PGT": {
+        "name": "Palakkad",
+        "sections": [
+          {
+            "code": "Palakkad - Shoranur - Kozhikode",
+            "name": "Palakkad - Shoranur - Kozhikode"
+          }
+        ]
+      }
+    }
+  },
+  "SER": {
+    "name": "South Eastern Railway",
+    "divisions": {
+      "KGP": {
+        "name": "Kharagpur (KGP)",
+        "sections": [
+          {
+            "code": "SEC_KGP_JGM_TATA",
+            "name": "Kharagpur - Tatanagar"
+          },
+          {
+            "code": "HWH-KGP-TATA",
+            "name": "HWH-KGP-TATA"
+          }
+        ]
+      },
+      "SER-KGP": {
+        "name": "Kharagpur",
+        "sections": [
+          {
+            "code": "Howrah - Kharagpur Quadruple Trunk",
+            "name": "Howrah - Kharagpur Quadruple Trunk"
+          },
+          {
+            "code": "Kharagpur - Tatanagar Steel Link",
+            "name": "Kharagpur - Tatanagar Steel Link"
+          }
+        ]
+      }
+    }
+  },
+  "WCR": {
+    "name": "West Central Railway",
+    "divisions": {
+      "KOTA": {
+        "name": "Kota (KOTA)",
+        "sections": [
+          {
+            "code": "KOTA-SWM",
+            "name": "KOTA-SWM"
+          },
+          {
+            "code": "SEC_KOTA_SWM_MAIN",
+            "name": "Kota - Sawai Madhopur"
+          }
+        ]
+      },
+      "WCR-JBP": {
+        "name": "Jabalpur",
+        "sections": [
+          {
+            "code": "Itarsi - Jabalpur Trunk Line",
+            "name": "Itarsi - Jabalpur Trunk Line"
+          }
+        ]
+      }
+    }
+  },
+  "ECoR": {
+    "name": "EAST COAST RAILWAY",
+    "divisions": {
+      "ECoR-KUR": {
+        "name": "Khurda Road",
+        "sections": [
+          {
+            "code": "Bhadrak - Cuttack - Bhubaneswar - Khurda Road",
+            "name": "Bhadrak - Cuttack - Bhubaneswar - Khurda Road"
+          }
+        ]
+      }
+    }
+  },
+  "SECR": {
+    "name": "SOUTH EAST CENTRAL RAILWAY",
+    "divisions": {
+      "SECR-BSP": {
+        "name": "Bilaspur",
+        "sections": [
+          {
+            "code": "Bilaspur - Raipur - Durg Industrial Line",
+            "name": "Bilaspur - Raipur - Durg Industrial Line"
+          }
+        ]
+      }
+    }
+  },
+  "SWR": {
+    "name": "SOUTH WESTERN RAILWAY",
+    "divisions": {
+      "SWR-SBC": {
+        "name": "Bengaluru",
+        "sections": [
+          {
+            "code": "Bengaluru - Jolarpettai Main Line",
+            "name": "Bengaluru - Jolarpettai Main Line"
+          },
+          {
+            "code": "Bengaluru - Mysuru Double Line",
+            "name": "Bengaluru - Mysuru Double Line"
+          }
+        ]
+      }
+    }
+  },
+  "NER": {
+    "name": "NORTH EASTERN RAILWAY",
+    "divisions": {
+      "NER-BSB": {
+        "name": "Varanasi",
+        "sections": [
+          {
+            "code": "Gorakhpur - Chhapra Main Line",
+            "name": "Gorakhpur - Chhapra Main Line"
+          }
+        ]
+      }
+    }
+  },
+  "NFR": {
+    "name": "NORTHEAST FRONTIER RAILWAY",
+    "divisions": {
+      "NFR-KIR": {
+        "name": "Katihar",
+        "sections": [
+          {
+            "code": "New Jalpaiguri - New Cooch Behar Main Line",
+            "name": "New Jalpaiguri - New Cooch Behar Main Line"
+          }
+        ]
+      }
+    }
+  },
+  "NWR": {
+    "name": "NORTH WESTERN RAILWAY",
+    "divisions": {
+      "NWR-JP": {
+        "name": "Jaipur",
+        "sections": [
+          {
+            "code": "Delhi - Rewari - Jaipur Section",
+            "name": "Delhi - Rewari - Jaipur Section"
+          }
+        ]
+      }
+    }
+  }
+}

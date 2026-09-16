@@ -3180,5 +3180,1183 @@
       "post_work_speed_kmph": 45,
       "normal_speed_restoration_hrs": 24
     }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/DDU/2026/BLK/1001",
+    "requisitioning_officer": {
+      "emp_id": "101001",
+      "designation": "SSE_PWAY_DDU",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "East Central Railway",
+      "division": "Pt. Deen Dayal Upadhyaya (DDU)",
+      "section": "DDU-GAYA",
+      "block_section": "DDU-GAYA Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in DDU corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/DNR/2026/BLK/1004",
+    "requisitioning_officer": {
+      "emp_id": "101004",
+      "designation": "SSE_PWAY_DNR",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "East Central Railway",
+      "division": "Danapur (DNR)",
+      "section": "DNR-MKA",
+      "block_section": "DNR-MKA Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in DNR corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/DHN/2026/BLK/1007",
+    "requisitioning_officer": {
+      "emp_id": "101007",
+      "designation": "SSE_PWAY_DHN",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "East Central Railway",
+      "division": "Dhanbad (DHN)",
+      "section": "DHN-GMO-KQR",
+      "block_section": "DHN-GMO-KQR Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in DHN corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SDAH/2026/BLK/1010",
+    "requisitioning_officer": {
+      "emp_id": "101010",
+      "designation": "SSE_PWAY_SDAH",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Eastern Railway",
+      "division": "Sealdah",
+      "section": "Barasat - Bongaon Section",
+      "block_section": "Barasat - Bongaon Section Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SDAH corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/DLI/2026/BLK/1013",
+    "requisitioning_officer": {
+      "emp_id": "101013",
+      "designation": "SSE_PWAY_DLI",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Northern Railway",
+      "division": "Delhi (DLI)",
+      "section": "DLI-NDLS-GZB",
+      "block_section": "DLI-NDLS-GZB Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in DLI corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/CSMT/2026/BLK/1016",
+    "requisitioning_officer": {
+      "emp_id": "101016",
+      "designation": "SSE_PWAY_CSMT",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Central Railway",
+      "division": "Mumbai (CSMT)",
+      "section": "Kalyan - Kasara",
+      "block_section": "Kalyan - Kasara Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in CSMT corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/CR-BSL/2026/BLK/1019",
+    "requisitioning_officer": {
+      "emp_id": "101019",
+      "designation": "SSE_PWAY_CR-BSL",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Central Railway",
+      "division": "Bhusawal",
+      "section": "Igatpuri - Manmad - Bhusawal",
+      "block_section": "Igatpuri - Manmad - Bhusawal Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in CR-BSL corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/CR-BB/2026/BLK/1022",
+    "requisitioning_officer": {
+      "emp_id": "101022",
+      "designation": "SSE_PWAY_CR-BB",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Central Railway",
+      "division": "Mumbai",
+      "section": "Kalyan - Kasara - Igatpuri (Thal Ghat)",
+      "block_section": "Kalyan - Kasara - Igatpuri (Thal Ghat) Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in CR-BB corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/MMCT/2026/BLK/1025",
+    "requisitioning_officer": {
+      "emp_id": "101025",
+      "designation": "SSE_PWAY_MMCT",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central (MMCT)",
+      "section": "Virar - Dahanu Road",
+      "block_section": "Virar - Dahanu Road Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in MMCT corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/BRC/2026/BLK/1028",
+    "requisitioning_officer": {
+      "emp_id": "101028",
+      "designation": "SSE_PWAY_BRC",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Western Railway",
+      "division": "Vadodara (BRC)",
+      "section": "ST-BRC",
+      "block_section": "ST-BRC Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in BRC corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/WR-BRC/2026/BLK/1031",
+    "requisitioning_officer": {
+      "emp_id": "101031",
+      "designation": "SSE_PWAY_WR-BRC",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Western Railway",
+      "division": "Vadodara",
+      "section": "Surat - Vadodara Golden Corridor",
+      "block_section": "Surat - Vadodara Golden Corridor Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in WR-BRC corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/WR-BCT/2026/BLK/1034",
+    "requisitioning_officer": {
+      "emp_id": "101034",
+      "designation": "SSE_PWAY_WR-BCT",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Western Railway",
+      "division": "Mumbai Central",
+      "section": "Churchgate - Virar - Dahanu Road",
+      "block_section": "Churchgate - Virar - Dahanu Road Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in WR-BCT corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/PRYJ/2026/BLK/1037",
+    "requisitioning_officer": {
+      "emp_id": "101037",
+      "designation": "SSE_PWAY_PRYJ",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj (PRYJ)",
+      "section": "Prayagraj - Fatehpur - Kanpur",
+      "block_section": "Prayagraj - Fatehpur - Kanpur Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in PRYJ corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/NCR-JHS/2026/BLK/1040",
+    "requisitioning_officer": {
+      "emp_id": "101040",
+      "designation": "SSE_PWAY_NCR-JHS",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "North Central Railway",
+      "division": "Jhansi",
+      "section": "Agra - Gwalior - Jhansi - Bina",
+      "block_section": "Agra - Gwalior - Jhansi - Bina Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in NCR-JHS corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/NCR-PRYJ/2026/BLK/1043",
+    "requisitioning_officer": {
+      "emp_id": "101043",
+      "designation": "SSE_PWAY_NCR-PRYJ",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "North Central Railway",
+      "division": "Prayagraj",
+      "section": "Kanpur - Prayagraj - Pt. Deen Dayal Upadhyaya",
+      "block_section": "Kanpur - Prayagraj - Pt. Deen Dayal Upadhyaya Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in NCR-PRYJ corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SC/2026/BLK/1046",
+    "requisitioning_officer": {
+      "emp_id": "101046",
+      "designation": "SSE_PWAY_SC",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad (SC)",
+      "section": "Kazipet - Secunderabad",
+      "block_section": "Kazipet - Secunderabad Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SC corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SCR-BZA/2026/BLK/1049",
+    "requisitioning_officer": {
+      "emp_id": "101049",
+      "designation": "SSE_PWAY_SCR-BZA",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "South Central Railway",
+      "division": "Vijayawada",
+      "section": "Kazipet - Vijayawada - Gudur Coastal Corridor",
+      "block_section": "Kazipet - Vijayawada - Gudur Coastal Corridor Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SCR-BZA corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SCR-SC/2026/BLK/1052",
+    "requisitioning_officer": {
+      "emp_id": "101052",
+      "designation": "SSE_PWAY_SCR-SC",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "South Central Railway",
+      "division": "Secunderabad",
+      "section": "Secunderabad - Kazipet Grand Trunk",
+      "block_section": "Secunderabad - Kazipet Grand Trunk Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SCR-SC corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/MAS/2026/BLK/1055",
+    "requisitioning_officer": {
+      "emp_id": "101055",
+      "designation": "SSE_PWAY_MAS",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Southern Railway",
+      "division": "Chennai (MAS)",
+      "section": "MAS-AJJ-KPD",
+      "block_section": "MAS-AJJ-KPD Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in MAS corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SR-MAS/2026/BLK/1058",
+    "requisitioning_officer": {
+      "emp_id": "101058",
+      "designation": "SSE_PWAY_SR-MAS",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Southern Railway",
+      "division": "Chennai",
+      "section": "Chennai Central - Arakkonam Trunk Line",
+      "block_section": "Chennai Central - Arakkonam Trunk Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SR-MAS corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SR-PGT/2026/BLK/1061",
+    "requisitioning_officer": {
+      "emp_id": "101061",
+      "designation": "SSE_PWAY_SR-PGT",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "Southern Railway",
+      "division": "Palakkad",
+      "section": "Palakkad - Shoranur - Kozhikode",
+      "block_section": "Palakkad - Shoranur - Kozhikode Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SR-PGT corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/KGP/2026/BLK/1064",
+    "requisitioning_officer": {
+      "emp_id": "101064",
+      "designation": "SSE_PWAY_KGP",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur (KGP)",
+      "section": "Kharagpur - Tatanagar",
+      "block_section": "Kharagpur - Tatanagar Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in KGP corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SER-KGP/2026/BLK/1067",
+    "requisitioning_officer": {
+      "emp_id": "101067",
+      "designation": "SSE_PWAY_SER-KGP",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "South Eastern Railway",
+      "division": "Kharagpur",
+      "section": "Howrah - Kharagpur Quadruple Trunk",
+      "block_section": "Howrah - Kharagpur Quadruple Trunk Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SER-KGP corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/KOTA/2026/BLK/1070",
+    "requisitioning_officer": {
+      "emp_id": "101070",
+      "designation": "SSE_PWAY_KOTA",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "West Central Railway",
+      "division": "Kota (KOTA)",
+      "section": "KOTA-SWM",
+      "block_section": "KOTA-SWM Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in KOTA corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/WCR-JBP/2026/BLK/1073",
+    "requisitioning_officer": {
+      "emp_id": "101073",
+      "designation": "SSE_PWAY_WCR-JBP",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "West Central Railway",
+      "division": "Jabalpur",
+      "section": "Itarsi - Jabalpur Trunk Line",
+      "block_section": "Itarsi - Jabalpur Trunk Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in WCR-JBP corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/ECoR-KUR/2026/BLK/1076",
+    "requisitioning_officer": {
+      "emp_id": "101076",
+      "designation": "SSE_PWAY_ECoR-KUR",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "EAST COAST RAILWAY",
+      "division": "Khurda Road",
+      "section": "Bhadrak - Cuttack - Bhubaneswar - Khurda Road",
+      "block_section": "Bhadrak - Cuttack - Bhubaneswar - Khurda Road Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in ECoR-KUR corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SECR-BSP/2026/BLK/1079",
+    "requisitioning_officer": {
+      "emp_id": "101079",
+      "designation": "SSE_PWAY_SECR-BSP",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "SOUTH EAST CENTRAL RAILWAY",
+      "division": "Bilaspur",
+      "section": "Bilaspur - Raipur - Durg Industrial Line",
+      "block_section": "Bilaspur - Raipur - Durg Industrial Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SECR-BSP corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/SWR-SBC/2026/BLK/1082",
+    "requisitioning_officer": {
+      "emp_id": "101082",
+      "designation": "SSE_PWAY_SWR-SBC",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "SOUTH WESTERN RAILWAY",
+      "division": "Bengaluru",
+      "section": "Bengaluru - Jolarpettai Main Line",
+      "block_section": "Bengaluru - Jolarpettai Main Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in SWR-SBC corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/NER-BSB/2026/BLK/1085",
+    "requisitioning_officer": {
+      "emp_id": "101085",
+      "designation": "SSE_PWAY_NER-BSB",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "NORTH EASTERN RAILWAY",
+      "division": "Varanasi",
+      "section": "Gorakhpur - Chhapra Main Line",
+      "block_section": "Gorakhpur - Chhapra Main Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in NER-BSB corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/NFR-KIR/2026/BLK/1088",
+    "requisitioning_officer": {
+      "emp_id": "101088",
+      "designation": "SSE_PWAY_NFR-KIR",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "NORTHEAST FRONTIER RAILWAY",
+      "division": "Katihar",
+      "section": "New Jalpaiguri - New Cooch Behar Main Line",
+      "block_section": "New Jalpaiguri - New Cooch Behar Main Line Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in NFR-KIR corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
+  },
+  {
+    "source_system": "TMS_CIVIL_ENGG",
+    "demand_ref_id": "TMS/NWR-JP/2026/BLK/1091",
+    "requisitioning_officer": {
+      "emp_id": "101091",
+      "designation": "SSE_PWAY_NWR-JP",
+      "mobile": "9876543210"
+    },
+    "location_details": {
+      "zone": "NORTH WESTERN RAILWAY",
+      "division": "Jaipur",
+      "section": "Delhi - Rewari - Jaipur Section",
+      "block_section": "Delhi - Rewari - Jaipur Section Section",
+      "line": "UP Main",
+      "from_km": "10.000",
+      "to_km": "14.500"
+    },
+    "block_specifications": {
+      "work_type": "Tamping Machine (CSM) Deployment",
+      "demand_nature": "Planned Rolling Block",
+      "preferred_date": "2026-09-21",
+      "requested_window": {
+        "duration_minutes": 150,
+        "preferred_start": "11:30",
+        "preferred_end": "14:00"
+      }
+    },
+    "interdepartmental_dependencies": {
+      "power_block_required": true,
+      "trd_details": "OHE power isolation required in NWR-JP corridor",
+      "st_disconnection_required": true,
+      "st_details": "Axle counters & track circuit bonding disconnection"
+    },
+    "speed_restriction_proposed": {
+      "post_work_speed_kmph": 50,
+      "normal_speed_restoration_hrs": 48
+    }
   }
 ]
